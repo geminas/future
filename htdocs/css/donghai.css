@@ -1,0 +1,614 @@
+.peopleinfobox {
+    margin: 0;
+    padding-bottom: 58.75%;
+    width: 100%;
+    position: relative;
+    
+}
+
+.about-content{
+    margin-top: 35px;
+}
+
+.peopleinfobox .vip-quote {
+    text-align:justify;
+    color:black;
+    position: absolute;
+    top:0px;
+    width: 100%;
+    padding: 4.5% 0;
+}
+
+.peopleinfobox .vip-image {
+    position: absolute;
+    top:40%;
+    width:22%;
+}
+
+.peopleinfobox .vip-image img {
+    width:100%
+}
+
+.peopleinfobox .vip-detail {
+    position: absolute;
+    top:40%; left: 27%;
+    width: 73%;
+}
+
+.peopleinfobox .vip-name {
+    color:#57D9EA;
+    padding-bottom: 2.6%;
+    margin-bottom: 0;
+}
+
+.peopleinfobox .vip-desc {
+    text-align:justify;
+}
+
+.gdhbutton {
+
+    display:-ms-flexbox;
+    -ms-flex-pack:center;
+    -ms-flex-align:center;
+
+    /* Firefox */
+    display:-moz-box;
+    -moz-box-pack:center;
+    -moz-box-align:center;
+
+    /* Safari, Opera, and Chrome */
+    display:-webkit-box;
+    -webkit-box-pack:center;
+    -webkit-box-align:center;
+
+    /* W3C */
+    display:box;
+    box-pack:center;
+    box-align:center;
+
+    -moz-transition: all 200ms ease-in;
+    -o-transition: all 200ms ease-in;
+    -webkit-transition: all 200ms ease-in;
+    transition: all 200ms ease-in; 
+  
+
+    border:1px solid black;
+    height:35px;
+    width:100px;
+    margin-top:12%;
+}
+
+
+.gdhbutton:hover {
+    border-color: #57D9EA;
+}
+
+.gdhbutton:hover a{
+    color: #57D9EA;
+}
+
+.gdhbutton a{
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: normal;
+    font-family: 'Akkurat Pro','Source Han Sans CN', sans-serif;
+}
+
+
+
+.buttonwhite {
+    border-color: white;
+}
+
+.buttonwhite a {
+    color: white;
+}
+
+.buttonblack {
+    border-color: black;
+}
+
+.buttonblack a {
+    color: black;
+}
+
+
+#result-container {
+    background-color:#cdcdcd;
+    margin:0;
+    padding: 3.125%;
+}
+
+.GDH-topimage {
+    padding:7.8125% 3.515625%;
+    color: black;
+}
+
+body {
+    background-color:#939598;
+}
+
+.container, .container-fluid {
+    background-color: #F2F2F2;
+}
+
+.GDH-topimage h2 {
+
+    font-weight: bold;
+    font-family: 'Akkurat Pro','Source Han Sans CN', 'SourceHanSansCN-Bold', sans-serif;
+}
+
+.GDH-topimage p {
+    font-weight: normal;
+    font-family: 'Akkurat Pro','Source Han Sans CN', sans-serif;
+}
+
+.GDH-normalpadding {
+    padding: 3.125%;
+}
+
+.category-infobox.title {
+    margin: 4% 0;
+    font-weight: 700;
+    font-family: 'Akkurat Pro','Source Han Sans CN', sans-serif;
+}
+
+.category-infobox.content {
+    margin: 0;
+    font-weight: 400;
+    font-family: 'Akkurat Pro','Source Han Sans CN', sans-serif;
+}
+
+.cbp-caption-infobox {
+    color: white;
+    font-family: 'Akkurat Pro','Source Han Sans CN', sans-serif;    
+}
+
+.cbp-caption-title {
+    font-size: 28px;
+    line-height: 40px;
+    font-weight: 700;
+}
+
+.cbp-caption-subtitle {
+    margin:10px 0 0;
+    font-size: 18px;
+}
+
+@media (max-width: 400px) {
+    .cbp-caption-title {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    
+    .cbp-caption-subtitle {
+    margin:10px 0 0;
+    font-size: 15px;
+}
+
+}
+
+.hpsection {
+    overflow:hidden;
+}
+
+.cbp-caption-desc {
+    margin:30px 0 0;
+    font-size: 12px;
+    line-height: 22px;
+    text-align: justify;
+    overflow: hidden;
+}
+
+
+
+
+.slash {
+    font-size:1.2em;
+    font-weight: 1000;
+    vertical-align: -0.05em;
+}
+
+
+.FooterHeader {
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 400;
+    color: #505050;
+    padding: 15px 0 22px;
+    margin:0;
+    font-family: 'Akkurat Pro','Source Han Sans CN', sans-serif;
+} /*Donghai*/
+
+.FooterContent {
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #505050;
+    font-family: 'Akkurat Pro','Source Han Sans CN', sans-serif;
+} /*Donghai*/
+
+.HPtopmenucollapse {
+    font-size: 26px;
+    font-weight: 700;
+    text-align: left;
+    color: #d3d3d3;
+    font-family: 'Akkurat Pro','Source Han Sans CN', sans-serif; 
+} /*Donghai*/
+
+.HPtopmenu {
+    display:inline-block;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    font-family: 'Akkurat Pro','Source Han Sans CN', sans-serif;
+} /*Donghai*/
+
+.buttonbox {
+display:-ms-flexbox;
+-ms-flex-pack:center;
+-ms-flex-align:center;
+
+/* Firefox */
+display:-moz-box;
+-moz-box-pack:center;
+-moz-box-align:center;
+
+/* Safari, Opera, and Chrome */
+display:-webkit-box;
+-webkit-box-pack:center;
+-webkit-box-align:center;
+
+/* W3C */
+display:box;
+box-pack:center;
+box-align:center;
+}
+
+.cyanbar {
+    height: 4px;
+    width: 92px;
+    background-color: #57D9EA;    
+} /*Donghai*/
+
+
+
+
+
+td {
+    padding:0 5px;
+}
+
+
+.HPTitle {
+    font-size: 72px;
+    line-height: 100px;
+    font-weight: bold;
+    font-family: 'Akkurat Pro','Source Han Sans CN', 'SourceHanSansCN-Bold', sans-serif;
+}/*Donghai*/
+
+.HPSectionTitle {
+    font-weight: bold;
+    font-family: 'Akkurat Pro','Source Han Sans CN', 'SourceHanSansCN-Bold', sans-serif;
+}/*Donghai*/
+
+
+.HPSubtitle {
+    font-weight: normal;
+    font-family: 'Akkurat Pro','Source Han Sans CN', sans-serif;
+}/*Donghai*/
+
+.HPText {
+    font-weight: normal;
+    font-family: 'Akkurat Pro','Source Han Sans CN', sans-serif;
+} /*Donghai*/
+
+.HPNotes {
+    font-weight: normal;
+    font-family: 'Akkurat Pro','Source Han Sans CN', sans-serif;
+} /*Donghai*/
+
+.HP12 {
+    font-weight: normal;
+    font-family: 'Akkurat Pro','Source Han Sans CN', sans-serif;
+} /*Donghai*/
+
+
+
+@media (max-width: 767px) {
+    .gdhbutton {
+        height: 30px;
+    }
+    
+    .xsNoLRPadding {
+    padding: 3.125% 0;
+    }
+
+    .category-infobox.title {
+        font-size: 28px;
+        line-height: 40px;
+    }
+
+    .category-infobox.content {
+        font-size: 14px;
+        line-height: 25px;
+        margin-bottom: 50px;
+    }  
+    
+    .cbp-caption-infobox {
+        padding: 0 ;
+    }
+
+    .cbp-caption-title {
+        color: black;
+    }
+
+    .cbp-caption-subtitle {
+        color: black;
+    }
+
+    .cbp-caption-desc {
+        color: grey;
+    }
+
+}
+    
+@media (min-width: 768px) {
+    
+    .HPTitle {
+        font-size: 42.19px;
+        line-height: 52.59px;
+    }/*Donghai*/
+
+    .HPSectionTitle {
+        font-size: 42.19px;
+        line-height: 46.88px;
+    }/*Donghai*/
+
+
+    .HPSubtitle {
+        font-size: 16.41px;
+        line-height: 20.51px;
+    }/*Donghai*/
+
+    .HPText {
+        font-size: 8.20px;
+        line-height: 14.06px;
+    } /*Donghai*/
+
+    .HPNotes {
+        font-size: 10.55px;
+        line-height: 14.65px;
+    } /*Donghai*/
+
+    .HP12 {
+        font-size: 7.03px;
+        line-height: 13px;
+    } /*Donghai*/
+    
+    
+    .cbp-caption-infobox {
+        padding:20px;
+    }
+
+    .GDH-topimage {
+        background-size: contain;
+    }
+
+    .GDH-topimage p {
+        width: 45%;
+    }
+    
+    .divide100p {
+        height:40px;
+    }
+    
+    .divide60p {
+        height:24px;
+    }
+
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .HPTitle {
+        font-size: 42.19px;
+        line-height: 52.59px;
+    }/*Donghai*/
+
+    .HPSectionTitle {
+        font-size: 42.19px;
+        line-height: 46.88px;
+    }/*Donghai*/
+
+
+    .HPSubtitle {
+        font-size: 16.41px;
+        line-height: 20.51px;
+    }/*Donghai*/
+
+    .HPText {
+        font-size: 8.20px;
+        line-height: 14.06px;
+    } /*Donghai*/
+
+    .HPNotes {
+        font-size: 10.55px;
+        line-height: 14.65px;
+    } /*Donghai*/
+
+    .HP12 {
+        font-size: 7.03px;
+        line-height: 13px;
+    } /*Donghai*/
+
+    .hpsection,
+    .GDH-topimage {
+        height: 410.1563px;
+    }
+    
+    .GDH-topimage h2 {
+        font-size: 42.1875px;
+        line-height: 46.875px;
+    }
+    
+    .GDH-topimage p {
+        font-size: 8.2px;
+        line-height: 14.06px;
+    }            
+    .category-infobox.title {
+        font-size: 16.4px;
+        line-height: 23.44px;
+    }
+
+    .category-infobox.content {
+        font-size: 8.2px;
+        line-height: 14.65px;
+    }      
+    .divide100p {
+        height:60px;
+    }
+    
+    .divide60p {
+        height:36px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1309px) {
+    .HPTitle {
+        font-size: 54.56px;
+        line-height: 75.78px;
+    }/*Donghai*/
+
+    .HPSectionTitle {
+        font-size: 54.56px;
+        line-height: 60.63px;
+    }/*Donghai*/
+
+
+    .HPSubtitle {
+        font-size: 21.22px;
+        line-height: 26.52px;
+    }/*Donghai*/
+
+    .HPText {
+        font-size: 10.61px;
+        line-height: 18.19px;
+    } /*Donghai*/
+
+    .HPNotes {
+        font-size: 13.64px;
+        line-height: 18.95px;
+    } /*Donghai*/
+
+    .HP12 {
+        font-size: 9.09px;
+        line-height: 15.16px;
+    } /*Donghai*/
+    
+    
+    .hpsection,
+    .GDH-topimage {
+        height: 530.4688px;
+    }
+    
+    .GDH-topimage h2 {
+        font-size: 54.5625px;
+        line-height: 60.625px;
+    }
+    
+    .GDH-topimage p {
+        font-size: 10.61px;
+        line-height: 18.19px;
+    }   
+    
+    .category-infobox.title {
+        font-size: 21.22px;
+        line-height: 30.31px;
+    }
+
+    .category-infobox.content {
+        font-size: 10.61pxpx;
+        line-height: 18.95px;
+    }
+    .divide100p {
+        height:80px;
+    }
+    
+    .divide60p {
+        height:48px;
+    }    
+}
+
+@media (min-width: 1310px) {
+    .HPTitle {
+        font-size: 72px;
+        line-height: 100px;
+    }/*Donghai*/
+
+    .HPSectionTitle {
+        font-size: 72px;
+        line-height: 80px;
+    }/*Donghai*/
+
+
+    .HPSubtitle {
+        font-size: 28px;
+        line-height: 35px;
+    }/*Donghai*/
+
+    .HPText {
+        font-size: 14px;
+        line-height: 24px;
+    } /*Donghai*/
+
+    .HPNotes {
+        font-size: 18px;
+        line-height: 25px;
+    } /*Donghai*/
+
+    .HP12 {
+        font-size: 12px;
+        line-height: 20px;
+    } /*Donghai*/
+    
+    
+    .hpsection,
+    .GDH-topimage {
+        height: 700px;
+    }
+    
+    .GDH-topimage h2 {
+        font-size: 72px;
+        line-height: 80px;
+    }
+    
+    .GDH-topimage p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    
+    .category-infobox.title {
+        font-size: 28px;
+        line-height: 40px;
+    }
+
+    .category-infobox.content {
+        font-size: 14px;
+        line-height: 25px;
+    }
+
+    .divide100p {
+        height:100px;
+    }
+    
+    .divide60p {
+        height:60px;
+    }
+}
+/* news */
+    .publishTime {padding-top:10px;}
+    .recommend_title {font-size:18px;}
+    .abstract {background-color:#DDD; padding:20px; margin-top:10px;margin-bottom:10px;}
+    .author {white-space:pre;}

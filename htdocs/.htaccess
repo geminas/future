@@ -1,0 +1,7 @@
+RewriteEngine On
+
+
+# Rewrite 系统规则请勿修改
+
+RewriteRule ^FFevent-(\S+)\.html$ event.php?eventid=$1
+RewriteRule ^FFnews-(\S+)\.html$ newsitem.php?newsid=$1
