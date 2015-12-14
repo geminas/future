@@ -80,7 +80,7 @@ function popupAction(event) {
             {type: "img", name: "img_image", caption: "首页主题图 960*507", attr:{src: contents_folder+"action/"+ActionData.actions[event.data.id].code+".jpg"}},
             {type: "input-file", name: "FILE_image", caption:"替换首页主题图",attr:{accept:"image/*"}},
 
-            {type: "button", name: "_ACTION", attr: {'value':'update'}, option: {'caption': "提交"}}
+            {type: "button", option: {'caption': "提交"}}
             ],
         };
     

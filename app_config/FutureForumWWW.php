@@ -12,6 +12,6 @@ DEFINE ('DB_HOST', '127.0.0.1:3306');
 DEFINE ('DB_NAME', 'futureforum');
 }
 
-DEFINE ("CONTENT_FOLDER", 'E:/httpserver/htdocs/FFV4a/contents/');
+DEFINE ("CONTENT_FOLDER", '../htdocs/contents/');
 ?>
 
