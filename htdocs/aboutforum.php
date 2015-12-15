@@ -21,7 +21,7 @@
 
 <div class="container" style="padding:30px">
     <div class="row tabs">
-        <div class="col-sm-8 text-center col-sm-offset-2">
+        <!-- <div class="col-sm-8 text-center col-sm-offset-2">
            <ul class="nav nav-tabs ">
               <li class="active"><a href="#">关于未来论坛</a></li>
               <li><a href="/aboutus.php">关于我们</a></li>
@@ -29,12 +29,12 @@
               <li><a href="/joinus.php">加入我们</a></li>
               <li><a href="/contactus.php">联系我们</a></li>
             </ul>
-        </div>
+        </div> -->
         <div class="col-sm-8 col-sm-offset-2 about-content">
-                <h1 class="t-h1">关于未来论坛</h1>
-                <div class="ctt-wrap">
+            <h1 class="t-h1">关于未来论坛</h1>
+            <div class="ctt-wrap">
                 
-        <p align="left">
+        <!-- <p align="left">
             【关于我们】</p>
         <p align="left">
             <strong>&mdash;&mdash;</strong><strong>未来论坛</strong><strong>&middot;</strong><strong>是谁</strong><strong>&mdash;&mdash;</strong></p>
@@ -216,9 +216,9 @@
             &nbsp;</p>
         <p align="left">
             微博：@<a href="http://weibo.com/futureforum">未来论坛FutureForum</a></p>
-   
+    -->
 
-                </div>
+            </div>
         </div>
     </div>
 </div>

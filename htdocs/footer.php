@@ -37,30 +37,11 @@
                             <div class="col-xs-6 col-sm-12" style="margin-bottom:40px">
                                 <div style="background-color:black; width:100%; height:6px"></div>
 
-                                <h3 class="FooterHeader">联系方式<br>Contact Information</h3>
-                                <table style="width:100%;" class="FooterContent">
-                                    <tr>
-                                        <td><i class="fa fa-map"></i>
-                                        </td>
-                                        <td>北京市朝阳区朝外大街甲6号
-                                            <br>万通中心D座803, 100020</td>
-                                    </tr>
-                                    <tr>
-                                        <td><i class="fa fa-phone"></i>
-                                        </td>
-                                        <td>+86 10 58751688</td>
-                                    </tr>
-                                    <tr>
-                                        <td><i class="fa fa-print"></i>
-                                        </td>
-                                        <td>+86 10 58751601</td>
-                                    </tr>
-                                    <tr>
-                                        <td><i class="fa fa-envelope"></i>
-                                        </td>
-                                        <td>futureforum@alliance.com.cn</td>
-                                    </tr>
-                                </table>
+                                <h3 class="FooterHeader">关于未来论坛<br>About Us</h3>
+                                        <a href="/aboutus.php" style="text-decoration:underline; color:blue">关于我们</a><br>
+                                        <a href="/product.php" style="text-decoration:underline; color:blue">产品服务</a><br>
+                                        <a href="/joinus.php" style="text-decoration:underline; color:blue">加入我们</a><br>
+                                        <a href="/contactus.php" style="text-decoration:underline; color:blue">联系我们</a><br>
                             </div>
                             <div class="col-xs-6 col-sm-12" style="margin-bottom:40px">
                                 <div style="background-color:black; width:100%; height:6px"></div>
