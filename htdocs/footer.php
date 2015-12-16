@@ -34,7 +34,7 @@
                     </div>
                     <div class="col-xs-12 col-sm-4">
                         <div class="row">
-                            <div class="col-xs-6 col-sm-12" style="margin-bottom:40px">
+                            <div class="col-xs-6 col-sm-12" style="margin-bottom:40px" font-family: 'Microsoft YaHei',"微软雅黑", 'Avenir Next',Avenir,'Helvetica Neue',Helvetica,'Lantinghei SC','Hiragino Sans GB',STHeiti,'WenQuanYi Micro Hei',SimSun,sans-serif;>
                                 <div style="background-color:black; width:100%; height:6px"></div>
 
                                 <h3 class="FooterHeader">关于未来论坛<br>About Us</h3>

@@ -21,7 +21,7 @@
 
 <div class="container" style="padding:30px">
     <div class="row tabs" font-family: 'Microsoft YaHei',"微软雅黑", 'Avenir Next',Avenir,'Helvetica Neue',Helvetica,'Lantinghei SC','Hiragino Sans GB',STHeiti,'WenQuanYi Micro Hei',SimSun,sans-serif;>
-        <div class="col-sm-8 text-center col-sm-offset-2">
+        <div class="col-sm-8 text-center col-sm-offset-2" >
            <ul class="nav nav-tabs ">
               <li class="active"><a href="#">关于我们</a></li>
               <li ><a href="/product.php">产品服务</a></li>
@@ -29,7 +29,7 @@
               <li><a href="/contactus.php">联系我们</a></li>
             </ul>
         </div>
-        <div class="col-sm-8 col-sm-offset-2 about-content"> <br>
+        <div class="col-sm-8 col-sm-offset-2 about-content" style="margin-top: 0px"> <br>
                 <h4 class="t-h1">关于我们</h4>
                 <div class="ctt-wrap">
                     <div>

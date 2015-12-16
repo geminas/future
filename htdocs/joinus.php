@@ -29,7 +29,7 @@
               <li><a href="/contactus.php">联系我们</a></li>
             </ul>
         </div>
-        <div class="col-sm-8 col-sm-offset-2 about-content"> <br>
+        <div class="col-sm-8 col-sm-offset-2 about-content" style="margin-top: 0px"> <br>
                 <h4 class="t-h1">加入我们</h4>
                 <div class="ctt-wrap">
                     <div>
