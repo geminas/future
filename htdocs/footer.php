@@ -34,14 +34,14 @@
                     </div>
                     <div class="col-xs-12 col-sm-4">
                         <div class="row">
-                            <div class="col-xs-6 col-sm-12" style="margin-bottom:30px" font-family: 'Microsoft YaHei',"微软雅黑", 'Avenir Next',Avenir,'Helvetica Neue',Helvetica,'Lantinghei SC','Hiragino Sans GB',STHeiti,'WenQuanYi Micro Hei',SimSun,sans-serif;>
+                            <div class="col-xs-6 col-sm-12" style="margin-bottom:15px" font-family: 'Microsoft YaHei',"微软雅黑", 'Avenir Next',Avenir,'Helvetica Neue',Helvetica,'Lantinghei SC','Hiragino Sans GB',STHeiti,'WenQuanYi Micro Hei',SimSun,sans-serif;>
                                 <div style="background-color:black; width:100%; height:6px"></div>
 
-                                <h3 class="FooterHeader">关于未来论坛<br>About Us</h3>
-                                        <a href="/aboutus.php" style="text-decoration:underline; color:blue">关于我们</a><br>
-                                        <a href="/product.php" style="text-decoration:underline; color:blue">产品服务</a><br>
-                                        <a href="/joinus.php" style="text-decoration:underline; color:blue">加入我们</a><br>
-                                        <a href="/contactus.php" style="text-decoration:underline; color:blue">联系我们</a>
+                                <h3 class="FooterHeader" style="padding-bottom:5px">关于未来论坛<br>About FutureForum</h3>
+                                        <a href="/aboutus.php" style="text-decoration:underline; color:blue; margin-left: 28px;">关于我们</a><br>
+                                        <a href="/product.php" style="text-decoration:underline; color:blue; margin-left: 28px;">产品服务</a><br>
+                                        <a href="/joinus.php" style="text-decoration:underline; color:blue; margin-left: 28px;">加入我们</a><br>
+                                        <a href="/contactus.php" style="text-decoration:underline; color:blue; margin-left: 28px;">联系我们</a>
                             </div>
                             <div class="col-xs-6 col-sm-12" style="margin-bottom:40px">
                                 <div style="background-color:black; width:100%; height:6px"></div>
