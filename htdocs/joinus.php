@@ -20,7 +20,7 @@
 <?php require "headermenu.php" ?>
 
 <div class="container" style="padding:30px">
-    <div class="row tabs">
+    <div class="row tabs" font-family: 'Microsoft YaHei',"微软雅黑", 'Avenir Next',Avenir,'Helvetica Neue',Helvetica,'Lantinghei SC','Hiragino Sans GB',STHeiti,'WenQuanYi Micro Hei',SimSun,sans-serif;>
         <div class="col-sm-8 text-center col-sm-offset-2">
            <ul class="nav nav-tabs ">
               <li><a href="/aboutus.php">关于我们</a></li>
@@ -30,7 +30,7 @@
             </ul>
         </div>
         <div class="col-sm-8 col-sm-offset-2 about-content"> <br>
-                <h3 class="t-h1">加入我们</h3>
+                <h4 class="t-h1">加入我们</h4>
                 <div class="ctt-wrap">
                     <div>
                         <p>

@@ -41,7 +41,7 @@
                                         <a href="/aboutus.php" style="text-decoration:underline; color:blue">关于我们</a><br>
                                         <a href="/product.php" style="text-decoration:underline; color:blue">产品服务</a><br>
                                         <a href="/joinus.php" style="text-decoration:underline; color:blue">加入我们</a><br>
-                                        <a href="/contactus.php" style="text-decoration:underline; color:blue">联系我们</a><br>
+                                        <a href="/contactus.php" style="text-decoration:underline; color:blue">联系我们</a>
                             </div>
                             <div class="col-xs-6 col-sm-12" style="margin-bottom:40px">
                                 <div style="background-color:black; width:100%; height:6px"></div>
