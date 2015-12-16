@@ -29,12 +29,10 @@
               <li class="active"><a href="#">联系我们</a></li>
             </ul>
         </div>
-        <div class="col-sm-8 col-sm-offset-2 about-content">
-                <h1 class="t-h1">联系我们</h1>
+        <div class="col-sm-8 col-sm-offset-2 about-content"> <br>
+                <h3 class="t-h1">联系我们</h3>
                 <div class="ctt-wrap">
                     <div>
-                        <p align="left">
-                            【联系我们】：</p>
                         <p>
                             地址：北京市朝阳区朝外大街甲6号万通中心D座803, 100020</p>
                         <p>

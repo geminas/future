@@ -29,8 +29,8 @@
               <li><a href="/contactus.php">联系我们</a></li>
             </ul>
         </div>
-        <div class="col-sm-8 col-sm-offset-2 about-content">
-                <h1 class="t-h1">产品服务</h1>
+        <div class="col-sm-8 col-sm-offset-2 about-content"> <br>
+                <h3 class="t-h1">产品服务</h3>
                 <div class="ctt-wrap">
                     <div>
                         <p align="left">
