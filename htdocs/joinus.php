@@ -21,15 +21,14 @@
 
 <div class="container" style="padding:30px">
     <div class="row tabs">
-        <!-- <div class="col-sm-8 text-center col-sm-offset-2">
+        <div class="col-sm-8 text-center col-sm-offset-2">
            <ul class="nav nav-tabs ">
-              <li ><a href="/aboutforum.php">关于未来论坛</a></li>
               <li><a href="/aboutus.php">关于我们</a></li>
               <li ><a href="/product.php">产品服务</a></li>
               <li class="active"><a href="#">加入我们</a></li>
               <li><a href="/contactus.php">联系我们</a></li>
             </ul>
-        </div> -->
+        </div>
         <div class="col-sm-8 col-sm-offset-2 about-content">
                 <h1 class="t-h1">加入我们</h1>
                 <div class="ctt-wrap">
