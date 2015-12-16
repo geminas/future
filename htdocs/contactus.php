@@ -22,7 +22,7 @@
 <div class="container" style="padding:30px">
     <div class="row tabs" font-family: 'Microsoft YaHei',"微软雅黑", 'Avenir Next',Avenir,'Helvetica Neue',Helvetica,'Lantinghei SC','Hiragino Sans GB',STHeiti,'WenQuanYi Micro Hei',SimSun,sans-serif;>
         <div class="col-sm-8 text-center col-sm-offset-2">
-           <ul class="nav nav-tabs ">
+           <ul class="nav nav-tabs " style="font-size: 16px">
               <li><a href="/aboutus.php">关于我们</a></li>
               <li class=""><a href="/product.php">产品服务</a></li>
               <li><a href="/joinus.php">加入我们</a></li>
