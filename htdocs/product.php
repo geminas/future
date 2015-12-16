@@ -37,21 +37,17 @@
                             <strong>&mdash;&mdash;</strong><strong>基本数据</strong><strong>&mdash;&mdash;</strong></p>
                         <p>
                             微博粉丝数：6K+（截止2015/12/25）<br />
-                            微信粉丝数：6K+（截止2015/12/25）</p>
-                        <p>
-                            新闻客户端订阅： 网易、凤凰、腾讯、今日头条、一点资讯、知道日报等阅读平台 （总计10K订阅用户）</p>
-                        <p align="left">
-                            <strong>&mdash;&mdash;</strong><strong>主要渠道</strong><strong>&mdash;&mdash;</strong></p>
-                        <p>
-                            未来论坛官网：<a href="http://www.futureforum.org.cn/">http://www.futureforum.org.cn/</a><br />
+                            微信粉丝数：6K+（截止2015/12/25）<br />
+                            新闻客户端：总计10K+订阅（网易、凤凰、腾讯、今日头条、一点资讯、知道日报等阅读平台）
+                        </p>
+                        <p><strong>&mdash;&mdash;</strong><strong>主要渠道</strong><strong>&mdash;&mdash;</strong></p>
+                        <p> 未来论坛官网：<a href="http://www.futureforum.org.cn/">http://www.futureforum.org.cn/</a><br />
                             未来论坛官方微博：@<a href="http://weibo.com/futureforum">未来论坛FutureForum</a><br />
-                            未来论坛微信公众平台：未来论坛（ID：futureforum）&nbsp;</p>
-                        <p>
+                            未来论坛微信公众平台：未来论坛（ID：futureforum）<br />
                             各大新闻客户端：<a href="http://c.3g.163.com/nc/qa/rss/default.html#/share/T1444889666048">网易</a>、凤凰、<a href="http://dy.qq.com/list-user.htm?chlid=5007059">腾讯</a>、<a href="http://mp.i.sohu.com/suc298684725/profile">搜狐</a>、<a href="http://www.yidianzixun.com/home?page=channel&amp;id=m35399">一点资讯</a>、<a href="http://toutiao.com/m5547045596/">今日头条</a>、<a href="http://weilailuntan.baijia.baidu.com/">百度百家</a>、<a href="http://zhidao.baidu.com/daily/author/?un=%CE%B4%C0%B4%C2%DB%CC%B3&amp;ie=gbk">知道日报</a><br />
                             视频内容：<a href="http://open.163.com/special/openclass/weilailuntan.html">网易公开课</a>、<a href="http://www.iqiyi.com/a_19rrhb5rot.html">爱奇艺</a>、<a href="http://tech.sina.com.cn/z/futureforum10/#139059644">新浪专题</a></p>
-                        <p align="left">
-                            <strong>&mdash;&mdash;</strong><strong>线下活动</strong><strong>&mdash;&mdash;</strong></p>
-                        <p align="left">
+                        <p><strong>&mdash;&mdash;</strong><strong>线下活动</strong><strong>&mdash;&mdash;</strong></p>
+                        <p>
                             在过去的时间里，未来论坛每月举办一期科普性质的&ldquo;理解未来&rdquo;讲座；每季度举办一次&ldquo;闭门耕&rdquo;研讨会议；以及每年举办一次的盛大的&ldquo;未来年会&rdquo;。在2016年1月17日未来论坛首届年会中，创建中国首个由民间发起的诺贝尔&ldquo;未来科学前沿大奖&rdquo;。</p>
                         <p align="left">
                             <strong>月度讲座：</strong><strong>&ldquo;</strong><strong>理解未来</strong><strong>&rdquo;</strong></p>
@@ -68,8 +64,6 @@
                         <p>
                             未来年会，在创始理事、咨委会员、科学界权威、政商界领袖及艺术界精英等人群的参与下，自创立大会之初，便成为了一年一度的全球科学人文创新的盛宴。年度综合性大型高端论坛，聚焦对未来有所洞见的人，秉承生生不息的科学思想、人文精神，启迪创新思维，引领未来。&nbsp;</p>
                     </div>
-                    <p>
-                        &nbsp;</p>
                 </div>
         </div>
     </div>

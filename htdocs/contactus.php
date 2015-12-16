@@ -33,19 +33,11 @@
                 <h4 class="t-h1">联系我们</h4>
                 <div class="ctt-wrap">
                     <div style="font-size: 16px">
-                        <p>
-                            地址：北京市朝阳区朝外大街甲6号万通中心D座803, 100020</p>
-                        <p>
-                            电话：+86 10 58751688</p>
-                        <p align="left">
-                            Email：<a href="mailto:ff2016@futureforum.com.cn">ff2016@futureforum.com.cn</a></p>
-                        <p align="left">
-                            &nbsp;</p>
-                        <p align="left">
-                            微博：@<a href="http://weibo.com/futureforum">未来论坛FutureForum</a></p>
+                        <p>地址：北京市朝阳区朝外大街甲6号万通中心D座803, 100020</p>
+                        <p>电话：+86 10 58751688</p>
+                        <p>Email：<a href="mailto:ff2016@futureforum.com.cn">ff2016@futureforum.com.cn</a></p>
+                        <p>微博：@<a href="http://weibo.com/futureforum">未来论坛FutureForum</a></p>
                     </div>
-                    <p>
-                        &nbsp;</p>
                 </div>
         </div>
     </div>
