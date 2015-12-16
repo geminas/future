@@ -32,7 +32,7 @@
         <div class="col-sm-8 col-sm-offset-2 about-content" style="margin-top: 0px"> <br>
                 <h4 class="t-h1">联系我们</h4>
                 <div class="ctt-wrap">
-                    <div>
+                    <div style="font-size: 16px">
                         <p>
                             地址：北京市朝阳区朝外大街甲6号万通中心D座803, 100020</p>
                         <p>

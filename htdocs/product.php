@@ -32,7 +32,7 @@
         <div class="col-sm-8 col-sm-offset-2 about-content" style="margin-top: 0px"> <br>
                 <h4 class="t-h1">产品服务</h4>
                 <div class="ctt-wrap">
-                    <div>
+                    <div style="font-size: 16px">
                         <p align="left">
                             <strong>&mdash;&mdash;</strong><strong>基本数据</strong><strong>&mdash;&mdash;</strong></p>
                         <p>
