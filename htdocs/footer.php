@@ -1,5 +1,4 @@
 <?php
-
 $links=queryDB_array("select * from links");
 ?>
 
