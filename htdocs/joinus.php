@@ -5,7 +5,9 @@
 <head>
     <meta charset="utf-8">
     <meta id="viewport" name="viewport" content="width=device-width">
-    
+    <?php
+        include "metalinks.php";
+    ?>
     <!-- Bootstrap -->
     <link href="bootstrap/css/bootstrap_1200.css" rel="stylesheet">
     <!-- custom css-->
