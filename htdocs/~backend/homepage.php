@@ -143,7 +143,7 @@ function popupSlides(event) {
         .prepend("<h3>幻灯片</h3>")
         .bPopup({follow: [false,false]});
     
-    $("#slides_list").append(
+    $("#slide_form").append(
     $("<div></div>", {'class': 'form-group'}).append(
     $("<div></div>", {'class': 'col-sm-10 col-sm-offset-2'}).append(
     $("<button></button>").text("删除本项").addClass("btn btn-danger form-control").click({id:HomepageData.slides[event.data.id].id},deleteSlide)
