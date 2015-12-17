@@ -57,7 +57,7 @@ $(document).ready( function () {
                 $("<td></td>").text(value.src).appendTo(tr);
             });
 
-            $("#links_list").append($("<button></button>").text("添加项目").addClass("btn btn-success").click(createNews));
+            $("#links_list").append($("<button></button>").text("添加项目").addClass("btn btn-success").click(createLinks));
         });
 });
 

@@ -60,9 +60,15 @@ function UpdateFFV($argin) {
             if (substr($key,0,5)=='FILE_') continue;
             
             if ($SetClause!='') $SetClause.=', ';
-            
+            if ($key=='publishTime') {
+                $time1 = date("Y-m-d H:i:s", time());
+                $SetClause.="`publishTime`='$time1'";
+                continue;
+            }
+
             $SetClause.="`$key`='$value'";
         }  
+
         queryDB("UPDATE `{$argin['formtype']}` SET " . $SetClause . " WHERE `id`='{$argin['id']}'");
     } else if ($argin['formtype']=='links') {
         $SetClause="";
@@ -94,8 +100,6 @@ function UpdateFFV($argin) {
     }
     return 0;
 }
-
-
 
 function UploadFileFFV($fileDefinitions) {
     //$content
@@ -145,6 +149,7 @@ function addWhereCondition(&$where_clause, $condition) {
 }
 
 function queryDB ($q) {
+    // print_r($q);
 	$result=accessDB($q);
 	return $result['query'];
 }
