@@ -202,12 +202,12 @@ function popupNews(event) {
             ],
         };
 
-/*
-        .bPopup({
-            follow: [false,false],
-            onClose: function () {UE.getEditor('news_form__editorValue').destroy();}
-        });
-*/    
+
+        // .bPopup({
+        //     follow: [false,false],
+        //     onClose: function () {UE.getEditor('news_form__editorValue').destroy();}
+        // });
+    
     
     $("#news_form_container")
         .html(createForm_bootstrap(formDesign))

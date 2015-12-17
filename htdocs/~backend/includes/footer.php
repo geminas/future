@@ -11,6 +11,7 @@
                             <li><a class="menu_footprints" href="footprints.php">足迹</a></li>
                             <li><a class="menu_action" href="action.php">行动</a></li>
                             <li><a class="menu_news" href="news.php">资讯动态</a></li>
+                            <li><a class="menu_links" href="links.php">友情链接</a></li>
                         </ul>
                     </li>
                     

@@ -78,7 +78,6 @@ function createForm_example() {
 
 function createForm(formData) {
     //formData: {formID, formContent, submitCaption, submitFunction}
-    
     var form=$("<form></form>").prop("id",formData.formID);
     var div=$("<div></div>")
         .attr("data-role","fieldcontain")

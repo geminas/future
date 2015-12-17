@@ -1,6 +1,6 @@
 <?php
 
-$links=queryDB_array("select * from mediapartner");
+$links=queryDB_array("select * from links");
 ?>
 
 <div class="section">
