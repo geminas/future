@@ -37,7 +37,7 @@ $links=queryDB_array("select * from links");
                                 <?php
                                 foreach ($links as $link) {
                                 ?>
-                                    <a href="<?php echo $link['href'];?>"><img style="width:100%; padding-bottom:5px" src="<?php echo $link['src'];?>"></a>
+                                    <a href="<?php echo $link['href'];?>" target="_blank"><img style="width:100%; padding-bottom:5px" src="<?php echo $link['src'];?>"></a>
                                 <?php } ?>
                             </div>
                         </div>
