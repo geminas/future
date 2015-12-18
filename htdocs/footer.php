@@ -6,7 +6,7 @@ $links=queryDB_array("select * from links");
     <div class="hpsection container GDH-normalpadding">
         <div class="row">
             <div class="col-md-5" style="margin-bottom:40px">
-                <img src="contents/logo-grey.png" style="width: 170px;">
+                <a href="http://www.futureforum.org.cn/" target="_blank"><img src="contents/logo-grey.png" style="width: 170px;"></a>
             </div>
             <!--footer col-->
             <div class="col-md-7">
@@ -15,12 +15,12 @@ $links=queryDB_array("select * from links");
                         <div style="margin-bottom:40px">
                             <div style="background-color:black; width:100%; height:6px"></div>
                             <h3 class="FooterHeader">战略支持<br>Sponsor</h3>
-                            <a href="http://www.infiniti.com.cn"><img style="width:100%; padding-bottom:5px" src="contents/sponsors/infiniti.png"></a>
+                            <a href="http://www.infiniti.com.cn" target="_blank"><img style="width:100%; padding-bottom:5px" src="contents/sponsors/infiniti.png"></a>
                         </div>
                         <div style="margin-bottom:40px">
                             <div style="background-color:black; width:100%; height:6px"></div>
                             <h3 class="FooterHeader">执行机构<br>Executive Agency</h3>
-                            <a href="http://www.alliance.com.cn/"><img style="width:100%; padding-bottom:5px" src="contents/sponsors/xinmeng.png"></a>
+                            <a href="http://www.alliance.com.cn/" target="_blank"><img style="width:100%; padding-bottom:5px" src="contents/sponsors/xinmeng.png"></a>
                         </div>
                     </div>
                     <div class="col-xs-6 col-sm-4">
