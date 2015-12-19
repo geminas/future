@@ -70,3 +70,13 @@ $links=queryDB_array("select * from links");
         </div>
     </div>
 </div>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?d69c5103b2c83bb5753b39638f7cd54d";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>

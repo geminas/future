@@ -20,6 +20,10 @@
 
 <body style="background-color:#939598; ">
 <?php require "headermenu.php" ?>
+<?php
+
+$aboutDb=queryDB_row("select * from aboutus where id=4");
+?>
 
 <div class="container" style="padding:30px">
     <div class="row tabs" font-family: 'Microsoft YaHei',"微软雅黑", 'Avenir Next',Avenir,'Helvetica Neue',Helvetica,'Lantinghei SC','Hiragino Sans GB',STHeiti,'WenQuanYi Micro Hei',SimSun,sans-serif;>
@@ -32,13 +36,10 @@
             </ul>
         </div>
         <div class="col-sm-8 col-sm-offset-2 about-content" style="margin-top: 0px"> <br>
-                <h4 class="t-h1">联系我们</h4>
+                <h4 class="t-h1"><?php echo $aboutDb['title'] ?></h4>
                 <div class="ctt-wrap">
                     <div style="font-size: 16px">
-                        <p>地址：北京市朝阳区朝外大街甲6号万通中心D座803, 100020</p>
-                        <p>电话：+86 10 58751688</p>
-                        <p>Email：<a href="mailto:ff2016@futureforum.com.cn">ff2016@futureforum.com.cn</a></p>
-                        <p>微博：@<a href="http://weibo.com/futureforum">未来论坛FutureForum</a></p>
+                        <?php echo $aboutDb['content'] ?>
                     </div>
                 </div>
         </div>

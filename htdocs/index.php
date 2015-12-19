@@ -10,6 +10,7 @@
         include "metalinks.php";
     ?>
     
+     <meta name="baidu-site-verification" content="PBM2DzZIRr" />
 
     <!-- Bootstrap -->
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
