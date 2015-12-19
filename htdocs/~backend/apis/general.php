@@ -145,6 +145,10 @@ function UploadFileFFVPNG($fileDefinitions) {
             $newheight=$fileDefinition['height'];
 
             $desc_resource = imagecreatetruecolor($newwidth, $newheight);
+            $color=imagecolorallocate($desc_resource,255,255,255); 
+            //3.设置透明 
+            imagecolortransparent($desc_resource,$color); 
+            imagefill($desc_resource,0,0,$color); 
             $src_resource = imagecreatefrompng($src_file);
             imagecopyresampled($desc_resource, $src_resource, 0, 0, 0, 0, $newwidth, $newheight, $width, $height);
             
