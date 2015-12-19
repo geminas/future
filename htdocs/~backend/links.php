@@ -6,11 +6,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $argin['formtype']!='miscs') {
     $fileDefinitions=array();
     $fileDefinitions[]=array(
         'formname' => 'FILE_theme',
-        'target' => sprintf('sponsors/%s.jpg',$_POST['code']),
+        'target' => sprintf('sponsors/%s.png',$_POST['code']),
         'width' => 300,
         'height' => 100
     );
-    UploadFileFFV($fileDefinitions);
+    UploadFileFFVPNG($fileDefinitions);
 }
 ?>
 

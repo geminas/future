@@ -128,7 +128,29 @@ function UploadFileFFV($fileDefinitions) {
             imagejpeg($desc_resource, $dest_file, 90);
         }
     }
-    
+}
+
+function UploadFileFFVPNG($fileDefinitions) {
+    //$content
+    //print_r2($_FILES);
+
+    foreach($fileDefinitions as $fileDefinition){
+        
+        if (isset($_FILES[$fileDefinition['formname']]) && ($_FILES[$fileDefinition['formname']]['error']===0)) {
+            $dest_file=CONTENT_FOLDER.$fileDefinition['target'];
+            $src_file=$_FILES[$fileDefinition['formname']]['tmp_name'];
+
+            list($width, $height) = getimagesize($src_file);
+            $newwidth=$fileDefinition['width'];
+            $newheight=$fileDefinition['height'];
+
+            $desc_resource = imagecreatetruecolor($newwidth, $newheight);
+            $src_resource = imagecreatefrompng($src_file);
+            imagecopyresampled($desc_resource, $src_resource, 0, 0, 0, 0, $newwidth, $newheight, $width, $height);
+            
+            imagepng($desc_resource, $dest_file, 90);
+        }
+    }
 }
 
 
