@@ -42,7 +42,7 @@ $(document).ready( function () {
                 .addClass("table-hover")
                 .appendTo("#links_list");
             var thead_tr=$("<tr></tr>").appendTo($("<thead></thead>").appendTo(table));
-            var heads=[,'链接'];
+            var heads=['链接'];
             $.each(heads, function (i,value) {
                 thead_tr.append($("<th></th>").text(value));
             });
