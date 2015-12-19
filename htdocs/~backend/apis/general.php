@@ -78,7 +78,6 @@ function UpdateFFV($argin) {
         queryDB("UPDATE `{$argin['formtype']}` SET " . $SetClause . " WHERE `id`='{$argin['id']}'");
     } else if ($argin['formtype']=='links') {
         $SetClause="";
-        print_r2($argin);
         foreach($argin as $key => $value) {
             if ($key=='formtype') continue;
             if ($key=='language') continue;
