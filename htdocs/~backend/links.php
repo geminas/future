@@ -6,7 +6,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $argin['formtype']!='miscs') {
     $fileDefinitions=array();
     $fileDefinitions[]=array(
         'formname' => 'FILE_theme',
-        'target' => sprintf('sponsors/%s.png',$_POST['code']),
+        'target' => sprintf('sponsors/%s.jpg',$_POST['code']),
         'width' => 300,
         'height' => 100
     );
@@ -85,8 +85,6 @@ function popupSlides(event) {
     $("<div></div>", {'class': 'col-sm-10 col-sm-offset-2'}).append(
     $("<button></button>").text("删除本项").addClass("btn btn-danger form-control").click({id:LinksData.links[event.data.id].id},deleteLink)
     )));
-     console.log(LinksData)
-     console.log(event)
      formData($("#link_form"), LinksData.links[event.data.id] )
 }
 

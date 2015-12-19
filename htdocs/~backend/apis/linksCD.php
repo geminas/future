@@ -24,7 +24,7 @@ if (isset($argin['remove'])) {
 
 if (isset($argin['create'])) {
     queryDB("INSERT INTO `links` (`code`,`href`,`src` )
-    VALUES ('{$argin['create']}', 'http://www.baidu.com/', 'sponsors/{$argin['create']}.png')");
+    VALUES ('{$argin['create']}', 'http://www.baidu.com/', 'sponsors/{$argin['create']}.jpg')");
 }
 
 
