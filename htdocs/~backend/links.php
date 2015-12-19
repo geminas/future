@@ -2,17 +2,16 @@
 <?php
 $page_title="友情链接";
 include ('includes/header.php');
-// if ($_SERVER['REQUEST_METHOD'] === 'POST' && $argin['formtype']!='links') {
-//     $fileDefinitions=array(
-//         array(
-//             'formname' => 'FILE_slide',
-//             'target' => 'revslider-'.$_POST['id'].'.jpg',
-//             'width' => 1280,
-//             'height' => 700
-//         )
-//     );
-//     UploadFileFFV($fileDefinitions);
-// }
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && $argin['formtype']!='miscs') {
+    $fileDefinitions=array();
+    $fileDefinitions[]=array(
+        'formname' => 'FILE_theme',
+        'target' => sprintf('sponsors/%s.png',$_POST['code']),
+        'width' => 300,
+        'height' => 100
+    );
+    UploadFileFFV($fileDefinitions);
+}
 ?>
 
 <h2>友情链接</h2>
@@ -43,7 +42,7 @@ $(document).ready( function () {
                 .addClass("table-hover")
                 .appendTo("#links_list");
             var thead_tr=$("<tr></tr>").appendTo($("<thead></thead>").appendTo(table));
-            var heads=['序号','链接', '图片位置'];
+            var heads=[,'链接'];
             $.each(heads, function (i,value) {
                 thead_tr.append($("<th></th>").text(value));
             });
@@ -52,9 +51,7 @@ $(document).ready( function () {
             
             $.each(LinksData.links, function (i,value) {
                 var tr=$("<tr></tr>").appendTo(tbody).click({id:i},popupSlides);
-                $("<td></td>").text(value.id).appendTo(tr);
                 $("<td></td>").text(value.href).appendTo(tr);
-                $("<td></td>").text(value.src).appendTo(tr);
             });
 
             $("#links_list").append($("<button></button>").text("添加项目").addClass("btn btn-success").click(createLinks));
@@ -68,9 +65,12 @@ function popupSlides(event) {
         formItems: [
             {type: "input-hidden", name: "formtype", attr: {"readonly":true, "value":"links"}},
             {type: "input-hidden", name: "id", attr: {"readonly":true}},
+            {type: "input-hidden", name: "code", attr: {"readonly":true}},
            
             {type: "input-text", name: "href", caption:"链接"},
-            {type: "input-text", name: "src", caption:"图片地址"},
+            {type: "img", name: "img_theme", caption: "主题图 300*100", attr:{src: contents_folder+LinksData.links[event.data.id].src}},
+            
+            {type: "input-file", name: "FILE_theme", caption:"主题图替换:", attr:{accept:"image/*"}},
             {type: "button", option: {'caption': "提交"}}
             ],
         };
@@ -83,7 +83,7 @@ function popupSlides(event) {
     $("#link_form").append(
     $("<div></div>", {'class': 'form-group'}).append(
     $("<div></div>", {'class': 'col-sm-10 col-sm-offset-2'}).append(
-    // $("<button></button>").text("删除本项").addClass("btn btn-danger form-control").click({id:HomepageData.slides[event.data.id].id},deleteLink)
+    $("<button></button>").text("删除本项").addClass("btn btn-danger form-control").click({id:LinksData.links[event.data.id].id},deleteLink)
     )));
      console.log(LinksData)
      console.log(event)
@@ -95,7 +95,7 @@ function deleteLink(event) {
     event.preventDefault();
     if(confirm("你确定要删除这个条目么？")) {
         apiCall(
-            'SlideCD',
+            'LinksCD',
             {remove:event.data.id},
             function () {
                 window.location.assign(window.location.href);

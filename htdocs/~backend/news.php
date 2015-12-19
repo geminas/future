@@ -5,8 +5,6 @@
 
 $page_title="资讯动态";
 include ('includes/header.php');
-//print_r2($_POST);
-
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && $argin['formtype']!='miscs') {
     $fileDefinitions=array();
     

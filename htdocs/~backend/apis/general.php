@@ -36,7 +36,6 @@ function processRequestArguments() {
 
 function UpdateFFV($argin) {
     if($argin['formtype']=='miscs') {
-        print_r("miscsmiscs  ");
         foreach($argin as $key => $value) {
             print_r($key);
             if ($key=='formtype') continue;
@@ -79,6 +78,7 @@ function UpdateFFV($argin) {
         queryDB("UPDATE `{$argin['formtype']}` SET " . $SetClause . " WHERE `id`='{$argin['id']}'");
     } else if ($argin['formtype']=='links') {
         $SetClause="";
+        print_r2($argin);
         foreach($argin as $key => $value) {
             if ($key=='formtype') continue;
             if ($key=='language') continue;
@@ -111,20 +111,17 @@ function UpdateFFV($argin) {
 function UploadFileFFV($fileDefinitions) {
     //$content
     //print_r2($_FILES);
-            
+
     foreach($fileDefinitions as $fileDefinition){
+        
         if (isset($_FILES[$fileDefinition['formname']]) && ($_FILES[$fileDefinition['formname']]['error']===0)) {
             $dest_file=CONTENT_FOLDER.$fileDefinition['target'];
             $src_file=$_FILES[$fileDefinition['formname']]['tmp_name'];
+
             list($width, $height) = getimagesize($src_file);
             $newwidth=$fileDefinition['width'];
             $newheight=$fileDefinition['height'];
 
-            print_r($dest_file);
-            print_r(" = = = ");
-            print_r($src_file);
-            print_r("\n");
-            
             $desc_resource = imagecreatetruecolor($newwidth, $newheight);
             $src_resource = imagecreatefromjpeg($src_file);
             imagecopyresampled($desc_resource, $src_resource, 0, 0, 0, 0, $newwidth, $newheight, $width, $height);

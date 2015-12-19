@@ -23,8 +23,8 @@ if (isset($argin['remove'])) {
 }
 
 if (isset($argin['create'])) {
-    queryDB("INSERT INTO `links` (`href`,`src` )
-    VALUES ('{$argin['create']}', 'contents/sponsors/baidunews.png', 'contents/sponsors/baidunews.png')");
+    queryDB("INSERT INTO `links` (`code`,`href`,`src` )
+    VALUES ('{$argin['create']}', 'http://www.baidu.com/', 'sponsors/{$argin['create']}.png')");
 }
 
 
