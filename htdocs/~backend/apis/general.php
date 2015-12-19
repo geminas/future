@@ -125,7 +125,7 @@ function UploadFileFFV($fileDefinitions) {
             $src_resource = imagecreatefromjpeg($src_file);
             imagecopyresampled($desc_resource, $src_resource, 0, 0, 0, 0, $newwidth, $newheight, $width, $height);
             
-            imagejpeg($desc_resource, $dest_file, 90);
+            imagejpeg($desc_resource, $dest_file, 8);
         }
     }
 }
