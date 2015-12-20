@@ -2,10 +2,16 @@
 
 <style type="text/css">
     @media (max-width: 1300px){
+         .HPtopmenu {
+            /*margin-left: 20px;*/
+            font-size: 10px;
+        }
+    }
+   /* @media (max-width: 1300px){
         #contact .HPtopmenu {
             margin-left: 20px;
         }
-    }
+    }*/
 </style>
 <div class="container" style="background-color: #F2F2F2; ">
     <div class="row hidden-xs" style="background-color:#FFF;">
