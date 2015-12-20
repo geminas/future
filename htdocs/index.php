@@ -82,7 +82,7 @@ $miscs=queryDB_array("select * from miscs where groupcode='homepage' order by se
                                 </div>
 
                                 <div class="caption HPTitle revslidercaption sft" data-x="50" data-y="145" data-speed="1000" data-start="1000" data-easing="easeOutExpo">
-                                    <a href="<?php echo $slide['href'];?>" style="color:white" target="_blank"><?php echo $slide['bigtitle_en'];?></a>
+                                    <a href="<?php echo $slide['href'];?>" style="color:white" target="_blank"><?php echo $slide['bigtitle'];?></a>
                                 </div>
 
 
@@ -181,7 +181,7 @@ $miscs=queryDB_array("select * from miscs where groupcode='homepage' order by se
                                 </div>
                                 <div class="img-overlay">
                                     <div class="inner-overlay">
-                                        <h2><?php echo $action['name_zh-cn']; ?><br><?php echo $action['name_en']; ?></h2>
+                                        <h2><?php echo $action['name_zh-cn']; ?><br><?php echo $action['name']; ?></h2>
                                         <p class="HPText">
                                             <?php echo $action[ 'subtitle_zh-cn']; ?>
                                         </p>

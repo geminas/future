@@ -28,8 +28,6 @@
             <a href="footprints.php"><div class="HPtopmenucollapse" style="padding: 10%;">未来·足迹</div></a>
             <a href="news.php"><div class="HPtopmenucollapse" style="padding: 10%;">未来·资讯</div></a>
         </div>
-        
-
     </div>
 </div>
 

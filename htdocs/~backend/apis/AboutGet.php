@@ -21,5 +21,5 @@ if (!isset($_SESSION['user_id'])) {
 
 //*JSON encoding and return
 //defaults: 'status'=0, 'data'=array(), 'message'='', 'redirection'='';
-produceOutputV3(array('data'=>array('about'=>queryDB_array("select * from about where id=1"))));
+produceOutputV3(array('data'=>array('about'=>queryDB_row("select * from aboutus where id = {$argin['id']}"))));
 ?>

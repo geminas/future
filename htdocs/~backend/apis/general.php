@@ -49,6 +49,20 @@ function UpdateFFV($argin) {
                 WHERE `id`='$key';
                 ");
         }
+    } else if ($argin['formtype']=='aboutus') {
+        // echo "<pre>";
+        $SetClause="";
+        foreach($argin as $key => $value) {
+            if ($key=='formtype') continue;
+            if ($key=='language') continue;
+            if ($key=='id') continue;
+
+            if ($SetClause!='') $SetClause.=', ';
+
+            $SetClause.="`$key`='$value'";
+        }  
+
+        queryDB("UPDATE `{$argin['formtype']}` SET " . $SetClause . " WHERE `id`='{$argin['id']}'");
     } else if ($argin['formtype']=='news') {
         // echo "<pre>";
         $SetClause="";
