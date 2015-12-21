@@ -1,9 +1,10 @@
 <div id="headl">
 
 <style type="text/css">
-    @media (max-width: 1300px){
+    @media (max-width: 1330px){
          .HPtopmenu {
-            /*margin-left: 20px;*/
+            margin-left: 10px;
+            width:15.7%;
             font-size: 10px;
         }
     }
@@ -20,7 +21,7 @@
         </a>
         
         <span style="width:3.5%" class="HPtopmenu"></span>
-        <a href="index_en.php"><span style="width:11.7%;" class="HPtopmenu"></span></a>
+        <!-- <a href="index_en.php"><span style="width:11.7%;" class="HPtopmenu"></span></a> -->
         <a href="index_en.php"><span style="width:11.7%" class="HPtopmenu">HOME</span></a>
         <a href="people_en.php"><span style="width:11.7%" class="HPtopmenu">Future·Characters</span></a>
         <a href="index_en.php#action"><span style="width:11.7%" class="HPtopmenu">Future·Action</span></a>

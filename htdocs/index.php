@@ -82,7 +82,7 @@ $miscs=queryDB_array("select * from miscs where groupcode='homepage' order by se
                                 </div>
 
                                 <div class="caption HPTitle revslidercaption sft" data-x="50" data-y="145" data-speed="1000" data-start="1000" data-easing="easeOutExpo">
-                                    <a href="<?php echo $slide['href'];?>" style="color:white" target="_blank"><?php echo $slide['bigtitle'];?></a>
+                                    <a href="<?php echo $slide['href'];?>" style="color:white" target="_blank"><?php echo $slide['bigtitle_en'];?></a>
                                 </div>
 
 
