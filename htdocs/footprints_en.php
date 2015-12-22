@@ -61,7 +61,7 @@
         <div class="container">
         <div class="row">
         <div class="GDH-topimage" style="background-image: url('contents/footprint.jpg');">
-                    <h2 style="color:white"><?php echo findmisc('footprint-bigtitle');?><br><?php echo findmisc('footprint-bigtitle','en');?></h2>
+                    <h2 style="color:white"><?php echo findmisc('footprint-bigtitle','zh-cn');?><br><?php echo findmisc('footprint-bigtitle','en');?></h2>
                     <div class="cyanbar" style="width:90px; height:4px"></div>
                     <div class="divide30"></div>
                     <p style="color:white"><?php echo findmisc('footprint-text');?></p>

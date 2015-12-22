@@ -7,13 +7,13 @@
             <img src="img/logo250.jpg" style="width: 19.53125%" alt="Future Forum 未来论坛">
         </a>
         
-        <span style="width:3.5%" class="HPtopmenu"></span>
-        <a href="index.php"><span style="width:11.7%;" class="HPtopmenu"></span></a>
+        <span style="width:0.5%" class="HPtopmenu"></span>
         <a href="index.php"><span style="width:11.7%" class="HPtopmenu">首页</span></a>
-        <a href="people.php"><span style="width:11.7%" class="HPtopmenu">未来·人物</span></a>
-        <a href="index.php#action"><span style="width:11.7%" class="HPtopmenu">未来·行动</span></a>
-        <a href="footprints.php"><span style="width:11.7%" class="HPtopmenu">未来·足迹</span></a>
-        <a href="news.php"><span style="width:11.7%" class="HPtopmenu">未来·资讯</span></a>
+        <a href="people.php"><span style="width:11.7%" class="HPtopmenu1">未来·人物</span></a>
+        <a href="index.php#action"><span style="width:11.7%" class="HPtopmenu2">未来·行动</span></a>
+        <a href="footprints.php"><span style="width:11.7%" class="HPtopmenu3">未来·足迹</span></a>
+        <a href="news.php"><span style="width:11.7%" class="HPtopmenu4">未来·资讯</span></a>
+        <a href="index_en.php"><span style="width:11.7%" class="HPtopmenu5">English</span></a>
     </div>
     <div class="row">
         <a href="index.php">
@@ -27,6 +27,7 @@
             <a href="index.php#action"><div class="HPtopmenucollapse" style="padding: 10%;">未来·行动</div></a>
             <a href="footprints.php"><div class="HPtopmenucollapse" style="padding: 10%;">未来·足迹</div></a>
             <a href="news.php"><div class="HPtopmenucollapse" style="padding: 10%;">未来·资讯</div></a>
+            <a href="index_en.php"><div class="HPtopmenucollapse" style="padding: 10%;">English</div></a>
         </div>
     </div>
 </div>

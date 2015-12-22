@@ -248,6 +248,46 @@ body {
     font-family: 'Akkurat Pro','Source Han Sans CN', sans-serif;
 } /*Donghai*/
 
+.HPtopmenu1 {
+    display:inline-block;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    font-family: 'Akkurat Pro','Source Han Sans CN', sans-serif;
+} /*Donghai*/
+
+.HPtopmenu2 {
+    display:inline-block;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    font-family: 'Akkurat Pro','Source Han Sans CN', sans-serif;
+} /*Donghai*/
+
+.HPtopmenu3 {
+    display:inline-block;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    font-family: 'Akkurat Pro','Source Han Sans CN', sans-serif;
+} /*Donghai*/
+
+.HPtopmenu4 {
+    display:inline-block;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    font-family: 'Akkurat Pro','Source Han Sans CN', sans-serif;
+} /*Donghai*/
+
+.HPtopmenu5 {
+    display:inline-block;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    font-family: 'Akkurat Pro','Source Han Sans CN', sans-serif;
+} /*Donghai*/
+
 .buttonbox {
 display:-ms-flexbox;
 -ms-flex-pack:center;
