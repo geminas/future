@@ -4,7 +4,7 @@
     @media (max-width: 1330px){
          .HPtopmenu {
             margin-left: 10px;
-            width:10.7%;
+            width:1.7%;
             font-size: 10px;
         }
 
@@ -16,19 +16,19 @@
 
         .HPtopmenu2 {
             margin-left: 10px;
-            width:13.7%;
+            width:10.7%;
             font-size: 10px;
         }
 
         .HPtopmenu3 {
             margin-left: 10px;
-            width:14.7%;
+            width:12.7%;
             font-size: 10px;
         }
 
         .HPtopmenu4 {
             margin-left: 10px;
-            width:14.7%;
+            width:10.7%;
             font-size: 10px;
         }
 
