@@ -136,7 +136,7 @@ if (!isset($event['code']))
 
             <div id="event-BigNumber"><?php echo $event['number']; ?></div>
             <div class="divide100p"></div>
-            <div id="event-ChineseTitle"><?php echo $event['title_en']; ?></div>
+            <div id="event-ChineseTitle"><?php echo $event['title_zh-cn']; ?></div>
             <div id="event-EnglishTitle"><?php echo $event['title_en']; ?></div>
 
             <div class="divide60p"></div>
