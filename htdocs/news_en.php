@@ -37,10 +37,10 @@ $folder="contents/news/";
     <div class="row">
         <div class="col-sm-8">
             <div id="newslist"></div>
-            <div style="text-align:center;"><button id="readmore" class="btn btn-default">读取中...</button></div>
+            <div style="text-align:center;"><button id="readmore" class="btn btn-default">Loading...</button></div>
         </div>
         <div class="col-sm-4">
-            <h3 style="font-size:24px">推荐阅读</h3>
+            <h3 style="font-size:24px">Recommended reading</h3>
             <?php
                 foreach($newsRecommended as $thumbitem) {
             ?>
@@ -126,7 +126,7 @@ function loadNews() {
     
     $.ajax({
         type: 'POST',
-        url: '~backend/apis/NewsItems_en.php',
+        url: '~backend/apis/NewsItems.php',
         data: {offset:newsExist,limit:20},
         dataType: 'json',
         success: function (JSONresponse) {
@@ -147,9 +147,9 @@ function loadNews() {
             //Button
             newsExist+=newsRecent.length;
             if (newsExist>=newsCount) {
-                $("#readmore").html("没有更多文章了").off();
+                $("#readmore").html("No more the article").off();
             } else {
-                $("#readmore").html("还有"+(newsCount-newsExist)+"篇，点击加载更多");
+                $("#readmore").html("There are "+(newsCount-newsExist)+" Piece，Click Load more");
             }
         }
     });
