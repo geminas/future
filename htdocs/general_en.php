@@ -13,7 +13,7 @@ function print_r2($val){
 
 //Input processing and sanitization
 
-function findmisc($key, $language='zh-cn') {
+function findmisc($key, $language='en') {
     $r=queryDB_row("select * from miscs where id='$key'");
     return $r[$language];
 }

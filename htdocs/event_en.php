@@ -130,13 +130,13 @@ if (!isset($event['code']))
         
         <div class="col-md-5 col-md-pull-7">
             <div class="divide30 hidden-md hidden-lg"></div>
-            <?php if ($event['number_zh-cn']!='') { ?>
-            <div id="event-NumberDate"><?php echo $event['number_zh-cn']; ?><br><?php echo $event['date_string']; ?></div>
+            <?php if ($event['number_en']!='') { ?>
+            <div id="event-NumberDate"><?php echo $event['number_en']; ?><br><?php echo $event['date_string']; ?></div>
             <?php } ?>
 
             <div id="event-BigNumber"><?php echo $event['number']; ?></div>
             <div class="divide100p"></div>
-            <div id="event-ChineseTitle"><?php echo $event['title_zh-cn']; ?></div>
+            <div id="event-ChineseTitle"><?php echo $event['title_en']; ?></div>
             <div id="event-EnglishTitle"><?php echo $event['title_en']; ?></div>
 
             <div class="divide60p"></div>
@@ -156,7 +156,7 @@ if (!isset($event['code']))
 
             <div class="divide60p"></div>
             <div id="event-description">
-            <?php echo $event['text_zh-cn']; ?>
+            <?php echo $event['text_en']; ?>
             </div>
             
             <div class="divide30 hidden-md hidden-lg"></div>

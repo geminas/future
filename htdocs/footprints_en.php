@@ -77,7 +77,7 @@
                     <?php 
                         foreach($events_category as $category) {
                         echo '<div data-filter="'.$category['code'].'" class="cbp-filter-item">';
-                        echo '    '.$category['title_zh-cn'].'<div class="cbp-filter-counter"></div>';
+                        echo '    '.$category['title_en'].'<div class="cbp-filter-counter"></div>';
                         echo '</div>';
                         }
                     ?>
@@ -90,12 +90,12 @@
                     <div class="col-sm-4">
                         <div class="cyanbar hidden-xs" style="width:100%; height:8px"></div>
                         <div class="category-infobox title">
-                            <?php echo $events_category[0]['title_zh-cn'];?><br>
+                            <?php echo $events_category[0]['title_en'];?><br>
                             <?php echo $events_category[0]['title_en'];?>
                         </div>
                         
                         <div class="category-infobox content">
-                            <?php echo $events_category[0]['note_zh-cn'];?>
+                            <?php echo $events_category[0]['note_en'];?>
                         </div>
                         
                     </div>
@@ -122,7 +122,7 @@
                                             </div>
                                             <div class="col-xs-6 hidden-sm hidden-md hidden-lg cbp-caption-infobox" style="padding-left: 5%">
                                                 <div class="cbp-caption-title">
-                                                    <?php echo $event['name_zh-cn']; ?>
+                                                    <?php echo $event['name_en']; ?>
                                                 </div>
                                                 
                                                 <div class="cbp-caption-subtitle">
@@ -141,7 +141,7 @@
                                             <div style="height:2px; background-color:#57D9EA; width:100%; margin-bottom: 20px"></div>
                                             
                                             <div class="cbp-caption-title">
-                                                <?php echo $event['name_zh-cn']; ?>
+                                                <?php echo $event['name_en']; ?>
                                             </div>
                                             
                                             <div class="cbp-caption-subtitle">
@@ -228,9 +228,9 @@
             foreach($events_category as $category) {
             echo '    case "'. str_replace(array("\n","\r"),"",$category['code']).'":'."\n";
             echo '        title="'.
-                str_replace(array("\n","\r"),"",$category['title_zh-cn']) . '<br>' .
+                str_replace(array("\n","\r"),"",$category['title_en']) . '<br>' .
                 str_replace(array("\n","\r"),"",$category['title_en']) . '";'."\n";
-            echo '        content= "'. str_replace(array("\n","\r"),"",$category['note_zh-cn']) .'";'."\n";
+            echo '        content= "'. str_replace(array("\n","\r"),"",$category['note_en']) .'";'."\n";
             echo '        break;'."\n";
             }
             ?>                   

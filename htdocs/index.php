@@ -87,8 +87,8 @@ $miscs=queryDB_array("select * from miscs where groupcode='homepage' order by se
 
 
 
-                                <div class="caption cyanbar sft" data-x="50" data-y="345" data-speed="1000" data-start="1000" data-easing="easeOutExpo">
-                                </div>
+                                <!-- <div class="caption cyanbar sft" data-x="50" data-y="345" data-speed="1000" data-start="1000" data-easing="easeOutExpo">
+                                </div> -->
 
 
                                 <div class="caption HPSubtitle revslidercaption sfl" data-x="50" data-y="470" data-speed="1000" data-start="1800" data-easing="easeOutExpo">

@@ -78,7 +78,7 @@ $miscs=queryDB_array("select * from miscs where groupcode='homepage' order by se
                                 <!-- MAIN IMAGE -->
                                 <img src="contents/revslider-<?php echo $slide['id'];?>.jpg" alt="darkblurbg" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
                                 <div class="caption HPTitle revslidercaption sft" data-x="50" data-y="60" data-speed="1000" data-start="1000" data-easing="easeOutExpo">
-                                    <a href="<?php echo $slide['href'];?>" style="color:white" target="_blank"><?php echo $slide['bigtitle_en'];?></a>
+                                    <a href="<?php echo $slide['href'];?>" style="color:white" target="_blank"><?php echo $slide['bigtitle_zh-cn'];?></a>
                                 </div>
 
                                 <div class="caption HPTitle revslidercaption sft" data-x="50" data-y="145" data-speed="1000" data-start="1000" data-easing="easeOutExpo">
@@ -87,16 +87,16 @@ $miscs=queryDB_array("select * from miscs where groupcode='homepage' order by se
 
 
 
-                                <div class="caption cyanbar sft" data-x="50" data-y="345" data-speed="1000" data-start="1000" data-easing="easeOutExpo">
-                                </div>
+                                <!-- <div class="caption cyanbar sft" data-x="50" data-y="345" data-speed="1000" data-start="1000" data-easing="easeOutExpo">
+                                </div> -->
 
 
                                 <div class="caption HPSubtitle revslidercaption sfl" data-x="50" data-y="470" data-speed="1000" data-start="1800" data-easing="easeOutExpo">
-                                    <a href="<?php echo $slide['href'];?>" style="color:white" target="_blank"><?php echo $slide['text_en'];?></a>
+                                    <a href="<?php echo $slide['href'];?>" style="color:white" target="_blank"><?php echo $slide['text_zh-cn'];?></a>
                                 </div>
 
                                 <div class="caption HPText revslidercaption sfl" data-x="50" data-y="565" data-speed="1000" data-start="1800" data-easing="easeOutExpo">
-                                    <a href="<?php echo $slide['href'];?>" style="color:white" target="_blank"><?php echo $slide['subtext_en'];?></a>
+                                    <a href="<?php echo $slide['href'];?>" style="color:white" target="_blank"><?php echo $slide['subtext_zh-cn'];?></a>
                                 </div>
                             </li>
                             <?php } ?>
