@@ -3,7 +3,7 @@
 require_once $_SERVER['DOCUMENT_ROOT']."/../app_config/FutureForumWWW.php";
 
 //Include Modules
-require_once 'general_en.php';
+require_once 'general.php';
 $argin=processRequestArguments();
 
 $metas=array('title'=>'','keywords'=>'','description'=>'');
