@@ -18,7 +18,7 @@ if (!isset($_SESSION['user_id'])) {
 	stopBecause("登录信息有误！",1);
 }
 
-$links=queryDB_array("select * from links");
+$links=queryDB_array("select * from links order by type asc");
 
 //*JSON encoding and return
 //defaults: 'status'=0, 'data'=array(), 'message'='', 'redirection'='';

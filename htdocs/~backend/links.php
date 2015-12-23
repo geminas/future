@@ -42,7 +42,7 @@ $(document).ready( function () {
                 .addClass("table-hover")
                 .appendTo("#links_list");
             var thead_tr=$("<tr></tr>").appendTo($("<thead></thead>").appendTo(table));
-            var heads=['链接'];
+            var heads=['类型', '链接'];
             $.each(heads, function (i,value) {
                 thead_tr.append($("<th></th>").text(value));
             });
@@ -51,6 +51,7 @@ $(document).ready( function () {
             
             $.each(LinksData.links, function (i,value) {
                 var tr=$("<tr></tr>").appendTo(tbody).click({id:i},popupSlides);
+                $("<td></td>").text(value.type).appendTo(tr);
                 $("<td></td>").text(value.href).appendTo(tr);
             });
 
@@ -66,6 +67,13 @@ function popupSlides(event) {
             {type: "input-hidden", name: "formtype", attr: {"readonly":true, "value":"links"}},
             {type: "input-hidden", name: "id", attr: {"readonly":true}},
             {type: "input-hidden", name: "code", attr: {"readonly":true}},
+
+            {type: "select", name: "type", caption: "类型", options: [
+                {caption: "战略合作媒体", attr: {value:1} },
+                {caption: "战略支持", attr: {value:2} },
+                {caption: "执行机构", attr: {value:3} },
+                {caption: "合作伙伴", attr: {value:4} },
+            ]},
            
             {type: "input-text", name: "href", caption:"链接"},
             {type: "img", name: "img_theme", caption: "主题图 300*100", attr:{src: contents_folder+LinksData.links[event.data.id].src}},
