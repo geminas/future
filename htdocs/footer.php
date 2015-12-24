@@ -1,5 +1,8 @@
 <?php
-$links=queryDB_array("select * from links");
+$links1=queryDB_array("select * from links where type = 1");
+$links2=queryDB_array("select * from links where type = 2");
+$links3=queryDB_array("select * from links where type = 3");
+$links4=queryDB_array("select * from links where type = 4");
 ?>
 
 <div class="section">
@@ -37,7 +40,7 @@ $links=queryDB_array("select * from links");
                                 <div style="background-color:black; width:100%; height:6px"></div>
                                 <h3 class="FooterHeader">战略合作媒体<br>Media Coalition</h3>
                                 <?php
-                                foreach ($links as $link) {
+                                foreach ($links1 as $link) {
                                 ?>
                                     <a href="<?php echo $link['href'];?>" target="_blank"><img style="width:100%; padding-bottom:5px" src="<?php echo "contents/" . $link['src'];?>"></a>
                                 <?php } ?>
@@ -48,12 +51,20 @@ $links=queryDB_array("select * from links");
                         <div style="margin-bottom:40px">
                             <div style="background-color:black; width:100%; height:6px"></div>
                             <h3 class="FooterHeader">战略支持<br>Sponsor</h3>
-                            <a href="http://www.infiniti.com.cn" target="_blank"><img style="width:100%; padding-bottom:5px" src="contents/sponsors/infiniti.png"></a>
+                            <?php
+                            foreach ($links2 as $link) {
+                            ?>
+                                <a href="<?php echo $link['href'];?>" target="_blank"><img style="width:100%; padding-bottom:5px" src="<?php echo "contents/" . $link['src'];?>"></a>
+                            <?php } ?>
                         </div>
                         <div style="margin-bottom:40px">
                             <div style="background-color:black; width:100%; height:6px"></div>
                             <h3 class="FooterHeader">执行机构<br>Executive Agency</h3>
-                            <a href="http://www.alliance.com.cn/" target="_blank"><img style="width:100%; padding-bottom:5px" src="contents/sponsors/xinmeng.png"></a>
+                            <?php
+                            foreach ($links3 as $link) {
+                            ?>
+                                <a href="<?php echo $link['href'];?>" target="_blank"><img style="width:100%; padding-bottom:5px" src="<?php echo "contents/" . $link['src'];?>"></a>
+                            <?php } ?>
                         </div>
                     </div>
                     <div class="col-xs-6 col-sm-3">
@@ -62,7 +73,7 @@ $links=queryDB_array("select * from links");
                                 <div style="background-color:black; width:100%; height:6px"></div>
                                 <h3 class="FooterHeader">合作伙伴<br>Partnership</h3>
                                 <?php
-                                foreach ($links as $link) {
+                                foreach ($links4 as $link) {
                                 ?>
                                     <a href="<?php echo $link['href'];?>" target="_blank"><img style="width:100%; padding-bottom:5px" src="<?php echo "contents/" . $link['src'];?>"></a>
                                 <?php } ?>
