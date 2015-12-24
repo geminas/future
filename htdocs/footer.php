@@ -5,7 +5,7 @@ $links=queryDB_array("select * from links");
 <div class="section">
     <div class="hpsection container GDH-normalpadding">
         <div class="row">
-            <div class="col-md-2" style="margin-bottom:40px">
+            <div class="col-md-3" style="margin-bottom:40px">
                 <a href="http://www.futureforum.org.cn/" target="_blank"><img src="contents/logo-grey.png" style="width: 170px;"></a>
             </div>
             <!--footer col-->
