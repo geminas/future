@@ -126,7 +126,7 @@
                                                 </div>
                                                 
                                                 <div class="cbp-caption-subtitle">
-                                                    <?php echo $event['date_string']; ?>
+                                                    <?php echo $event['date_string_en']; ?>
                                                 </div>
                                                 
                                                 <div class="gdhbutton buttonblack">
@@ -145,7 +145,7 @@
                                             </div>
                                             
                                             <div class="cbp-caption-subtitle">
-                                                <?php echo $event['date_string']; ?>
+                                                <?php echo $event['date_string_en']; ?>
                                             </div>
                                             
                                             <div class="gdhbutton buttonwhite">

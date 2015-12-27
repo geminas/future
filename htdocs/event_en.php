@@ -131,7 +131,7 @@ if (!isset($event['code']))
         <div class="col-md-5 col-md-pull-7">
             <div class="divide30 hidden-md hidden-lg"></div>
             <?php if ($event['number_en']!='') { ?>
-            <div id="event-NumberDate"><?php echo $event['number_en']; ?><br><?php echo $event['date_string']; ?></div>
+            <div id="event-NumberDate"><?php echo $event['number_en']; ?><br><?php echo $event['date_string_en']; ?></div>
             <?php } ?>
 
             <div id="event-BigNumber"><?php echo $event['number']; ?></div>
@@ -141,16 +141,16 @@ if (!isset($event['code']))
 
             <div class="divide60p"></div>
             <div id="event-infobox">
-                <?php if ($event['speaker_name']!='') { ?>
-                    <strong>主讲</strong>/<?php echo $event['speaker_name']; ?><br>
+                <?php if ($event['speaker_name_en']!='') { ?>
+                    <strong>主讲</strong>/<?php echo $event['speaker_name_en']; ?><br>
                 <?php } ?>
                 
-                <?php if ($event['date_string']!='') { ?>
-                    <strong>时间</strong>/<?php echo $event['date_string']; ?><br>
+                <?php if ($event['date_string_en']!='') { ?>
+                    <strong>时间</strong>/<?php echo $event['date_string_en']; ?><br>
                 <?php } ?>
                 
-                <?php if ($event['address']!='') { ?>
-                    <strong>地点</strong>/<?php echo $event['address']; ?><br>
+                <?php if ($event['address_en']!='') { ?>
+                    <strong>地点</strong>/<?php echo $event['address_en']; ?><br>
                 <?php } ?>
             </div>
 
