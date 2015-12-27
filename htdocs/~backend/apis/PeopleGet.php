@@ -20,7 +20,7 @@ if (!isset($_SESSION['user_id'])) {
 
 
 $people_category=queryDB_array("select * from people_category");
-$people=queryDB_array("select * from people");
+$people=queryDB_array("select * from people order by code asc");
 $miscs=queryDB_array("select * from miscs where groupcode='people' order by sequence asc ");
 
 //*JSON encoding and return

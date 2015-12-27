@@ -51,7 +51,7 @@
     <!-- Static navbar -->
 
     <?php require "headermenu.php";
-    $people=queryDB_array("select * from people"); reset($people);
+    $people=queryDB_array("select * from people order by code asc "); reset($people);
     $miscs=queryDB_array("select * from miscs where groupcode='people' order by sequence asc ");
     $people_category=queryDB_array("select * from people_category order by value asc")
     ?>

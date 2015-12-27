@@ -8,8 +8,6 @@
     
         <?php
         include "metalinks.php";
-
-
 $argin=processRequestArguments();
 $eventid=$argin['eventid'];
 
