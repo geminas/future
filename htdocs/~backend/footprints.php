@@ -198,6 +198,7 @@ function popupEvent(event) {
             {type: "input-text", name: "category", caption:"类别代码"},
 
             {type: "input-text", name: "name_zh-cn", caption:"中文短名"},
+            {type: "input-text", name: "name_en", caption:"英文短名"},
             {type: "input-text", name: "title_zh-cn", caption:"中文标题"},
             {type: "input-text", name: "title_en", caption:"英文标题"},
             
@@ -206,10 +207,14 @@ function popupEvent(event) {
             {type: "input-text", name: "number_en", caption:"活动序号-英语"},
 
             {type: "input-text", name: "speaker_name", caption:"主讲人"},
+            {type: "input-text", name: "speaker_name_en", caption:"主讲人en"},
             {type: "input-text", name: "date_string", caption:"日期"},
+            {type: "input-text", name: "date_string_en", caption:"日期en"},
             {type: "input-text", name: "address", caption:"活动地点"},
+            {type: "input-text", name: "address_en", caption:"活动地点en"},
 
             {type: "textarea", name: "text_zh-cn", caption:"中文长说明", attr:{ rows: 8}},
+            {type: "textarea", name: "text_en", caption:"英文长说明", attr:{ rows: 8}},
             
             {type: "input-text", name: "youkuID", caption:"优酷视频ID"},
             {type: "input-text", name: "sequence", caption:"排序参考号"},

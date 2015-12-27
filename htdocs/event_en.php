@@ -142,15 +142,15 @@ if (!isset($event['code']))
             <div class="divide60p"></div>
             <div id="event-infobox">
                 <?php if ($event['speaker_name_en']!='') { ?>
-                    <strong>主讲</strong>/<?php echo $event['speaker_name_en']; ?><br>
+                    <strong>Speaker</strong>/<?php echo $event['speaker_name_en']; ?><br>
                 <?php } ?>
                 
                 <?php if ($event['date_string_en']!='') { ?>
-                    <strong>时间</strong>/<?php echo $event['date_string_en']; ?><br>
+                    <strong>Date</strong>/<?php echo $event['date_string_en']; ?><br>
                 <?php } ?>
                 
                 <?php if ($event['address_en']!='') { ?>
-                    <strong>地点</strong>/<?php echo $event['address_en']; ?><br>
+                    <strong>Venue</strong>/<?php echo $event['address_en']; ?><br>
                 <?php } ?>
             </div>
 

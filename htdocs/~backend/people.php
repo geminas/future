@@ -179,6 +179,7 @@ function popupPerson(event) {
             {type: "input-text", name: "name_zh-cn", caption:"中文名"},
             {type: "input-text", name: "name_en", caption:"英文名"},
             {type: "input-text", name: "desc1_zh-cn", caption:"中文短说明第1行"},
+            {type: "input-text", name: "desc1_en", caption:"英文短说明第1行"},
             {type: "input-text", name: "desc2_zh-cn", caption:"中文短说明第2行"},
             {type: "textarea", name: "note_zh-cn", caption:"中文长说明", attr:{ rows: 5}},
             {type: "textarea", name: "quote_zh-cn", caption:"引言", attr:{ rows: 5}},

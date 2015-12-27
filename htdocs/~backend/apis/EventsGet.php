@@ -30,7 +30,8 @@ $events=queryDB_array("select
     events.`title_zh-cn` as `title_zh-cn`,
     events.title_en as title_en,
     speaker_name,
-    date_string, address, `text_zh-cn`, youkuID, sequence,
+    speaker_name_en,
+    date_string, date_string_en, address, address_en, `text_zh-cn`, `text_en`, youkuID, sequence,
     events_category.`title_zh-cn` as category_title
     from events inner join events_category on events_category.value=events.category
     order by sequence asc");
