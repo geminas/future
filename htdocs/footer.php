@@ -8,24 +8,24 @@ $links4=queryDB_array("select * from links where type = 4");
 <div class="section">
     <div class="hpsection container GDH-normalpadding">
         <div class="row">
-            <div class="col-md-3" style="margin-bottom:40px">
-                <div class="col-xs-12 col-sm-3" style="margin-bottom:40px">
-                    <a href="http://www.futureforum.org.cn/" target="_blank"><img src="contents/logo-grey.png" style="width: 170px;"></a>
+            <div class="col-sm-3" style="margin-bottom:40px">
+                <div class="col-xs-12 col-sm-12" style="margin-bottom:40px">
+                    <a href="http://www.futureforum.org.cn/" target="_blank"><img src="contents/logo-grey.png" style="width:100%; max-width:300px;"></a>
                 </div>
-                <div class="col-xs-6 col-sm-12" style="margin-bottom:40px">
+                <div class="col-xs-12 col-sm-12" style="margin-bottom:40px">
                     <div style="background-color:black; width:100%; height:6px"></div>
                     <h3 class="FooterHeader">官方微信订阅号<br>WeChat Subscription</h3>
-                    <div style="text-align: right">
-                        <img style="width:100%" src="contents/wechat.png">
+                    <div style="">
+                        <img style="width:100%; max-width:300px" src="contents/wechat.png">
                     </div>
                 </div>
             </div>
             <!--footer col-->
-            <div class="col-md-9">
+            <div class="col-sm-9">
                 <div class="row">
-                    <div class="col-xs-12 col-sm-3">
+                    <div class="col-xs-6 col-sm-3">
                         <div class="row">
-                            <div class="col-xs-6 col-sm-12" font-family: 'Microsoft YaHei',"微软雅黑", 'Avenir Next',Avenir,'Helvetica Neue',Helvetica,'Lantinghei SC','Hiragino Sans GB',STHeiti,'WenQuanYi Micro Hei',SimSun,sans-serif;>
+                            <div class="col-xs-12 col-sm-12" font-family: 'Microsoft YaHei',"微软雅黑", 'Avenir Next',Avenir,'Helvetica Neue',Helvetica,'Lantinghei SC','Hiragino Sans GB',STHeiti,'WenQuanYi Micro Hei',SimSun,sans-serif;>
                                 <div style="margin-bottom:40px">
                                     <div style="background-color:black; width:100%; height:6px"></div>
                                     <h3 class="FooterHeader" style="padding-bottom:5px">关于未来论坛<br>About FutureForum</h3>
