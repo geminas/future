@@ -9,48 +9,78 @@ $links4=queryDB_array("select * from links where type = 4");
     <div class="hpsection container GDH-normalpadding">
         <div class="row">
             <div class="col-md-3" style="margin-bottom:40px">
-                <a href="http://www.futureforum.org.cn/" target="_blank"><img src="contents/logo-grey.png" style="width: 170px;"></a>
+                <div class="col-xs-12 col-sm-3" style="margin-bottom:40px">
+                    <a href="http://www.futureforum.org.cn/" target="_blank"><img src="contents/logo-grey.png" style="width: 170px;"></a>
+                </div>
+                <div class="col-xs-6 col-sm-12" style="margin-bottom:40px">
+                    <div style="background-color:black; width:100%; height:6px"></div>
+                    <h3 class="FooterHeader">官方微信订阅号<br>WeChat Subscription</h3>
+                    <div style="text-align: right">
+                        <img style="width:100%" src="contents/wechat.png">
+                    </div>
+                </div>
             </div>
             <!--footer col-->
             <div class="col-md-9">
                 <div class="row">
                     <div class="col-xs-12 col-sm-3">
                         <div class="row">
-                            <div class="col-xs-6 col-sm-12" style="margin-bottom:15px" font-family: 'Microsoft YaHei',"微软雅黑", 'Avenir Next',Avenir,'Helvetica Neue',Helvetica,'Lantinghei SC','Hiragino Sans GB',STHeiti,'WenQuanYi Micro Hei',SimSun,sans-serif;>
-                                <div style="background-color:black; width:100%; height:6px"></div>
-
-                                <h3 class="FooterHeader" style="padding-bottom:5px">关于未来论坛<br>About FutureForum</h3>
-                                        <a href="/aboutus.php" style="text-decoration:underline; color:blue; margin-left: 28px;">About Us</a><br>
-                                        <a href="/product.php" style="text-decoration:underline; color:blue; margin-left: 28px;">Product Service</a><br>
-                                        <a href="/joinus.php" style="text-decoration:underline; color:blue; margin-left: 28px;">Join Us</a><br>
-                                        <a href="/contactus.php" style="text-decoration:underline; color:blue; margin-left: 28px;">Contact Us</a>
-                            </div>
-                            <div class="col-xs-6 col-sm-12" style="margin-bottom:40px">
-                                <div style="background-color:black; width:100%; height:6px"></div>
-                                <h3 class="FooterHeader">官方微信订阅号<br>WeChat Subscription</h3>
-                                <div style="text-align: right">
-                                    <img style="width:100%" src="contents/wechat.png">
+                            <div class="col-xs-6 col-sm-12" font-family: 'Microsoft YaHei',"微软雅黑", 'Avenir Next',Avenir,'Helvetica Neue',Helvetica,'Lantinghei SC','Hiragino Sans GB',STHeiti,'WenQuanYi Micro Hei',SimSun,sans-serif;>
+                                <div style="margin-bottom:40px">
+                                    <div style="background-color:black; width:100%; height:6px"></div>
+                                    <h3 class="FooterHeader" style="padding-bottom:5px">关于未来论坛<br>About FutureForum</h3>
+                                    <a href="/aboutus.php" style="text-decoration:underline; color:blue; margin-left: 28px;">About Us</a><br>
+                                    <a href="/product.php" style="text-decoration:underline; color:blue; margin-left: 28px;">Product Service</a><br>
+                                    <a href="/joinus.php" style="text-decoration:underline; color:blue; margin-left: 28px;">Join Us</a><br>
+                                    <a href="/contactus.php" style="text-decoration:underline; color:blue; margin-left: 28px;">Contact Us</a>
+                                </div>
+                                <div style="margin-bottom:40px">
+                                    <div style="background-color:black; width:100%; height:6px"></div>
+                                    <h3 class="FooterHeader">执行机构<br>Executive Agency</h3>
+                                    <?php
+                                    foreach ($links3 as $link) {
+                                    ?>
+                                        <a href="<?php echo $link['href'];?>" target="_blank"><img style="width:100%; padding-bottom:5px" src="<?php echo "contents/" . $link['src'];?>"></a>
+                                    <?php } ?>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-xs-6 col-sm-3">
                         <div style="margin-bottom:40px">
-                            <div>
-                                <div style="background-color:black; width:100%; height:6px"></div>
-                                <h3 class="FooterHeader">战略合作媒体<br>Media Coalition</h3>
-                                <?php
-                                foreach ($links1 as $link) {
-                                ?>
-                                    <a href="<?php echo $link['href'];?>" target="_blank"><img style="width:100%; padding-bottom:5px" src="<?php echo "contents/" . $link['src'];?>"></a>
-                                <?php } ?>
-                            </div>
+                            <div style="background-color:black; width:100%; height:6px"></div>
+                            <h3 class="FooterHeader">战略合作媒体<br>Media Coalition</h3>
+                            <?php
+                            foreach ($links1 as $link) {
+                            ?>
+                                <a href="<?php echo $link['href'];?>" target="_blank"><img style="width:100%; padding-bottom:5px" src="<?php echo "contents/" . $link['src'];?>"></a>
+                            <?php } ?>
                         </div>
                     </div>
                     <div class="col-xs-6 col-sm-3">
                         <div style="margin-bottom:40px">
                             <div style="background-color:black; width:100%; height:6px"></div>
-                            <h3 class="FooterHeader">战略支持<br>Sponsor</h3>
+                            <h3 class="FooterHeader">战略合作机构<br>Strategic Partnership</h3>
+                            <?php
+                            foreach ($links1 as $link) {
+                            ?>
+                                <a href="<?php echo $link['href'];?>" target="_blank"><img style="width:100%; padding-bottom:5px" src="<?php echo "contents/" . $link['src'];?>"></a>
+                            <?php } ?>
+                        </div>
+                        <div style="margin-bottom:40px">
+                            <div style="background-color:black; width:100%; height:6px"></div>
+                            <h3 class="FooterHeader">公益慈善合作<br>Philanthropic Partnership</h3>
+                            <?php
+                            foreach ($links1 as $link) {
+                            ?>
+                                <a href="<?php echo $link['href'];?>" target="_blank"><img style="width:100%; padding-bottom:5px" src="<?php echo "contents/" . $link['src'];?>"></a>
+                            <?php } ?>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-3">
+                        <div style="margin-bottom:40px">
+                            <div style="background-color:black; width:100%; height:6px"></div>
+                            <h3 class="FooterHeader">荣誉合作<br>Honorary Partnership</h3>
                             <?php
                             foreach ($links2 as $link) {
                             ?>
@@ -59,25 +89,12 @@ $links4=queryDB_array("select * from links where type = 4");
                         </div>
                         <div style="margin-bottom:40px">
                             <div style="background-color:black; width:100%; height:6px"></div>
-                            <h3 class="FooterHeader">执行机构<br>Executive Agency</h3>
+                            <h3 class="FooterHeader">特约合作<br>Contributing Partnership</h3>
                             <?php
-                            foreach ($links3 as $link) {
+                            foreach ($links1 as $link) {
                             ?>
                                 <a href="<?php echo $link['href'];?>" target="_blank"><img style="width:100%; padding-bottom:5px" src="<?php echo "contents/" . $link['src'];?>"></a>
                             <?php } ?>
-                        </div>
-                    </div>
-                    <div class="col-xs-6 col-sm-3">
-                        <div style="margin-bottom:40px">
-                            <div>
-                                <div style="background-color:black; width:100%; height:6px"></div>
-                                <h3 class="FooterHeader">合作伙伴<br>Partnership</h3>
-                                <?php
-                                foreach ($links4 as $link) {
-                                ?>
-                                    <a href="<?php echo $link['href'];?>" target="_blank"><img style="width:100%; padding-bottom:5px" src="<?php echo "contents/" . $link['src'];?>"></a>
-                                <?php } ?>
-                            </div>
                         </div>
                     </div>
                 </div>
