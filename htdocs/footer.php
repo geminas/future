@@ -28,7 +28,7 @@ $links6=queryDB_array("select * from links where type = 6");
                     <div class="col-xs-6 col-sm-3">
                         <div class="row">
                             <div class="col-xs-12 col-sm-12" font-family: 'Microsoft YaHei',"微软雅黑", 'Avenir Next',Avenir,'Helvetica Neue',Helvetica,'Lantinghei SC','Hiragino Sans GB',STHeiti,'WenQuanYi Micro Hei',SimSun,sans-serif;>
-                                <div style="margin-bottom:40px">
+                                <div style="margin-bottom:10px">
                                     <div style="background-color:black; width:100%; height:6px"></div>
                                     <h3 class="FooterHeader" style="padding-bottom:5px">关于未来论坛<br>About FutureForum</h3>
                                     <a href="/aboutus.php" style="text-decoration:underline; color:blue; margin-left: 28px;">关于我们</a><br>
@@ -36,7 +36,7 @@ $links6=queryDB_array("select * from links where type = 6");
                                     <a href="/joinus.php" style="text-decoration:underline; color:blue; margin-left: 28px;">加入我们</a><br>
                                     <a href="/contactus.php" style="text-decoration:underline; color:blue; margin-left: 28px;">联系我们</a>
                                 </div>
-                                <div style="margin-bottom:40px">
+                                <div style="margin-bottom:10px">
                                     <div style="background-color:black; width:100%; height:6px"></div>
                                     <h3 class="FooterHeader">执行机构<br>Executive Agency</h3>
                                     <?php
@@ -49,7 +49,7 @@ $links6=queryDB_array("select * from links where type = 6");
                         </div>
                     </div>
                     <div class="col-xs-6 col-sm-3">
-                        <div style="margin-bottom:40px">
+                        <div style="margin-bottom:10px">
                             <div style="background-color:black; width:100%; height:6px"></div>
                             <h3 class="FooterHeader">战略合作媒体<br>Media Coalition</h3>
                             <?php
@@ -60,7 +60,7 @@ $links6=queryDB_array("select * from links where type = 6");
                         </div>
                     </div>
                     <div class="col-xs-6 col-sm-3">
-                        <div style="margin-bottom:40px">
+                        <div style="margin-bottom:10px">
                             <div style="background-color:black; width:100%; height:6px"></div>
                             <h3 class="FooterHeader">战略合作机构<br>Strategic Partnership</h3>
                             <?php
@@ -69,7 +69,7 @@ $links6=queryDB_array("select * from links where type = 6");
                                 <a href="<?php echo $link['href'];?>" target="_blank"><img style="width:100%; padding-bottom:5px" src="<?php echo "contents/" . $link['src'];?>"></a>
                             <?php } ?>
                         </div>
-                        <div style="margin-bottom:40px">
+                        <div style="margin-bottom:10px">
                             <div style="background-color:black; width:100%; height:6px"></div>
                             <h3 class="FooterHeader">公益慈善合作<br>Philanthropic Partnership</h3>
                             <?php
@@ -80,7 +80,7 @@ $links6=queryDB_array("select * from links where type = 6");
                         </div>
                     </div>
                     <div class="col-xs-6 col-sm-3">
-                        <div style="margin-bottom:40px">
+                        <div style="margin-bottom:10px">
                             <div style="background-color:black; width:100%; height:6px"></div>
                             <h3 class="FooterHeader">荣誉合作<br>Honorary Partnership</h3>
                             <?php
@@ -89,7 +89,7 @@ $links6=queryDB_array("select * from links where type = 6");
                                 <a href="<?php echo $link['href'];?>" target="_blank"><img style="width:100%; padding-bottom:5px" src="<?php echo "contents/" . $link['src'];?>"></a>
                             <?php } ?>
                         </div>
-                        <div style="margin-bottom:40px">
+                        <div style="margin-bottom:10px">
                             <div style="background-color:black; width:100%; height:6px"></div>
                             <h3 class="FooterHeader">特约合作<br>Contributing Partnership</h3>
                             <?php
