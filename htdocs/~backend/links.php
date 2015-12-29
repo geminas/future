@@ -69,10 +69,12 @@ function popupSlides(event) {
             {type: "input-hidden", name: "code", attr: {"readonly":true}},
 
             {type: "select", name: "type", caption: "类型", options: [
-                {caption: "战略合作媒体", attr: {value:1} },
-                {caption: "战略支持", attr: {value:2} },
-                {caption: "执行机构", attr: {value:3} },
-                {caption: "合作伙伴", attr: {value:4} },
+                {caption: "执行机构", attr: {value:1} },
+                {caption: "战略合作媒体", attr: {value:2} },
+                {caption: "战略合作机构", attr: {value:3} },
+                {caption: "公益慈善合作", attr: {value:4} },
+                {caption: "荣誉合作", attr: {value:5} },
+                {caption: "特约合作", attr: {value:6} },
             ]},
            
             {type: "input-text", name: "href", caption:"链接"},
