@@ -3,6 +3,8 @@ $links1=queryDB_array("select * from links where type = 1");
 $links2=queryDB_array("select * from links where type = 2");
 $links3=queryDB_array("select * from links where type = 3");
 $links4=queryDB_array("select * from links where type = 4");
+$links5=queryDB_array("select * from links where type = 5");
+$links6=queryDB_array("select * from links where type = 6");
 ?>
 
 <div class="section">
@@ -10,7 +12,7 @@ $links4=queryDB_array("select * from links where type = 4");
         <div class="row">
             <div class="col-sm-3" style="margin-bottom:40px">
                 <div class="col-xs-12 col-sm-12" style="margin-bottom:40px">
-                    <a href="http://www.futureforum.org.cn/" target="_blank"><img src="contents/logo-grey.png" style="width:100%; max-width:300px;"></a>
+                    <a href="http://www.futureforum.org.cn/" target="_blank"><img src="contents/logo-grey.jpg" style="width:100%; max-width:300px;"></a>
                 </div>
                 <div class="col-xs-12 col-sm-12" style="margin-bottom:40px">
                     <div style="background-color:black; width:100%; height:6px"></div>
@@ -38,7 +40,7 @@ $links4=queryDB_array("select * from links where type = 4");
                                     <div style="background-color:black; width:100%; height:6px"></div>
                                     <h3 class="FooterHeader">执行机构<br>Executive Agency</h3>
                                     <?php
-                                    foreach ($links3 as $link) {
+                                    foreach ($links1 as $link) {
                                     ?>
                                         <a href="<?php echo $link['href'];?>" target="_blank"><img style="width:100%; padding-bottom:5px" src="<?php echo "contents/" . $link['src'];?>"></a>
                                     <?php } ?>
@@ -51,7 +53,7 @@ $links4=queryDB_array("select * from links where type = 4");
                             <div style="background-color:black; width:100%; height:6px"></div>
                             <h3 class="FooterHeader">战略合作媒体<br>Media Coalition</h3>
                             <?php
-                            foreach ($links1 as $link) {
+                            foreach ($links2 as $link) {
                             ?>
                                 <a href="<?php echo $link['href'];?>" target="_blank"><img style="width:100%; padding-bottom:5px" src="<?php echo "contents/" . $link['src'];?>"></a>
                             <?php } ?>
@@ -62,7 +64,7 @@ $links4=queryDB_array("select * from links where type = 4");
                             <div style="background-color:black; width:100%; height:6px"></div>
                             <h3 class="FooterHeader">战略合作机构<br>Strategic Partnership</h3>
                             <?php
-                            foreach ($links1 as $link) {
+                            foreach ($links3 as $link) {
                             ?>
                                 <a href="<?php echo $link['href'];?>" target="_blank"><img style="width:100%; padding-bottom:5px" src="<?php echo "contents/" . $link['src'];?>"></a>
                             <?php } ?>
@@ -71,7 +73,7 @@ $links4=queryDB_array("select * from links where type = 4");
                             <div style="background-color:black; width:100%; height:6px"></div>
                             <h3 class="FooterHeader">公益慈善合作<br>Philanthropic Partnership</h3>
                             <?php
-                            foreach ($links1 as $link) {
+                            foreach ($links4 as $link) {
                             ?>
                                 <a href="<?php echo $link['href'];?>" target="_blank"><img style="width:100%; padding-bottom:5px" src="<?php echo "contents/" . $link['src'];?>"></a>
                             <?php } ?>
@@ -82,7 +84,7 @@ $links4=queryDB_array("select * from links where type = 4");
                             <div style="background-color:black; width:100%; height:6px"></div>
                             <h3 class="FooterHeader">荣誉合作<br>Honorary Partnership</h3>
                             <?php
-                            foreach ($links2 as $link) {
+                            foreach ($links5 as $link) {
                             ?>
                                 <a href="<?php echo $link['href'];?>" target="_blank"><img style="width:100%; padding-bottom:5px" src="<?php echo "contents/" . $link['src'];?>"></a>
                             <?php } ?>
@@ -91,7 +93,7 @@ $links4=queryDB_array("select * from links where type = 4");
                             <div style="background-color:black; width:100%; height:6px"></div>
                             <h3 class="FooterHeader">特约合作<br>Contributing Partnership</h3>
                             <?php
-                            foreach ($links1 as $link) {
+                            foreach ($links6 as $link) {
                             ?>
                                 <a href="<?php echo $link['href'];?>" target="_blank"><img style="width:100%; padding-bottom:5px" src="<?php echo "contents/" . $link['src'];?>"></a>
                             <?php } ?>
