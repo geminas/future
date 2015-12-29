@@ -64,7 +64,7 @@ $links6=queryDB_array("select * from links where type = 6");
                                 foreach ($links2 as $link) {
                             ?>
                                 <?php 
-                                    if ($link'isLink']=='1') {
+                                    if ($link['isLink']=='1') {
                                 ?>
                                     <a href="<?php echo $link['href'];?>" target="_blank"><img style="width:100%; padding-bottom:5px" src="<?php echo "contents/" . $link['src'];?>"></a>
                                 <?php } 
