@@ -12,7 +12,7 @@ $links6=queryDB_array("select * from links where type = 6");
         <div class="row">
             <div class="col-sm-3" style="margin-bottom:40px">
                 <div class="col-xs-12 col-sm-12" style="margin-bottom:40px">
-                    <a href="http://www.futureforum.org.cn/" target="_blank"><img src="contents/logo-grey.jpg" style="width:100%; max-width:300px;"></a>
+                    <a href="http://www.futureforum.org.cn/" target="_blank"><img src="contents/logo-grey.png" style="width:100%; max-width:300px;"></a>
                 </div>
                 <div class="col-xs-12 col-sm-12" style="margin-bottom:40px">
                     <div style="background-color:black; width:100%; height:6px"></div>
