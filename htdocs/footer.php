@@ -64,11 +64,11 @@ $links6=queryDB_array("select * from links where type = 6");
                                 foreach ($links2 as $link) {
                             ?>
                                 <?php 
-                                    if ($links1['isLink']=='1') {
+                                    if ($link'isLink']=='1') {
                                 ?>
                                     <a href="<?php echo $link['href'];?>" target="_blank"><img style="width:100%; padding-bottom:5px" src="<?php echo "contents/" . $link['src'];?>"></a>
                                 <?php } 
-                                    else if ($links1['isLink']=='2') {
+                                    else if ($link['isLink']=='2') {
                                 ?>
                                     <a target="_blank"><img style="width:100%; padding-bottom:5px" src="<?php echo "contents/" . $link['src'];?>"></a>
                                 <?php } ?>
