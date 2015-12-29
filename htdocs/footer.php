@@ -40,9 +40,17 @@ $links6=queryDB_array("select * from links where type = 6");
                                     <div style="background-color:black; width:100%; height:6px"></div>
                                     <h3 class="FooterHeader">执行机构<br>Executive Agency</h3>
                                     <?php
-                                    foreach ($links1 as $link) {
+                                        foreach ($links1 as $link) {
                                     ?>
-                                        <a href="<?php echo $link['href'];?>" target="_blank"><img style="width:100%; padding-bottom:5px" src="<?php echo "contents/" . $link['src'];?>"></a>
+                                        <?php 
+                                            if ($link['isLink']=='1') {
+                                        ?>
+                                            <a href="<?php echo $link['href'];?>" target="_blank"><img style="width:100%; padding-bottom:5px" src="<?php echo "contents/" . $link['src'];?>"></a>
+                                        <?php } 
+                                            else if ($link['isLink']=='2') {
+                                        ?>
+                                            <a target="_blank"><img style="width:100%; padding-bottom:5px" src="<?php echo "contents/" . $link['src'];?>"></a>
+                                        <?php } ?>
                                     <?php } ?>
                                 </div>
                             </div>
@@ -53,9 +61,17 @@ $links6=queryDB_array("select * from links where type = 6");
                             <div style="background-color:black; width:100%; height:6px"></div>
                             <h3 class="FooterHeader">战略合作媒体<br>Media Coalition</h3>
                             <?php
-                            foreach ($links2 as $link) {
+                                foreach ($links2 as $link) {
                             ?>
-                                <a href="<?php echo $link['href'];?>" target="_blank"><img style="width:100%; padding-bottom:5px" src="<?php echo "contents/" . $link['src'];?>"></a>
+                                <?php 
+                                    if ($links1['isLink']=='1') {
+                                ?>
+                                    <a href="<?php echo $link['href'];?>" target="_blank"><img style="width:100%; padding-bottom:5px" src="<?php echo "contents/" . $link['src'];?>"></a>
+                                <?php } 
+                                    else if ($links1['isLink']=='2') {
+                                ?>
+                                    <a target="_blank"><img style="width:100%; padding-bottom:5px" src="<?php echo "contents/" . $link['src'];?>"></a>
+                                <?php } ?>
                             <?php } ?>
                         </div>
                     </div>
@@ -64,18 +80,34 @@ $links6=queryDB_array("select * from links where type = 6");
                             <div style="background-color:black; width:100%; height:6px"></div>
                             <h3 class="FooterHeader">战略合作机构<br>Strategic Partnership</h3>
                             <?php
-                            foreach ($links3 as $link) {
+                                foreach ($links3 as $link) {
                             ?>
-                                <a href="<?php echo $link['href'];?>" target="_blank"><img style="width:100%; padding-bottom:5px" src="<?php echo "contents/" . $link['src'];?>"></a>
+                                <?php 
+                                    if ($link['isLink']=='1') {
+                                ?>
+                                    <a href="<?php echo $link['href'];?>" target="_blank"><img style="width:100%; padding-bottom:5px" src="<?php echo "contents/" . $link['src'];?>"></a>
+                                <?php } 
+                                    else if ($link['isLink']=='2') {
+                                ?>
+                                    <a target="_blank"><img style="width:100%; padding-bottom:5px" src="<?php echo "contents/" . $link['src'];?>"></a>
+                                <?php } ?>
                             <?php } ?>
                         </div>
                         <div style="margin-bottom:10px">
                             <div style="background-color:black; width:100%; height:6px"></div>
                             <h3 class="FooterHeader">公益慈善合作<br>Philanthropic Partnership</h3>
                             <?php
-                            foreach ($links4 as $link) {
+                                foreach ($links4 as $link) {
                             ?>
-                                <a href="<?php echo $link['href'];?>" target="_blank"><img style="width:100%; padding-bottom:5px" src="<?php echo "contents/" . $link['src'];?>"></a>
+                                <?php 
+                                    if ($link['isLink']=='1') {
+                                ?>
+                                    <a href="<?php echo $link['href'];?>" target="_blank"><img style="width:100%; padding-bottom:5px" src="<?php echo "contents/" . $link['src'];?>"></a>
+                                <?php } 
+                                    else if ($link['isLink']=='2') {
+                                ?>
+                                    <a target="_blank"><img style="width:100%; padding-bottom:5px" src="<?php echo "contents/" . $link['src'];?>"></a>
+                                <?php } ?>
                             <?php } ?>
                         </div>
                     </div>
@@ -84,18 +116,34 @@ $links6=queryDB_array("select * from links where type = 6");
                             <div style="background-color:black; width:100%; height:6px"></div>
                             <h3 class="FooterHeader">荣誉合作<br>Honorary Partnership</h3>
                             <?php
-                            foreach ($links5 as $link) {
+                                foreach ($links5 as $link) {
                             ?>
-                                <a href="<?php echo $link['href'];?>" target="_blank"><img style="width:100%; padding-bottom:5px" src="<?php echo "contents/" . $link['src'];?>"></a>
+                                <?php 
+                                    if ($link['isLink']=='1') {
+                                ?>
+                                    <a href="<?php echo $link['href'];?>" target="_blank"><img style="width:100%; padding-bottom:5px" src="<?php echo "contents/" . $link['src'];?>"></a>
+                                <?php } 
+                                    else if ($link['isLink']=='2') {
+                                ?>
+                                    <a target="_blank"><img style="width:100%; padding-bottom:5px" src="<?php echo "contents/" . $link['src'];?>"></a>
+                                <?php } ?>
                             <?php } ?>
                         </div>
                         <div style="margin-bottom:10px">
                             <div style="background-color:black; width:100%; height:6px"></div>
                             <h3 class="FooterHeader">特约合作<br>Contributing Partnership</h3>
                             <?php
-                            foreach ($links6 as $link) {
+                                foreach ($links6 as $link) {
                             ?>
-                                <a href="<?php echo $link['href'];?>" target="_blank"><img style="width:100%; padding-bottom:5px" src="<?php echo "contents/" . $link['src'];?>"></a>
+                                <?php 
+                                    if ($link['isLink']=='1') {
+                                ?>
+                                    <a href="<?php echo $link['href'];?>" target="_blank"><img style="width:100%; padding-bottom:5px" src="<?php echo "contents/" . $link['src'];?>"></a>
+                                <?php } 
+                                    else if ($link['isLink']=='2') {
+                                ?>
+                                    <a target="_blank"><img style="width:100%; padding-bottom:5px" src="<?php echo "contents/" . $link['src'];?>"></a>
+                                <?php } ?>
                             <?php } ?>
                         </div>
                     </div>
