@@ -172,9 +172,9 @@ $miscs=queryDB_array("select * from miscs where groupcode='homepage' order by se
                 </div>
 
                 <div class="col-sm-6">
-                    <ul class="bxslider" id="actionslider" style="padding:0; -webkit-animation-delay: 0.5s; position:relative">
+                    <ul class="bxslider" id="actionslider" style="padding:0px; -webkit-animation-delay: 0.5s; position:relative">
                         <?php $actions=queryDB_array("select * from actions"); reset($actions); while (list($number, $action)=each($actions)) { ?>
-                        <li>
+                        <li style="list-style:none">
                             <div class="work-wrap">
                                 <div>
                                     <img src="contents/action/<?php echo $action['code']; ?>.jpg" />
