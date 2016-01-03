@@ -12,6 +12,10 @@
                             <li><a class="menu_action" href="action.php">行动</a></li>
                             <li><a class="menu_news" href="news.php">资讯动态</a></li>
                             <li><a class="menu_links" href="links.php">友情链接</a></li>
+                            <li><a class="menu_aboutus" href="aboutus.php">关于我们</a></li>
+                            <li><a class="menu_product" href="product.php">产品服务</a></li>
+                            <li><a class="menu_joinus" href="joinus.php">加入我们</a></li>
+                            <li><a class="menu_contactus" href="contactus.php">联系我们</a></li>
                         </ul>
                     </li>
                     
