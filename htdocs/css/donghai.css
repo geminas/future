@@ -248,6 +248,14 @@ body {
     font-family: 'Akkurat Pro','Source Han Sans CN', sans-serif;
 } /*Donghai*/
 
+.HPtopmenu0 {
+    display:inline-block;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    font-family: 'Akkurat Pro','Source Han Sans CN', sans-serif;
+} /*Donghai*/
+
 .HPtopmenu1 {
     display:inline-block;
     font-size: 18px;
@@ -283,7 +291,7 @@ body {
 .HPtopmenu5 {
     display:inline-block;
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 500;
     text-align: center;
     font-family: 'Akkurat Pro','Source Han Sans CN', sans-serif;
 } /*Donghai*/
@@ -582,7 +590,7 @@ td {
     
     .divide60p {
         height:48px;
-    }    
+    }
 }
 
 @media (min-width: 1310px) {

@@ -2,9 +2,15 @@
 
 <style type="text/css">
     @media (max-width: 1330px){
-         .HPtopmenu {
+        .HPtopmenu {
             margin-left: 10px;
             width:1.7%;
+            font-size: 10px;
+        }
+
+        .HPtopmenu0 {
+            margin-left: 10px;
+            width:3.7%;
             font-size: 10px;
         }
 
@@ -51,12 +57,12 @@
         </a>
         
         <span style="width:0.5%" class="HPtopmenu"></span>
-        <a href="index_en.php"><span style="width:11.7%" class="HPtopmenu">HOME</span></a>
-        <a href="people_en.php"><span style="width:11.7%" class="HPtopmenu1">Future·Characters</span></a>
-        <a href="index_en.php#action"><span style="width:11.7%" class="HPtopmenu2">Future·Action</span></a>
-        <a href="footprints_en.php"><span style="width:11.7%" class="HPtopmenu3">Future·Footprints</span></a>
-        <a href="news_en.php"><span style="width:11.7%" class="HPtopmenu4">Future·News</span></a>
-        <a href="index.php"><span style="width:11.7%" class="HPtopmenu5">中文</span></a>
+        <a href="index_en.php"><span style="width:8.7%" class="HPtopmenu0">HOME</span></a>
+        <a href="people_en.php"><span style="width:13.7%" class="HPtopmenu1">Future·Characters</span></a>
+        <a href="index_en.php#action"><span style="width:10.7%" class="HPtopmenu2">Future·Action</span></a>
+        <a href="footprints_en.php"><span style="width:11.7%" class="HPtopmenu HPtopmenu3">Future·Footprints</span></a>
+        <a href="news_en.php"><span style="width:10.7%" class="HPtopmenu4">Future·News</span></a>
+        <a href="index.php"><span style="width:8.7%" class="HPtopmenu5">中文</span></a>
     </div>
     <div class="row">
         <a href="index_en.php">
