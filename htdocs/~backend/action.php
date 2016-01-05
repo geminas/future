@@ -76,7 +76,9 @@ function popupAction(event) {
             {type: "input-text", name: "name_zh-cn", caption:"中文名"},
             {type: "input-text", name: "name_en", caption:"英文名"},
             {type: "input-text", name: "subtitle_zh-cn", caption:"中文副标题"},
+            {type: "input-text", name: "subtitle_en", caption:"英文副标题"},
             {type: "textarea", name: "text_zh-cn", caption:"中文长说明", attr:{ rows: 5}},
+            {type: "textarea", name: "text_en", caption:"英文长说明", attr:{ rows: 5}},
             {type: "img", name: "img_image", caption: "首页主题图 960*507", attr:{src: contents_folder+"action/"+ActionData.actions[event.data.id].code+".jpg"}},
             {type: "input-file", name: "FILE_image", caption:"替换首页主题图",attr:{accept:"image/*"}},
 
