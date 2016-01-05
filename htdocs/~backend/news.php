@@ -15,6 +15,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $argin['formtype']!='miscs') {
         'height' => 400
     );
 
+print_r("private function upFile");
+
     
     UploadFileFFV($fileDefinitions);
 }
@@ -22,7 +24,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $argin['formtype']!='miscs') {
 ?>
 
 <script type="text/javascript" charset="utf-8" src="ueditor/ueditor.config.js"></script>
-<script type="text/javascript" charset="utf-8" src="ueditor/ueditor.all.min.js"> </script>
+<script type="text/javascript" charset="utf-8" src="ueditor/ueditor.all.js"> </script>
 <script type="text/javascript" charset="utf-8" src="ueditor/lang/zh-cn/zh-cn.js"></script>
     
 

@@ -72,8 +72,6 @@
             <a href="news_en.php"><div class="HPtopmenucollapse" style="padding: 10%;">Future·News</div></a>
             <a href="index.php"><div class="HPtopmenucollapse" style="padding: 10%;">中文</div></a>
         </div>
-        
-
     </div>
 </div>
 

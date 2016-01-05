@@ -11,17 +11,30 @@ include "Uploader.class.php";
 $base64 = "upload";
 switch (htmlspecialchars($_GET['action'])) {
     case 'uploadimage':
+        // $config = array(
+        //     "pathFormat" => $CONFIG['imagePathFormat'],
+        //     "maxSize" => $CONFIG['imageMaxSize'],
+        //     "allowFiles" => $CONFIG['imageAllowFiles']
+        // );
         $config = array(
-            "pathFormat" => $CONFIG['imagePathFormat'],
-            "maxSize" => $CONFIG['imageMaxSize'],
-            "allowFiles" => $CONFIG['imageAllowFiles']
+            "pathFormat" => "/contents/news/image/{yyyy}{mm}{dd}/{time}{rand:6}",
+            "maxSize" => 2048000,
+            "allowFiles" => [".png", ".jpg", ".jpeg", ".gif", ".bmp"]
         );
-        $fieldName = $CONFIG['imageFieldName'];
+        $fieldName = "upfile";
         break;
     case 'uploadscrawl':
+        // $config = array(
+        //     "pathFormat" => $CONFIG['scrawlPathFormat'],
+        //     "maxSize" => $CONFIG['scrawlMaxSize'],
+        //     "allowFiles" => $CONFIG['scrawlAllowFiles'],
+        //     "oriName" => "scrawl.png"
+        // );
+        // $fieldName = $CONFIG['scrawlFieldName'];
+        // $base64 = "base64";
         $config = array(
-            "pathFormat" => $CONFIG['scrawlPathFormat'],
-            "maxSize" => $CONFIG['scrawlMaxSize'],
+            "pathFormat" => "/contents/news/image/{yyyy}{mm}{dd}/{time}{rand:6}",
+            "maxSize" => 2048000,
             "allowFiles" => $CONFIG['scrawlAllowFiles'],
             "oriName" => "scrawl.png"
         );
@@ -46,6 +59,10 @@ switch (htmlspecialchars($_GET['action'])) {
         $fieldName = $CONFIG['fileFieldName'];
         break;
 }
+
+// print_r("confffff:");
+// $tempuuuuu =  $CONFIG['imagePathFormat'];
+// print_r($tempuuuuu);
 
 /* 生成上传实例对象并完成上传 */
 $up = new Uploader($fieldName, $config, $base64);
