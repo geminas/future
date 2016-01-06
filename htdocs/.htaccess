@@ -7,4 +7,4 @@ RewriteRule ^FFevent/p/(\S+)\.html$ event.php?eventid=$1
 RewriteRule ^FFeventen/p/(\S+)\.html$ event_en.php?eventid=$1
 RewriteRule ^FFnews/p/(\S+)\.html$ newsitem.php?newsid=$1
 
-RewriteRule /FFnews/p/contents/(.*) /contents/$1 [R=permanent,L]
+RewriteRule   contents/  ^FFnews/p/contents/
