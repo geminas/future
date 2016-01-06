@@ -114,10 +114,10 @@
                                         <div class="row" style="margin:0">
                                             <div class="col-xs-6 col-sm-12" style="padding:0">
                                                 <div class="hidden-xs">
-                                                <a class="" href="FFeventen-<?php echo $event['code']; ?>.html"><img src="contents/eventthumb/<?php echo $event['code']; ?>.jpg" alt=""></a>
+                                                <a class="" href="FFeventen/p/<?php echo $event['code']; ?>.html"><img src="contents/eventthumb/<?php echo $event['code']; ?>.jpg" alt=""></a>
                                                 </div>
                                                 <div class="hidden-sm hidden-md hidden-lg">
-                                                <a class="" href="FFeventen-<?php echo $event['code']; ?>.html"><img src="contents/eventthumb_b/<?php echo $event['code']; ?>.jpg" alt=""></a>
+                                                <a class="" href="FFeventen/p/<?php echo $event['code']; ?>.html"><img src="contents/eventthumb_b/<?php echo $event['code']; ?>.jpg" alt=""></a>
                                                 </div>
                                             </div>
                                             <div class="col-xs-6 hidden-sm hidden-md hidden-lg cbp-caption-infobox" style="padding-left: 5%">
@@ -130,7 +130,7 @@
                                                 </div>
                                                 
                                                 <div class="gdhbutton buttonblack">
-                                                    <a href="FFeventen-<?php echo $event['code']; ?>.html">MORE</a>
+                                                    <a href="FFeventen/p/<?php echo $event['code']; ?>.html">MORE</a>
                                                 </div>
                                             </div>
                                             
@@ -149,7 +149,7 @@
                                             </div>
                                             
                                             <div class="gdhbutton buttonwhite">
-                                                <a href="FFeventen-<?php echo $event['code']; ?>.html">MORE</a>
+                                                <a href="FFeventen/p/<?php echo $event['code']; ?>.html">MORE</a>
                                             </div>
                                         </div>
                                     </div>
