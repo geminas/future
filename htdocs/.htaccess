@@ -3,6 +3,6 @@ RewriteEngine On
 
 # Rewrite 系统规则请勿修改
 
-RewriteRule ^FFevent\/p\/(\S+)\.html$ event.php?eventid=$1
+RewriteRule ^FFevent/p/(\S+)\.html$ event.php?eventid=$1
 RewriteRule ^FFeventen/p/(\S+)\.html$ event_en.php?eventid=$1
-RewriteRule ^FFnews\/p\/(\S+)\.html$ newsitem.php?newsid=$1
+RewriteRule ^FFnews/p/(\S+)\.html$ newsitem.php?newsid=$1
