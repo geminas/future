@@ -2,6 +2,10 @@
     padding-left: 0px;
 }
 
+.uyan_frame a{
+    display: none;
+}
+
 .peopleinfobox {
     margin: 0;
     padding-bottom: 58.75%;

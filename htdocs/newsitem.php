@@ -103,7 +103,6 @@ $folder="contents/news/";
 </div>
 <!-- UY END -->
 
-
 <?php
     require "footer.php";
 ?>
