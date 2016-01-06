@@ -130,7 +130,7 @@
                                                 </div>
                                                 
                                                 <div class="gdhbutton buttonblack">
-                                                    <a href="FFevent-<?php echo $event['code']; ?>.html">MORE</a>
+                                                    <a href="FFevent/p/<?php echo $event['code']; ?>.html">MORE</a>
                                                 </div>
                                             </div>
                                             
