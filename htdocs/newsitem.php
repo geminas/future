@@ -96,10 +96,14 @@ $folder="contents/news/";
 <!-- UY BEGIN -->
 
 <div class="container" style="padding:30px">
-    <style>.Copyright a {display:none !important;}</style>
     <div class="row">
         <div id="uyan_frame" class="col-sm-8"></div>
         <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2078754"></script>
+        <script>
+        $(function(){
+             $("iframe").contents().find(".Copyright a").css('display','none'); 
+        })();
+        </script>
     </div>
 </div>
 <!-- UY END -->
