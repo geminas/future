@@ -95,9 +95,9 @@ $folder="contents/news/";
 </div>
 <!-- UY BEGIN -->
 
-<div class="col-sm-8" style="padding:50px">
+<div class="container" style="padding:30px">
     <div class="row">
-        <div id="uyan_frame" style="width:100%"></div>
+        <div id="uyan_frame" class="col-sm-8"></div>
         <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2078754"></script>
     </div>
 </div>
