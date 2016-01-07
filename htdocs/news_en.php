@@ -100,7 +100,7 @@ function createNews(item) {
     var newsItem_en=$("<div></div>").addClass("row newsItem_en");
     var image=
         $("<div></div>").addClass("col-sm-4").html(
-            $("<a></a>",{'target':'_blank','href':"FFnews/p/"+item.code+".html"}).html(
+            $("<a></a>",{'target':'_blank','href':"FFnewsen/p/"+item.code+".html"}).html(
                 $("<img>",{
                     'src' : '<?php echo $folder;?>theme/'+item.code+'.jpg',
                     'style' : "width:100%; padding-bottom:10px",
@@ -109,7 +109,7 @@ function createNews(item) {
         )).appendTo(newsItem_en);;
     var text=
         $("<div></div>").addClass("col-sm-8").html(
-            $("<a></a>",{'target':'_blank','href':"FFnews/p/"+item.code+".html"}).html(
+            $("<a></a>",{'target':'_blank','href':"FFnewsen/p/"+item.code+".html"}).html(
                 $("<h4></h4>").html(item.title)
         )).appendTo(newsItem_en);;
 
