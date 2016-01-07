@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8">
     <meta id="viewport" name="viewport" content="width=device-width">
-    <style>element.style {display: none;}</style>
+    
 <?php
 include "metalinks.php";
 $argin=processRequestArguments();

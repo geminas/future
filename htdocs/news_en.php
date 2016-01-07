@@ -97,7 +97,7 @@ function createHeadline(item) {
 }
 
 function createNews(item) {
-    var newsItem=$("<div></div>").addClass("row newsitem");
+    var newsItem_en=$("<div></div>").addClass("row newsItem_en");
     var image=
         $("<div></div>").addClass("col-sm-4").html(
             $("<a></a>",{'target':'_blank','href':"FFnews/p/"+item.code+".html"}).html(
@@ -106,23 +106,23 @@ function createNews(item) {
                     'style' : "width:100%; padding-bottom:10px",
                     'alt':''
                 })
-        )).appendTo(newsItem);;
+        )).appendTo(newsItem_en);;
     var text=
         $("<div></div>").addClass("col-sm-8").html(
             $("<a></a>",{'target':'_blank','href':"FFnews/p/"+item.code+".html"}).html(
                 $("<h4></h4>").html(item.title)
-        )).appendTo(newsItem);;
+        )).appendTo(newsItem_en);;
 
                     
     $("<div></div>").addClass("news_abstract").html(item.abstract).appendTo(text);
     $("<div></div>").addClass("publishTime").html(item.publishTime).appendTo(text);
     
-    return newsItem;
+    return newsItem_en;
 }
 
 function loadNews() {
     $("#readmore").html("读取中...");
-    var newsExist=$(".headline").length+$(".newsitem").length;
+    var newsExist=$(".headline").length+$(".newsItem_en").length;
     
     $.ajax({
         type: 'POST',
