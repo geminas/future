@@ -57,12 +57,12 @@
         </a>
         
         <span style="width:0.5%" class="HPtopmenu"></span>
-        <a href="index_en.php"><span style="width:8.7%" class="HPtopmenu0">HOME</span></a>
-        <a href="people_en.php"><span style="width:13.7%" class="HPtopmenu1">Future·Characters</span></a>
-        <a href="index_en.php#action"><span style="width:10.7%" class="HPtopmenu2">Future·Action</span></a>
-        <a href="footprints_en.php"><span style="width:11.7%" class="HPtopmenu HPtopmenu3">Future·Footprints</span></a>
-        <a href="news_en.php"><span style="width:10.7%" class="HPtopmenu4">Future·News</span></a>
-        <a href="index.php"><span style="width:8.7%" class="HPtopmenu5">中文</span></a>
+        <a href="<?php echo "http://".$_SERVER['HTTP_HOST']."index_en.php"; ?>"><span style="width:7.7%" class="HPtopmenu0">HOME</span></a>
+        <a href="<?php echo "http://".$_SERVER['HTTP_HOST']."/people_en.php"; ?>"><span style="width:13.7%" class="HPtopmenu1">Future·Characters</span></a>
+        <a href="<?php echo "http://".$_SERVER['HTTP_HOST']."/index_en.php#action"; ?>"><span style="width:10.7%" class="HPtopmenu2">Future·Action</span></a>
+        <a href="<?php echo "http://".$_SERVER['HTTP_HOST']."/footprints_en.php"; ?>"><span style="width:13.7%" class="HPtopmenu HPtopmenu3">Future·Footprints</span></a>
+        <a href="<?php echo "http://".$_SERVER['HTTP_HOST']."/news_en.php"; ?>"><span style="width:10.7%" class="HPtopmenu4">Future·News</span></a>
+        <a href="<?php echo "http://".$_SERVER['HTTP_HOST']."/index.php"; ?>"><span style="width:7.7%" class="HPtopmenu5">中文</span></a>
     </div>
     <div class="row">
         <a href="index_en.php">
@@ -71,12 +71,12 @@
         <span id="barmenu-bars" class="hidden-sm hidden-md hidden-lg" style="position: absolute; top:0; right:0; width:17.6%; padding-bottom:16%;background-size:contain; background-image:url('img/menu-bars.jpg')"></span>
         <span id="barmenu-cross" class="hidden-sm hidden-md hidden-lg" style="display: none; position: absolute; top:0; right:0; width:17.6%; padding-bottom:16%;background-size:contain; background-image:url('img/menu-cross.jpg')"></span>
         <div id="barmenu-content" style="display: none; position: absolute; right:0; width:66%; background-color: rgb(80,80,80); z-index:99999; padding: 10% 0">
-            <a href="index_en.php"><div class="HPtopmenucollapse" style="padding: 10%;">HOME</div></a>
-            <a href="people_en.php"><div class="HPtopmenucollapse" style="padding: 10%;">Future·Characters</div></a>
-            <a href="index_en.php#action"><div class="HPtopmenucollapse" style="padding: 10%;">Future·Action</div></a>
-            <a href="footprints_en.php"><div class="HPtopmenucollapse" style="padding: 10%;">Future·Footprints</div></a>
-            <a href="news_en.php"><div class="HPtopmenucollapse" style="padding: 10%;">Future·News</div></a>
-            <a href="index.php"><div class="HPtopmenucollapse" style="padding: 10%;">中文</div></a>
+            <a href="<?php echo "http://".$_SERVER['HTTP_HOST']."index_en.php"; ?>"><div class="HPtopmenucollapse" style="padding: 10%;">HOME</div></a>
+            <a href="<?php echo "http://".$_SERVER['HTTP_HOST']."/people_en.php"; ?>"><div class="HPtopmenucollapse" style="padding: 10%;">Future·Characters</div></a>
+            <a href="<?php echo "http://".$_SERVER['HTTP_HOST']."/index_en.php#action"; ?>"><div class="HPtopmenucollapse" style="padding: 10%;">Future·Action</div></a>
+            <a href="<?php echo "http://".$_SERVER['HTTP_HOST']."/footprints_en.php"; ?>"><div class="HPtopmenucollapse" style="padding: 10%;">Future·Footprints</div></a>
+            <a href="<?php echo "http://".$_SERVER['HTTP_HOST']."/news_en.php"; ?>"><div class="HPtopmenucollapse" style="padding: 10%;">Future·News</div></a>
+            <a href="<?php echo "http://".$_SERVER['HTTP_HOST']."/index.php"; ?>"><div class="HPtopmenucollapse" style="padding: 10%;">中文</div></a>
         </div>
     </div>
 </div>

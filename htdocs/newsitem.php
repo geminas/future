@@ -14,7 +14,7 @@ $newsitem=queryDB_row("select `id`, `code`, `title`, DATE_FORMAT(`publishTime`,'
 
 
 $newsRecommended=queryDB_array("
-    select code,title from news
+    select id,code,title from news
     where recommendation > 0 and status <> 0
     order by recommendation desc, publishTime desc
     limit 10;
