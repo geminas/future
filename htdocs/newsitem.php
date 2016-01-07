@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8">
     <meta id="viewport" name="viewport" content="width=device-width">
-    
+    <style>element.style {display: none;}</style>
 <?php
 include "metalinks.php";
 $argin=processRequestArguments();
@@ -99,7 +99,6 @@ $folder="contents/news/";
     <div class="row">
         <div id="uyan_frame" class="col-sm-8"></div>
         <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2078754"></script>
-        <style>element.style {display: none;}</style>
     </div>
 </div>
 <!-- UY END -->
