@@ -76,7 +76,7 @@ $folder="contents/news/";
             ?>
             
             <div class="newsthumb">
-                <a target="_blank" href="p/<?php echo $thumbitem['id']; ?>.html">
+                <a target="_blank" href="newsitem/<?php echo $thumbitem['id']; ?>.html">
                 <h4 class="recommend_title">
                 <?php
                     echo $thumbitem['title'];
