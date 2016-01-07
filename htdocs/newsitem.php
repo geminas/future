@@ -30,7 +30,7 @@ $folder="contents/news/";
 ?>
     
     <!-- Bootstrap -->
-    <link href="bootstrap/css/bootstrap_1200.css" rel="stylesheet">id
+    <link href="bootstrap/css/bootstrap_1200.css" rel="stylesheet">
     <!-- custom css-->
     <link href="css/style.css" rel="stylesheet" type="text/css" media="screen">
     <link href="css/donghai.css" rel="stylesheet" type="text/css">
@@ -76,7 +76,7 @@ $folder="contents/news/";
             ?>
             
             <div class="newsthumb">
-                <a target="_blank" href="FFnews/p/<?php echo $thumbitem['code']; ?>.html">
+                <a target="_blank" href="p/<?php echo $thumbitem['id']; ?>.html">
                 <h4 class="recommend_title">
                 <?php
                     echo $thumbitem['title'];
