@@ -10,7 +10,7 @@
 include "metalinks.php";
 
 $newsRecommended=queryDB_array("
-    select code,title from news
+    select id,code,title from news
     where recommendation > 0 and status <> 0
     order by recommendation desc, publishTime desc
     limit 10;
@@ -43,7 +43,7 @@ $folder="contents/news/";
             ?>
             
             <div class="newsthumb">
-                <a target="_blank" href="FFnews/p/<?php echo $thumbitem['code']; ?>.html">
+                <a target="_blank" href="p/<?php echo $thumbitem['id']; ?>.html">
                 <h4 class="recommend_title">
                 <?php
                     echo $thumbitem['title'];
@@ -80,7 +80,7 @@ $folder="contents/news/";
 
 function createHeadline(item) {
     var headline=$("<div></div>").addClass("headline");
-    var clickable=$("<a></a>",{'target':'_blank','href':"FFnews/p/"+item.code+".html"});
+    var clickable=$("<a></a>",{'target':'_blank','href':"p/"+item.id+".html"});
     $("<img>",{
         'src' : '<?php echo $folder;?>theme/'+item.code+'.jpg',
         'style' : "width:100%; padding-bottom:10px",
@@ -97,7 +97,7 @@ function createNews(item) {
     var newsItem=$("<div></div>").addClass("row newsitem");
     var image=
         $("<div></div>").addClass("col-sm-4").html(
-            $("<a></a>",{'target':'_blank','href':"FFnews/p/"+item.code+".html"}).html(
+            $("<a></a>",{'target':'_blank','href':"p/"+item.id+".html"}).html(
                 $("<img>",{
                     'src' : '<?php echo $folder;?>theme/'+item.code+'.jpg',
                     'style' : "width:100%; padding-bottom:10px",
@@ -106,7 +106,7 @@ function createNews(item) {
         )).appendTo(newsItem);;
     var text=
         $("<div></div>").addClass("col-sm-8").html(
-            $("<a></a>",{'target':'_blank','href':"FFnews/p/"+item.code+".html"}).html(
+            $("<a></a>",{'target':'_blank','href':"p/"+item.id+".html"}).html(
                 $("<h4></h4>").html(item.title)
         )).appendTo(newsItem);;
 

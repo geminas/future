@@ -46,7 +46,7 @@ $folder="contents/news/";
             ?>
             
             <div class="newsthumb">
-                <a target="_blank" href="FFnews/p/<?php echo $thumbitem['code']; ?>.html">
+                <a target="_blank" href="FFnewsen/p/<?php echo $thumbitem['code']; ?>.html">
                 <h4 class="recommend_title">
                 <?php
                     echo $thumbitem['title'];
@@ -83,7 +83,7 @@ $folder="contents/news/";
 
 function createHeadline(item) {
     var headline=$("<div></div>").addClass("headline");
-    var clickable=$("<a></a>",{'target':'_blank','href':"FFnews/p/"+item.code+".html"});
+    var clickable=$("<a></a>",{'target':'_blank','href':"FFnewsen/p/"+item.code+".html"});
     $("<img>",{
         'src' : '<?php echo $folder;?>theme/'+item.code+'.jpg',
         'style' : "width:100%; padding-bottom:10px",
