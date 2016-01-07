@@ -10,7 +10,7 @@
 include "metalinks.php";
 $argin=processRequestArguments();
 
-$newsitem=queryDB_row("select `id`, `code`, `title`, DATE_FORMAT(`publishTime`,'%Y-%c-%e %k:%i') as `publishTime`, `editorValue`, `abstract`, `recommendation`, `author`, `status`, `keywords`, `meta-title`, `meta-keywords`, `meta-description` from news where code='{$argin['newsid']}' and status <> 0");
+$newsitem=queryDB_row("select `id`, `code`, `title`, DATE_FORMAT(`publishTime`,'%Y-%c-%e %k:%i') as `publishTime`, `editorValue`, `abstract`, `recommendation`, `author`, `status`, `keywords`, `meta-title`, `meta-keywords`, `meta-description` from news where ='{$argin['newsid']}' and status <> 0");
 
 
 $newsRecommended=queryDB_array("
@@ -30,7 +30,7 @@ $folder="contents/news/";
 ?>
     
     <!-- Bootstrap -->
-    <link href="bootstrap/css/bootstrap_1200.css" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap_1200.css" rel="stylesheet">id
     <!-- custom css-->
     <link href="css/style.css" rel="stylesheet" type="text/css" media="screen">
     <link href="css/donghai.css" rel="stylesheet" type="text/css">
@@ -98,7 +98,8 @@ $folder="contents/news/";
 <div class="container" style="padding:30px">
     <div class="row">
         <div id="uyan_frame" class="col-sm-8"></div>
-        <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2078754"></script>
+        <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2078754">
+        </script>
     </div>
 </div>
 <!-- UY END -->
