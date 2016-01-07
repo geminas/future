@@ -10,7 +10,7 @@
 include "metalinks_en.php";
 $argin=processRequestArguments();
 
-$newsitem=queryDB_row("select `id`, `code`, `title`, DATE_FORMAT(`publishTime`,'%Y-%c-%e %k:%i') as `publishTime`, `editorValue`, `abstract`, `recommendation`, `author`, `status`, `keywords`, `meta-title`, `meta-keywords`, `meta-description` from news where code='{$argin['newsid']}' and status <> 0");
+$newsitem=queryDB_row("select `id`, `code`, `title`, DATE_FORMAT(`publishTime`,'%Y-%c-%e %k:%i') as `publishTime`, `editorValue`, `abstract`, `recommendation`, `author`, `status`, `keywords`, `meta-title`, `meta-keywords`, `meta-description` from news where id='{$argin['newsid']}' and status <> 0");
 
 
 $newsRecommended=queryDB_array("
@@ -76,7 +76,7 @@ $folder="contents/news/";
             ?>
             
             <div class="newsthumb">
-                <a target="_blank" href="FFnews/p/<?php echo $thumbitem['code']; ?>.html">
+                <a target="_blank" href="newsItem_en/<?php echo $thumbitem['code']; ?>.html">
                 <h4 class="recommend_title">
                 <?php
                     echo $thumbitem['title'];
