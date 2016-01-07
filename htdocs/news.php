@@ -40,6 +40,7 @@ $folder="contents/news/";
             <h3 style="font-size:24px">推荐阅读</h3>
             <?php
                 foreach($newsRecommended as $thumbitem) {
+                    print_r($thumbitem);
             ?>
             
             <div class="newsthumb">
