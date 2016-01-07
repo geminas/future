@@ -134,6 +134,7 @@ function loadNews() {
             
             //NewsItems
             $.each(newsRecent, function (i,e) {
+                print_r(e);
                 if ($(".headline").length) {
                     $("#newslist").append(createNews(e));
                 } else {
