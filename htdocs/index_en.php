@@ -241,7 +241,7 @@ $miscs=queryDB_array("select * from miscs where groupcode='homepage' order by se
                                         </div>
                                         
                                         <div class="gdhbutton buttonwhite">
-                                            <a href="FFeventen/p/<?php echo $event['code']; ?>.html">MORE</a>
+                                            <a href="<?php echo "http://".$_SERVER['HTTP_HOST']."/"; ?>footprints/<?php echo $event['id']; ?>.html">MORE</a>
                                         </div>
                                         
                                     </div>
