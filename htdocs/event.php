@@ -12,7 +12,7 @@ $argin=processRequestArguments();
 $eventid=$argin['eventid'];
 
 
-$event=queryDB_row("select * from events where code='$eventid'");    
+$event=queryDB_row("select * from events where id='$eventid'");    
 if (!isset($event['code']))
     header('Location: ./footprints.php');
 

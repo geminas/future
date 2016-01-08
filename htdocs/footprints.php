@@ -106,7 +106,6 @@
                             while (list($number, $event) = each($events)) {
                             $r=queryDB_row("select events_category.code as catCode from events inner join events_category on events_category.value=events.category where events.code='{$event['code']}'");
                             $event['group']=str_replace(array("."),"",$r['catCode']);
-                            
                             ?>
                             <div class="cbp-item <?php echo $event['group']; ?>">
                                 <div class="cbp-caption">
