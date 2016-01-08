@@ -28,7 +28,7 @@
 
         .HPtopmenu3 {
             margin-left: 10px;
-            width:12.7%;
+            width:15.7%;
             font-size: 10px;
         }
 
@@ -58,10 +58,9 @@
         
         <span style="width:0.5%" class="HPtopmenu"></span>
         <a href="<?php echo "http://".$_SERVER['HTTP_HOST']."index_en.php"; ?>"><span style="width:7.7%" class="HPtopmenu0">HOME</span></a>
-        <a href="<?php echo "http://".$_SERVER['HTTP_HOST']."/people_en.php"; ?>"><span style="width:13.7%" class="HPtopmenu1">Future·Characters</span></a>
+        <a href="<?php echo "http://".$_SERVER['HTTP_HOST']."/people_en.php"; ?>"><span style="width:14.7%" class="HPtopmenu1">Future·Characters</span></a>
         <a href="<?php echo "http://".$_SERVER['HTTP_HOST']."/index_en.php#action"; ?>"><span style="width:10.7%" class="HPtopmenu2">Future·Action</span></a>
-        <a href="<?php echo "http://".$_SERVER['HTTP_HOST']."/footprints_en.php"; ?>"><span style="width:13.7%" class="HPtopmenu HPtopmenu3">Future·Footprints</span></a>
-        <a href="<?php echo "http://".$_SERVER['HTTP_HOST']."/news_en.php"; ?>"><span style="width:10.7%" class="HPtopmenu4">Future·News</span></a>
+        <a href="<?php echo "http://".$_SERVER['HTTP_HOST']."/footprints_en.php"; ?>"><span style="width:14.7%" class="HPtopmenu HPtopmenu3">Future·Footprints</span></a>
         <a href="<?php echo "http://".$_SERVER['HTTP_HOST']."/index.php"; ?>"><span style="width:7.7%" class="HPtopmenu5">中文</span></a>
     </div>
     <div class="row">
@@ -75,7 +74,6 @@
             <a href="<?php echo "http://".$_SERVER['HTTP_HOST']."/people_en.php"; ?>"><div class="HPtopmenucollapse" style="padding: 10%;">Future·Characters</div></a>
             <a href="<?php echo "http://".$_SERVER['HTTP_HOST']."/index_en.php#action"; ?>"><div class="HPtopmenucollapse" style="padding: 10%;">Future·Action</div></a>
             <a href="<?php echo "http://".$_SERVER['HTTP_HOST']."/footprints_en.php"; ?>"><div class="HPtopmenucollapse" style="padding: 10%;">Future·Footprints</div></a>
-            <a href="<?php echo "http://".$_SERVER['HTTP_HOST']."/news_en.php"; ?>"><div class="HPtopmenucollapse" style="padding: 10%;">Future·News</div></a>
             <a href="<?php echo "http://".$_SERVER['HTTP_HOST']."/index.php"; ?>"><div class="HPtopmenucollapse" style="padding: 10%;">中文</div></a>
         </div>
     </div>
