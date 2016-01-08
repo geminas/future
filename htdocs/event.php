@@ -15,10 +15,9 @@ $eventid=$argin['eventid'];
 $event=queryDB_row("select * from events where id='$eventid'");    
 if (!isset($event['code']))
     header('Location: ./footprints.php');
-
     $imgcounter=1;
     $root="../";
-    $folder="contents/event/";
+    $folder="http://".$_SERVER['HTTP_HOST']."/"."contents/event/";
 ?>
     
     <!-- Bootstrap -->
