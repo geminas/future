@@ -15,9 +15,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $argin['formtype']!='miscs') {
         'height' => 400
     );
 
-print_r("private function upFile");
-
-    
     UploadFileFFV($fileDefinitions);
 }
 
