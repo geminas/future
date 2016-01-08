@@ -167,10 +167,10 @@ if (!isset($event['code']))
 
 
 <?php
-$r=queryDB_row("select events_category.code as catCode from events inner join events_category on events_category.value=events.category where events.id='$eventid'");
-if ($r['catCode']=='.lecture')
-    require "footer_lectures.php";    
-else
+// $r=queryDB_row("select events_category.code as catCode from events inner join events_category on events_category.value=events.category where events.id='$eventid'");
+// if ($r['catCode']=='.lecture')
+//     require "footer_lectures.php";    
+// else
     require "footer.php";
 ?>
 
