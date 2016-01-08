@@ -14,13 +14,13 @@ $argin=processRequestArguments();
 $eventid=$argin['eventid'];
 
 
-$event=queryDB_row("select * from events where code='$eventid'");    
+$event=queryDB_row("select * from events where id='$eventid'");    
 if (!isset($event['code']))
     header('Location: ./footprints_en.php');
 
     $imgcounter=1;
     $root="../";
-    $folder="contents/event/";
+    $folder="http://".$_SERVER['HTTP_HOST']."/"."contents/event/";
 ?>
     
     <!-- Bootstrap -->
@@ -105,7 +105,7 @@ if (!isset($event['code']))
 <?php if ($event['youkuID']!='') { ?>
     <iframe src="<?php echo "http://player.youku.com/embed/".$event['youkuID']; ?>" id="featured-video" allowFullScreen="true" quality="high" width="660" height="371"></iframe>
 <?php } else { ?>
-    <img src="<?php printf("%s%s-%02d.jpg",$folder,$eventid,$imgcounter++) ?>" style="width:100%; height:auto;" alt="">
+    <img src="<?php printf("%s%s-%02d.jpg",$folder,$event['code'],$imgcounter++) ?>" style="width:100%; height:auto;" alt="">
 <?php } ?>
 
             </div>
@@ -113,16 +113,16 @@ if (!isset($event['code']))
             <div id="RightColumn">
                 <div class="row" id="featured-images">
                     <div class="col-lg-6 col-md-12 col-sm-6 col-xs-12">
-                        <img src="<?php printf("%s%s-%02d.jpg",$folder,$eventid,$imgcounter++) ?>" alt="">
+                        <img src="<?php printf("%s%s-%02d.jpg",$folder,$event['code'],$imgcounter++) ?>" alt="">
                     </div>
                     <div class="col-lg-6 col-md-12 col-sm-6 col-xs-12">
-                        <img src="<?php printf("%s%s-%02d.jpg",$folder,$eventid,$imgcounter++) ?>" alt="">
+                        <img src="<?php printf("%s%s-%02d.jpg",$folder,$event['code'],$imgcounter++) ?>" alt="">
                     </div>
                     <div class="col-lg-6 col-md-12 col-sm-6 col-xs-12">
-                        <img src="<?php printf("%s%s-%02d.jpg",$folder,$eventid,$imgcounter++) ?>" alt="">
+                        <img src="<?php printf("%s%s-%02d.jpg",$folder,$event['code'],$imgcounter++) ?>" alt="">
                     </div>
                     <div class="col-lg-6 col-md-12 col-sm-6 col-xs-12">
-                        <img src="<?php printf("%s%s-%02d.jpg",$folder,$eventid,$imgcounter++) ?>" alt="">
+                        <img src="<?php printf("%s%s-%02d.jpg",$folder,$event['code'],$imgcounter++) ?>" alt="">
                     </div>
                 </div>
             </div>
@@ -170,7 +170,7 @@ if (!isset($event['code']))
 
 
 <?php
-$r=queryDB_row("select events_category.code as catCode from events inner join events_category on events_category.value=events.category where events.code='$eventid'");
+$r=queryDB_row("select events_category.code as catCode from events inner join events_category on events_category.value=events.category where events.id='$eventid'");
 if ($r['catCode']=='.lecture')
     require "footer_lectures_en.php";    
 else
