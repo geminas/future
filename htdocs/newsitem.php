@@ -65,7 +65,15 @@ $folder="contents/news/";
                 <a href="javascript:void(0)" title="分享到开心网" class="tkaixin" id="tkaixin" bosszone="msKaixin"><b>开心网</b></a>
                 </div></div></div></li></ul>
                 </div>
+                <script>
+                    $('shareMod').mouseenter(function(){
+                        $('<li></li>').style.display="block";
+                    });
 
+                    $('shareMod').mouseleaver(function(){
+                        $('<li></li>').style.display="none";
+                    });
+                </script>
             </div>
             <div class="abstract">
                 <?php echo $newsitem['abstract'];?>
