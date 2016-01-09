@@ -7,9 +7,9 @@
         </a>
         
         <span style="width:0.5%" class="HPtopmenu"></span>
-        <a href="<?php echo "http://".$_SERVER['HTTP_HOST']."index_en.php"; ?>"><span style="width:11.7%" class="HPtopmenu0e">HOME</span></a>
+        <a href="<?php echo "http://".$_SERVER['HTTP_HOST']."index_en.php"; ?>"><span style="width:13.7%" class="HPtopmenu0e">HOME</span></a>
         <a href="<?php echo "http://".$_SERVER['HTTP_HOST']."/people_en.php"; ?>"><span style="width:18.7%" class="HPtopmenu1e">Future·Characters</span></a>
-        <a href="<?php echo "http://".$_SERVER['HTTP_HOST']."/index_en.php#action"; ?>"><span style="width:15.7%" class="HPtopmenu2e">Future·Action</span></a>
+        <a href="<?php echo "http://".$_SERVER['HTTP_HOST']."/index_en.php#action"; ?>"><span style="width:16.7%" class="HPtopmenu2e">Future·Action</span></a>
         <a href="<?php echo "http://".$_SERVER['HTTP_HOST']."/footprints_en.php"; ?>"><span style="width:18.7%" class="HPtopmenu HPtopmenu3e">Future·Footprints</span></a>
         <a class="header-language-cn" href="<?php echo "http://".$_SERVER['HTTP_HOST']."/index.php"; ?>"><img src="/contents/language/l_english.png" style="width: 100%" alt=""> </a> 
     </div>
