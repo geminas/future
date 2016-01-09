@@ -1,55 +1,5 @@
 <div id="headl">
 
-<style type="text/css">
-    @media (max-width: 1330px){
-        .HPtopmenu {
-            margin-left: 10px;
-            width:1.7%;
-            font-size: 10px;
-        }
-
-        .HPtopmenu0 {
-            margin-left: 10px;
-            width:3.7%;
-            font-size: 10px;
-        }
-
-        .HPtopmenu1 {
-            margin-left: 10px;
-            width:15.7%;
-            font-size: 10px;
-        }
-
-        .HPtopmenu2 {
-            margin-left: 10px;
-            width:10.7%;
-            font-size: 10px;
-        }
-
-        .HPtopmenu3 {
-            margin-left: 10px;
-            width:15.7%;
-            font-size: 10px;
-        }
-
-        .HPtopmenu4 {
-            margin-left: 10px;
-            width:10.7%;
-            font-size: 10px;
-        }
-
-        .HPtopmenu5 {
-            margin-left: 10px;
-            width:8.7%;
-            font-size: 10px;
-        }
-    }
-   /* @media (max-width: 1300px){
-        #contact .HPtopmenu {
-            margin-left: 20px;
-        }
-    }*/
-</style>
 <div class="container" style="background-color: #F2F2F2; ">
     <div class="row hidden-xs" style="background-color:#FFF;">
         <a href="index_en.php">
@@ -57,10 +7,10 @@
         </a>
         
         <span style="width:0.5%" class="HPtopmenu"></span>
-        <a href="<?php echo "http://".$_SERVER['HTTP_HOST']."index_en.php"; ?>"><span style="width:7.7%" class="HPtopmenu0">HOME</span></a>
-        <a href="<?php echo "http://".$_SERVER['HTTP_HOST']."/people_en.php"; ?>"><span style="width:14.7%" class="HPtopmenu1">Future·Characters</span></a>
-        <a href="<?php echo "http://".$_SERVER['HTTP_HOST']."/index_en.php#action"; ?>"><span style="width:10.7%" class="HPtopmenu2">Future·Action</span></a>
-        <a href="<?php echo "http://".$_SERVER['HTTP_HOST']."/footprints_en.php"; ?>"><span style="width:14.7%" class="HPtopmenu HPtopmenu3">Future·Footprints</span></a>
+        <a href="<?php echo "http://".$_SERVER['HTTP_HOST']."index_en.php"; ?>"><span style="width:11.7%" class="HPtopmenu0e">HOME</span></a>
+        <a href="<?php echo "http://".$_SERVER['HTTP_HOST']."/people_en.php"; ?>"><span style="width:18.7%" class="HPtopmenu1e">Future·Characters</span></a>
+        <a href="<?php echo "http://".$_SERVER['HTTP_HOST']."/index_en.php#action"; ?>"><span style="width:15.7%" class="HPtopmenu2e">Future·Action</span></a>
+        <a href="<?php echo "http://".$_SERVER['HTTP_HOST']."/footprints_en.php"; ?>"><span style="width:18.7%" class="HPtopmenu HPtopmenu3e">Future·Footprints</span></a>
         <a class="header-language-cn" href="<?php echo "http://".$_SERVER['HTTP_HOST']."/index.php"; ?>"><img src="/contents/language/l_english.png" style="width: 100%" alt=""> </a> 
     </div>
     <div class="row">

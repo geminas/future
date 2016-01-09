@@ -5,8 +5,8 @@
 .header-language-cn {
     float: right;
     position: relative;
-    margin-right: 30px;
-    margin-top: 2.2%;
+    margin-right: 10px;
+    margin-top: 1.2%;
     width: 65px;
     height: 29px;
 }
@@ -14,8 +14,8 @@
 .header-language-en {
     float: right;
     position: relative;
-    margin-right: 30px;
-    margin-top: 2.2%;
+    margin-right: 10px;
+    margin-top: 1.2%;
     width: 65px;
     height: 29px;
 }
@@ -318,6 +318,40 @@ body {
     font-family: 'Akkurat Pro','Source Han Sans CN', sans-serif;
 } /*Donghai*/
 
+
+.HPtopmenu0e {
+    display:inline-block;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    font-family: 'Akkurat Pro','Source Han Sans CN', sans-serif;
+} /*Donghai*/
+
+.HPtopmenu1e {
+    display:inline-block;
+    font-size: 18px;
+    font-weight: 900;
+    text-align: center;
+    font-family: 'Akkurat Pro','Source Han Sans CN', sans-serif;
+} /*Donghai*/
+
+.HPtopmenu2e {
+    display:inline-block;
+    font-size: 18px;
+    font-weight: 800;
+    text-align: center;
+    font-family: 'Akkurat Pro','Source Han Sans CN', sans-serif;
+} /*Donghai*/
+
+.HPtopmenu3e {
+    display:inline-block;
+    font-size: 18px;
+    font-weight: 900;
+    text-align: center;
+    font-family: 'Akkurat Pro','Source Han Sans CN', sans-serif;
+} /*Donghai*/
+
+
 .buttonbox {
 display:-ms-flexbox;
 -ms-flex-pack:center;
@@ -490,6 +524,39 @@ td {
         height:24px;
     }
 
+
+    .HPtopmenu0e {
+        display:inline-block;
+        font-size: 14px;
+        font-weight: 600;
+        text-align: center;
+        font-family: 'Akkurat Pro','Source Han Sans CN', sans-serif;
+    } /*Donghai*/
+
+    .HPtopmenu1e {
+        display:inline-block;
+        font-size: 14px;
+        font-weight: 900;
+        text-align: center;
+        font-family: 'Akkurat Pro','Source Han Sans CN', sans-serif;
+    } /*Donghai*/
+
+    .HPtopmenu2e {
+        display:inline-block;
+        font-size: 14px;
+        font-weight: 800;
+        text-align: center;
+        font-family: 'Akkurat Pro','Source Han Sans CN', sans-serif;
+    } /*Donghai*/
+
+    .HPtopmenu3e {
+        display:inline-block;
+        font-size: 14px;
+        font-weight: 900;
+        text-align: center;
+        font-family: 'Akkurat Pro','Source Han Sans CN', sans-serif;
+    } /*Donghai*/
+
 }
 
 
@@ -565,6 +632,38 @@ td {
     .divide60p {
         height:36px;
     }
+
+    .HPtopmenu0e {
+        display:inline-block;
+        font-size: 14px;
+        font-weight: 600;
+        text-align: center;
+        font-family: 'Akkurat Pro','Source Han Sans CN', sans-serif;
+    } /*Donghai*/
+
+    .HPtopmenu1e {
+        display:inline-block;
+        font-size: 14px;
+        font-weight: 900;
+        text-align: center;
+        font-family: 'Akkurat Pro','Source Han Sans CN', sans-serif;
+    } /*Donghai*/
+
+    .HPtopmenu2e {
+        display:inline-block;
+        font-size: 14px;
+        font-weight: 800;
+        text-align: center;
+        font-family: 'Akkurat Pro','Source Han Sans CN', sans-serif;
+    } /*Donghai*/
+
+    .HPtopmenu3e {
+        display:inline-block;
+        font-size: 14px;
+        font-weight: 900;
+        text-align: center;
+        font-family: 'Akkurat Pro','Source Han Sans CN', sans-serif;
+    } /*Donghai*/
 }
 
 @media (min-width: 992px) and (max-width: 1309px) {
@@ -641,6 +740,38 @@ td {
     .divide60p {
         height:48px;
     }
+
+    .HPtopmenu0e {
+        display:inline-block;
+        font-size: 16px;
+        font-weight: 600;
+        text-align: center;
+        font-family: 'Akkurat Pro','Source Han Sans CN', sans-serif;
+    } /*Donghai*/
+
+    .HPtopmenu1e {
+        display:inline-block;
+        font-size: 16px;
+        font-weight: 900;
+        text-align: center;
+        font-family: 'Akkurat Pro','Source Han Sans CN', sans-serif;
+    } /*Donghai*/
+
+    .HPtopmenu2e {
+        display:inline-block;
+        font-size: 16px;
+        font-weight: 800;
+        text-align: center;
+        font-family: 'Akkurat Pro','Source Han Sans CN', sans-serif;
+    } /*Donghai*/
+
+    .HPtopmenu3e {
+        display:inline-block;
+        font-size: 16px;
+        font-weight: 900;
+        text-align: center;
+        font-family: 'Akkurat Pro','Source Han Sans CN', sans-serif;
+    } /*Donghai*/
 }
 
 @media (min-width: 1310px) {
@@ -718,6 +849,38 @@ td {
     .divide60p {
         height:60px;
     }
+
+    .HPtopmenu0e {
+        display:inline-block;
+        font-size: 18px;
+        font-weight: 600;
+        text-align: center;
+        font-family: 'Akkurat Pro','Source Han Sans CN', sans-serif;
+    } /*Donghai*/
+
+    .HPtopmenu1e {
+        display:inline-block;
+        font-size: 18px;
+        font-weight: 900;
+        text-align: center;
+        font-family: 'Akkurat Pro','Source Han Sans CN', sans-serif;
+    } /*Donghai*/
+
+    .HPtopmenu2e {
+        display:inline-block;
+        font-size: 18px;
+        font-weight: 800;
+        text-align: center;
+        font-family: 'Akkurat Pro','Source Han Sans CN', sans-serif;
+    } /*Donghai*/
+
+    .HPtopmenu3e {
+        display:inline-block;
+        font-size: 18px;
+        font-weight: 900;
+        text-align: center;
+        font-family: 'Akkurat Pro','Source Han Sans CN', sans-serif;
+    } /*Donghai*/
 }
 /* news */
     .publishTime {padding-top:10px;}

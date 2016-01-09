@@ -8,11 +8,11 @@
         </a>
         
         <span style="width:0.5%" class="HPtopmenu"></span>
-        <a href="<?php echo "http://".$_SERVER['HTTP_HOST']."/index.php"; ?>"><span style="width:11.7%" class="HPtopmenu">首页</span></a>
-        <a href="<?php echo "http://".$_SERVER['HTTP_HOST']."/people.php"; ?>"><span style="width:11.7%" class="HPtopmenu1">未来·人物</span></a>
-        <a href="<?php echo "http://".$_SERVER['HTTP_HOST']."/index.php#action"; ?>"><span style="width:11.7%" class="HPtopmenu2">未来·行动</span></a>
-        <a href="<?php echo "http://".$_SERVER['HTTP_HOST']."/footprints.php"; ?>"><span style="width:11.7%" class="HPtopmenu3">未来·足迹</span></a>
-        <a href="<?php echo "http://".$_SERVER['HTTP_HOST']."/news.php"; ?>"><span style="width:11.7%" class="HPtopmenu4">未来·资讯</span></a>
+        <a href="<?php echo "http://".$_SERVER['HTTP_HOST']."/index.php"; ?>"><span style="width:13.7%" class="HPtopmenu">首页</span></a>
+        <a href="<?php echo "http://".$_SERVER['HTTP_HOST']."/people.php"; ?>"><span style="width:13.7%" class="HPtopmenu1">未来·人物</span></a>
+        <a href="<?php echo "http://".$_SERVER['HTTP_HOST']."/index.php#action"; ?>"><span style="width:13.7%" class="HPtopmenu2">未来·行动</span></a>
+        <a href="<?php echo "http://".$_SERVER['HTTP_HOST']."/footprints.php"; ?>"><span style="width:13.7%" class="HPtopmenu3">未来·足迹</span></a>
+        <a href="<?php echo "http://".$_SERVER['HTTP_HOST']."/news.php"; ?>"><span style="width:13.7%" class="HPtopmenu4">未来·资讯</span></a>
         <a class="header-language-cn" href="<?php echo "http://".$_SERVER['HTTP_HOST']."/index_en.php"; ?>"><img src="/contents/language/l_chinese.png" style="width: 100%" alt=""> </a> 
     </div>
     <div class="row">
