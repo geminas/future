@@ -109,7 +109,7 @@ $folder="contents/news/";
     <!-- 多说评论框 end -->
     <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
     <script type="text/javascript">
-    var duoshuoQuery = {short_name:"futureforum333"};
+    var duoshuoQuery = {short_name:"futureforum"};
     (function() {
         var ds = document.createElement('script');
         ds.type = 'text/javascript';ds.async = true;
