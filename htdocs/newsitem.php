@@ -105,7 +105,7 @@ $folder="contents/news/";
 <div class="container" style="padding:30px">
     <div class="row">
     <!-- 多说评论框 start -->
-    <div class="ds-thread" data-thread-key="请将此处替换成文章在你的站点中的ID" data-title="请替换成文章的标题" data-url="请替换成文章的网址"></div>
+    <div class="ds-thread" data-thread-key="<?php echo "$newsitem['id']"; ?>" data-title="<?php echo "$newsitem['id']"; ?>" data-url="<?php echo "http://".$_SERVER['HTTP_HOST']."/"; ?>news/<?php echo $newsitem['id']; ?>.html"></div>
     <!-- 多说评论框 end -->
     <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
     <script type="text/javascript">
