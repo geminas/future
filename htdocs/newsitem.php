@@ -54,7 +54,7 @@ $folder="contents/news/";
 
 
                 <div class="shareMod">
-                <span class="shareBtn" id="shareBtn"><span class="titShareIcon">分享</span></span><ul><li class="menu-item" id="menu-item" style="display: none;"><div class="menu-wrap"><div class="menu"><div class="menu-bd">
+                <span class="shareBtn" id="shareBtn"><span class="titShareIcon">分享</span></span><ul><li class="menu-item" id="menu-item" style="display: block;"><div class="menu-wrap"><div class="menu"><div class="menu-bd">
                 <a title="分享到微博" href="javascript:void(0)" id="tmblogbt" class="tmblog" bosszone="msWeibo" onclick="share2weibo.showPopup(this)"><b>微博</b></a>
                 <a title="分享到空间" href="javascript:void(0)" onclick="share2qzone.showPopup(this)" class="tqzone" bosszone="msQzone"><b>空间</b></a>
                 <a title="分享到微信" href="javascript:void(0);" onclick="pageShareWX()" class="tweixin" bosszone="msFriend"><b>微信</b></a>
