@@ -51,29 +51,6 @@ $folder="contents/news/";
             <div class="author_publishTime">
                 <span class="author"><strong><?php echo $newsitem['author'];?></strong></span>
                 <span class="publishTime"><?php echo $newsitem['publishTime'];?></span>
-
-
-                <div class="shareMod">
-                <span class="shareBtn" id="shareBtn"><span class="titShareIcon">分享</span></span><ul><li class="menu-item" id="menu-item" style="display: block;"><div class="menu-wrap"><div class="menu"><div class="menu-bd">
-                <a title="分享到微博" href="javascript:void(0)" id="tmblogbt" class="tmblog" bosszone="msWeibo" onclick="share2weibo.showPopup(this)"><b>微博</b></a>
-                <a title="分享到空间" href="javascript:void(0)" onclick="share2qzone.showPopup(this)" class="tqzone" bosszone="msQzone"><b>空间</b></a>
-                <a title="分享到微信" href="javascript:void(0);" onclick="pageShareWX()" class="tweixin" bosszone="msFriend"><b>微信</b></a>
-                <a title="分享到新浪微博" href="javascript:void(0)" class="tsina" id="tsina" bosszone="msSina"><b>新浪微博</b></a>
-                <a href="javascript:void(0)" title="分享到邮箱" onclick="share2qmail.showPopup(this)" class="tqmail" bosszone="msQmail"><b>邮箱</b></a>
-                <a href="javascript:void(0)" title="分享到QQ好友" onclick="share2qq.showPopup(this)" class="qqpengyou" bosszone="tqq"><b>QQ好友</b></a>
-                <a href="javascript:void(0)" title="分享到人人网" class="trenren" id="trenren" bosszone="msRenren"><b>人人网</b></a>
-                <a href="javascript:void(0)" title="分享到开心网" class="tkaixin" id="tkaixin" bosszone="msKaixin"><b>开心网</b></a>
-                </div></div></div></li></ul>
-                </div>
-                <script>
-                    $('shareMod').mouseenter(function(){
-                        $('<li></li>').style.display="block";
-                    });
-
-                    $('shareMod').mouseleaver(function(){
-                        $('<li></li>').style.display="none";
-                    });
-                </script>
             </div>
             <div class="abstract">
                 <?php echo $newsitem['abstract'];?>
