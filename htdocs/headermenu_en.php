@@ -61,7 +61,7 @@
         <a href="<?php echo "http://".$_SERVER['HTTP_HOST']."/people_en.php"; ?>"><span style="width:14.7%" class="HPtopmenu1">Future·Characters</span></a>
         <a href="<?php echo "http://".$_SERVER['HTTP_HOST']."/index_en.php#action"; ?>"><span style="width:10.7%" class="HPtopmenu2">Future·Action</span></a>
         <a href="<?php echo "http://".$_SERVER['HTTP_HOST']."/footprints_en.php"; ?>"><span style="width:14.7%" class="HPtopmenu HPtopmenu3">Future·Footprints</span></a>
-        <a href="<?php echo "http://".$_SERVER['HTTP_HOST']."/index.php"; ?>"><span style="width:7.7%" class="HPtopmenu5">中文</span></a>
+        <a class="header-language-cn" href="<?php echo "http://".$_SERVER['HTTP_HOST']."/index.php"; ?>"><img src="/contents/language/l_english.png" style="width: 100%" alt=""> </a> 
     </div>
     <div class="row">
         <a href="index_en.php">

@@ -2,6 +2,24 @@
     padding-left: 0px;
 }
 
+.header-language-cn {
+    float: right;
+    position: relative;
+    margin-right: 30px;
+    margin-top: 2.2%;
+    width: 65px;
+    height: 29px;
+}
+
+.header-language-en {
+    float: right;
+    position: relative;
+    margin-right: 30px;
+    margin-top: 2.2%;
+    width: 65px;
+    height: 29px;
+}
+
 .Copyright a {
     display: none;
 }
@@ -410,6 +428,15 @@ td {
 }
     
 @media (min-width: 768px) {
+    .header-language-cn {
+        width: 45.5px;
+        height: 20.3px;
+    }
+
+    .header-language-en {
+        width: 45.5px;
+        height: 20.3px;
+    }
     
     .HPTitle {
         font-size: 42.19px;
@@ -467,6 +494,15 @@ td {
 
 
 @media (min-width: 768px) and (max-width: 991px) {
+    .header-language-cn {
+        width: 45.5px;
+        height: 20.3px;
+    }
+
+    .header-language-en {
+        width: 45.5px;
+        height: 20.3px;
+    }
 
     .HPTitle {
         font-size: 42.19px;
@@ -532,6 +568,16 @@ td {
 }
 
 @media (min-width: 992px) and (max-width: 1309px) {
+    .header-language-cn {
+        width: 55.25px;
+        height: 24.65px;
+    }
+
+    .header-language-en {
+        width: 55.25px;
+        height: 24.65px;
+    }
+
     .HPTitle {
         font-size: 54.56px;
         line-height: 75.78px;
@@ -598,6 +644,16 @@ td {
 }
 
 @media (min-width: 1310px) {
+    .header-language-cn {
+        width: 65px;
+        height: 29px;
+    }
+
+    .header-language-en {
+        width: 65px;
+        height: 29px;
+    }
+
     .HPTitle {
         font-size: 72px;
         line-height: 100px;
