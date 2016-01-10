@@ -52,7 +52,7 @@ $folder="contents/news/";
                 <span class="author"><strong><?php echo $newsitem['author'];?></strong></span>
                 <span class="publishTime"><?php echo $newsitem['publishTime'];?></span>
                 <!-- <div class="row"> -->
-                <span class="bdsharebuttonbox"></a><a href="#" class="bds_more" data-cmd="more" style="background-size: 14px; font-size: 14px; position: relative; float: right;">分享</a></span>
+                <span class="bdsharebuttonbox"></a><a href="#" class="bds_more" data-cmd="more" style="background-size: 14px; font-size: 14px; position: relative; float: right; background-position-y: 4px; background-position-x: 9px;">分享</a></span>
                 <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
                 <!-- </div> -->
             </div>
@@ -72,6 +72,10 @@ $folder="contents/news/";
                     echo '<span class="label label-primary">'. trim($keyword) .'</span> ';
                     
                 ?>
+
+                <span class="bdsharebuttonbox col-sm-8" style="background-size: 14px; font-size: 14px; position: relative; float: right; background-position-y: 4px; background-position-x: 9px;"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a></span>
+                <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+
             </div>
         </div>
         <div class="col-sm-4">
