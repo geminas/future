@@ -52,7 +52,7 @@ $folder="contents/news/";
                 <span class="author"><strong><?php echo $newsitem['author'];?></strong></span>
                 <span class="publishTime"><?php echo $newsitem['publishTime'];?></span>
                 <!-- <div class="row"> -->
-                <span class="bdsharebuttonbox"></a><a href="#" class="bds_more" data-cmd="more" style="background-size: 14px; font-size: 14px; position: relative; float: right; background-position-y: 4px; background-position-x: 9px;">分享</a></span>
+                <span class="bdsharebuttonbox"></a><a href="#" class="bds_more" data-cmd="more" style="margin-top: 0px; background-size: 14px; font-size: 14px; position: relative; float: right; background-position-y: 4px; background-position-x: 9px;">分享</a></span>
                 <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
                 <!-- </div> -->
             </div>
