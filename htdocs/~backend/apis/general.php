@@ -37,7 +37,6 @@ function processRequestArguments() {
 function UpdateFFV($argin) {
     if($argin['formtype']=='miscs') {
         foreach($argin as $key => $value) {
-            print_r($key);
             if ($key=='formtype') continue;
             if ($key=='language') continue;
             if ($key=='id') continue;
