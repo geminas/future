@@ -34,8 +34,6 @@ $(document).ready( function () {
         {},
         function (data) {
             LinksData=data;
-            console.log(data);
-
             //Category
             var table=$("<table></table>")
                 .addClass("table")
