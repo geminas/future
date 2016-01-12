@@ -7,7 +7,7 @@
         </a>
         
         <span style="width:0.5%" class="HPtopmenu"></span>
-        <a href="<?php echo "http://".$_SERVER['HTTP_HOST']."index_en.php"; ?>"><span style="width:13.7%" class="HPtopmenu0e">HOME</span></a>
+        <a href="<?php echo "http://".$_SERVER['HTTP_HOST']."/index_en.php"; ?>"><span style="width:13.7%" class="HPtopmenu0e">HOME</span></a>
         <a href="<?php echo "http://".$_SERVER['HTTP_HOST']."/people_en.php"; ?>"><span style="width:18.7%" class="HPtopmenu1e">Future·Characters</span></a>
         <a href="<?php echo "http://".$_SERVER['HTTP_HOST']."/index_en.php#action"; ?>"><span style="width:16.7%" class="HPtopmenu2e">Future·Action</span></a>
         <a href="<?php echo "http://".$_SERVER['HTTP_HOST']."/footprints_en.php"; ?>"><span style="width:18.7%" class="HPtopmenu HPtopmenu3e">Future·Footprints</span></a>
@@ -20,7 +20,7 @@
         <span id="barmenu-bars" class="hidden-sm hidden-md hidden-lg" style="position: absolute; top:0; right:0; width:17.6%; padding-bottom:16%;background-size:contain; background-image:url('img/menu-bars.jpg')"></span>
         <span id="barmenu-cross" class="hidden-sm hidden-md hidden-lg" style="display: none; position: absolute; top:0; right:0; width:17.6%; padding-bottom:16%;background-size:contain; background-image:url('img/menu-cross.jpg')"></span>
         <div id="barmenu-content" style="display: none; position: absolute; right:0; width:66%; background-color: rgb(80,80,80); z-index:99999; padding: 10% 0">
-            <a href="<?php echo "http://".$_SERVER['HTTP_HOST']."index_en.php"; ?>"><div class="HPtopmenucollapse" style="padding: 10%;">HOME</div></a>
+            <a href="<?php echo "http://".$_SERVER['HTTP_HOST']."/index_en.php"; ?>"><div class="HPtopmenucollapse" style="padding: 10%;">HOME</div></a>
             <a href="<?php echo "http://".$_SERVER['HTTP_HOST']."/people_en.php"; ?>"><div class="HPtopmenucollapse" style="padding: 10%;">Future·Characters</div></a>
             <a href="<?php echo "http://".$_SERVER['HTTP_HOST']."/index_en.php#action"; ?>"><div class="HPtopmenucollapse" style="padding: 10%;">Future·Action</div></a>
             <a href="<?php echo "http://".$_SERVER['HTTP_HOST']."/footprints_en.php"; ?>"><div class="HPtopmenucollapse" style="padding: 10%;">Future·Footprints</div></a>

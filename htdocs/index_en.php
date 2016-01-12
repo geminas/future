@@ -78,10 +78,6 @@ $miscs=queryDB_array("select * from miscs where groupcode='homepage' order by se
                                 <!-- MAIN IMAGE -->
                                 <img src="contents/revslider-<?php echo $slide['id'];?>.jpg" alt="darkblurbg" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
                                 <div class="caption HPTitle revslidercaption sft" data-x="50" data-y="60" data-speed="1000" data-start="1000" data-easing="easeOutExpo">
-                                    <a href="<?php echo $slide['href'];?>" style="color:white" target="_blank"><?php echo $slide['bigtitle_zh-cn'];?></a>
-                                </div>
-
-                                <div class="caption HPTitle revslidercaption sft" data-x="50" data-y="145" data-speed="1000" data-start="1000" data-easing="easeOutExpo">
                                     <a href="<?php echo $slide['href'];?>" style="color:white" target="_blank"><?php echo $slide['bigtitle_en'];?></a>
                                 </div>
 
@@ -116,7 +112,7 @@ $miscs=queryDB_array("select * from miscs where groupcode='homepage' order by se
         <div class="container hpsection GDH-normalpadding">
             <div class="row">
                 <div class="col-sm-6">
-                    <h2 class="HPSectionTitle"><?php echo findmisc('homepage-people-title','zh-cn');?><br><?php echo findmisc('homepage-people-title','en');?></h2>
+                    <h2 class="HPSectionTitle"><?php echo findmisc('homepage-people-title','en');?></h2>
                     <div class="cyanbar" style="width:90px; height:4px"></div>
                     <div style="width: 100%; padding-bottom: 5.1%"></div>
                     <p class="HPText"><?php echo findmisc('homepage-people-note');?></p>
@@ -164,7 +160,7 @@ $miscs=queryDB_array("select * from miscs where groupcode='homepage' order by se
             <div class="row">
 
                 <div class="col-sm-6">
-                    <h2 class="HPSectionTitle"><?php echo findmisc('homepage-action-title','zh-cn');?><br><?php echo findmisc('homepage-action-title','en');?></h2>
+                    <h2 class="HPSectionTitle"><?php echo findmisc('homepage-action-title','en');?></h2>
                     <div class="cyanbar" style="width:90px; height:4px"></div>
                     <div style="width: 100%; padding-bottom: 5.1%"></div>
                     <p class="HPText" style="width: 80%; text-align:justify"><?php echo findmisc('homepage-action-note');?>
@@ -202,7 +198,7 @@ $miscs=queryDB_array("select * from miscs where groupcode='homepage' order by se
             <div>
                 <div class="row">
                     <div class="col-sm-6">
-                        <h2 class="HPSectionTitle"><?php echo findmisc('homepage-footprint-title','zh-cn');?><br><?php echo findmisc('homepage-footprint-title','en');?></h2>
+                        <h2 class="HPSectionTitle"><?php echo findmisc('homepage-footprint-title','en');?></h2>
                     </div>
 
                     <div class="col-sm-4 col-sm-offset-2">

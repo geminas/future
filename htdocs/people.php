@@ -90,7 +90,6 @@
                     <div class="col-sm-4">
                         <div class="cyanbar hidden-xs" style="width:100%; height:8px"></div>
                         <div class="category-infobox title">
-                            <?php echo $people_category[1]['title_zh-cn'];?><br>
                             <?php echo $people_category[1]['title_en'];?>
                         </div>
                         

@@ -61,7 +61,7 @@
         <div class="container">
         <div class="row">
         <div class="GDH-topimage" style="background-image: url('contents/people.jpg');">
-                    <h2 style="color:black"><?php echo findmisc('people-bigtitle','zh-cn');?><br><?php echo findmisc('people-bigtitle','en');?></h2>
+                    <h2 style="color:black"><?php echo findmisc('people-bigtitle','en');?></h2>
                     <div class="cyanbar" style="width:90px; height:4px"></div>
                     <div class="divide30"></div>
                     <p style="color:black"><?php echo findmisc('people-text');?></p>
@@ -90,7 +90,6 @@
                     <div class="col-sm-4">
                         <div class="cyanbar hidden-xs" style="width:100%; height:8px"></div>
                         <div class="category-infobox title">
-                            <?php echo $people_category[1]['title_zh-cn'];?><br>
                             <?php echo $people_category[1]['title_en'];?>
                         </div>
                         
@@ -216,7 +215,6 @@
             foreach($people_category as $category) {
             echo '    case "'. str_replace(array("\n","\r"),"",$category['code']).'":'."\n";
             echo '        title="'.
-                str_replace(array("\n","\r"),"",$category['title_zh-cn']) . '<br>' .
                 str_replace(array("\n","\r"),"",$category['title_en']) . '";'."\n";
             echo '        content= "'. str_replace(array("\n","\r"),"",$category['note_en']) .'";'."\n";
             echo '        break;'."\n";

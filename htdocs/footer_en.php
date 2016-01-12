@@ -16,7 +16,7 @@ $links6=queryDB_array("select * from links where type = 6");
                 </div>
                 <div class="col-xs-12 col-sm-12" style="margin-bottom:40px">
                     <div style="background-color:black; width:100%; height:6px"></div>
-                    <h3 class="FooterHeader">官方微信订阅号<br>WeChat Subscription</h3>
+                    <h3 class="FooterHeader">WeChat Subscription</h3>
                     <div style="">
                         <img style="width:100%; max-width:300px" src="contents/wechat.png">
                     </div>
@@ -30,7 +30,7 @@ $links6=queryDB_array("select * from links where type = 6");
                             <div class="col-xs-12 col-sm-12" font-family: 'Microsoft YaHei',"微软雅黑", 'Avenir Next',Avenir,'Helvetica Neue',Helvetica,'Lantinghei SC','Hiragino Sans GB',STHeiti,'WenQuanYi Micro Hei',SimSun,sans-serif;>
                                 <div style="margin-bottom:10px">
                                     <div style="background-color:black; width:100%; height:6px"></div>
-                                    <h3 class="FooterHeader" style="padding-bottom:5px">关于未来论坛<br>About FutureForum</h3>
+                                    <h3 class="FooterHeader" style="padding-bottom:5px">About FutureForum</h3>
                                     <a href="/aboutus.php" style="text-decoration:underline; color:blue; margin-left: 28px;">About Us</a><br>
                                     <a href="/product.php" style="text-decoration:underline; color:blue; margin-left: 28px;">Product Service</a><br>
                                     <a href="/joinus.php" style="text-decoration:underline; color:blue; margin-left: 28px;">Join Us</a><br>
@@ -38,7 +38,7 @@ $links6=queryDB_array("select * from links where type = 6");
                                 </div>
                                 <div style="margin-bottom:10px">
                                     <div style="background-color:black; width:100%; height:6px"></div>
-                                    <h3 class="FooterHeader">执行机构<br>Executive Agency</h3>
+                                    <h3 class="FooterHeader">Executive Agency</h3>
                                     <?php
                                     foreach ($links1 as $link) {
                                     ?>
@@ -51,7 +51,7 @@ $links6=queryDB_array("select * from links where type = 6");
                     <div class="col-xs-6 col-sm-3">
                         <div style="margin-bottom:10px">
                             <div style="background-color:black; width:100%; height:6px"></div>
-                            <h3 class="FooterHeader">战略合作媒体<br>Media Coalition</h3>
+                            <h3 class="FooterHeader">Media Coalition</h3>
                             <?php
                             foreach ($links2 as $link) {
                             ?>
@@ -62,7 +62,7 @@ $links6=queryDB_array("select * from links where type = 6");
                     <div class="col-xs-6 col-sm-3">
                         <div style="margin-bottom:10px">
                             <div style="background-color:black; width:100%; height:6px"></div>
-                            <h3 class="FooterHeader">战略合作机构<br>Strategic Partnership</h3>
+                            <h3 class="FooterHeader">Strategic Partnership</h3>
                             <?php
                             foreach ($links3 as $link) {
                             ?>
@@ -71,7 +71,7 @@ $links6=queryDB_array("select * from links where type = 6");
                         </div>
                         <div style="margin-bottom:10px">
                             <div style="background-color:black; width:100%; height:6px"></div>
-                            <h3 class="FooterHeader">公益慈善合作<br>Philanthropic Partnership</h3>
+                            <h3 class="FooterHeader">Philanthropic Partnership</h3>
                             <?php
                             foreach ($links4 as $link) {
                             ?>
@@ -82,7 +82,7 @@ $links6=queryDB_array("select * from links where type = 6");
                     <div class="col-xs-6 col-sm-3">
                         <div style="margin-bottom:10px">
                             <div style="background-color:black; width:100%; height:6px"></div>
-                            <h3 class="FooterHeader">荣誉合作<br>Honorary Partnership</h3>
+                            <h3 class="FooterHeader">Honorary Partnership</h3>
                             <?php
                             foreach ($links5 as $link) {
                             ?>
@@ -91,7 +91,7 @@ $links6=queryDB_array("select * from links where type = 6");
                         </div>
                         <div style="margin-bottom:10px">
                             <div style="background-color:black; width:100%; height:6px"></div>
-                            <h3 class="FooterHeader">特约合作<br>Contributing Partnership</h3>
+                            <h3 class="FooterHeader">Contributing Partnership</h3>
                             <?php
                             foreach ($links6 as $link) {
                             ?>
