@@ -88,11 +88,11 @@ $miscs=queryDB_array("select * from miscs where groupcode='homepage' order by se
 
 
                                 <div class="caption HPSubtitle revslidercaption sfl" data-x="50" data-y="470" data-speed="1000" data-start="1800" data-easing="easeOutExpo">
-                                    <a href="<?php echo $slide['href'];?>" style="color:white" target="_blank"><?php echo $slide['text_zh-cn'];?></a>
+                                    <a href="<?php echo $slide['href'];?>" style="color:white" target="_blank"><?php echo $slide['text_en'];?></a>
                                 </div>
 
                                 <div class="caption HPText revslidercaption sfl" data-x="50" data-y="565" data-speed="1000" data-start="1800" data-easing="easeOutExpo">
-                                    <a href="<?php echo $slide['href'];?>" style="color:white" target="_blank"><?php echo $slide['subtext_zh-cn'];?></a>
+                                    <a href="<?php echo $slide['href'];?>" style="color:white" target="_blank"><?php echo $slide['subtext_en'];?></a>
                                 </div>
                             </li>
                             <?php } ?>
@@ -179,7 +179,7 @@ $miscs=queryDB_array("select * from miscs where groupcode='homepage' order by se
                                     <div class="inner-overlay">
                                         <h2><?php echo $action['name_zh-cn']; ?><br><?php echo $action['name_en']; ?></h2>
                                         <p class="HPText">
-                                            <?php echo $action['subtitle_zh-cn']; ?>
+                                            <?php echo $action['subtitle_en']; ?>
                                         </p>
                                     </div>
                                 </div>
