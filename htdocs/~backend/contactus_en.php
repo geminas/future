@@ -3,7 +3,7 @@
 //if(!isset($_POST['publish'])) $_POST['publish']=0;
 //if(!isset($_POST['headline'])) $_POST['headline']=0;
 
-$page_title="加入我们";
+$page_title="联系我们英文版";
 include ('includes/header.php');
 ?>
 
@@ -14,34 +14,36 @@ include ('includes/header.php');
 <script>
 
 $(document).ready( function () {
-    $(".menu_joinus").addClass("selected");
+    $(".menu_contactus_en").addClass("selected");
 });
 
 $(document).ready( function () {
    // pullNews();
     apiCall(
         'AboutGet',
-        {id:3},
+        {id:4},
         function (data) {
             console.log(data)
              var formDesign = {
             formAttr: {id:"about_form", method:"POST", enctype:"multipart/form-data"},
             formItems: [
-                {type: "input-hidden", name: "formtype", attr: {"readonly":true, "value":"aboutus"}},
-                {type: "input-hidden", name: "id", attr: {"readonly":true, "value":"3"}},
-                {type: "customHTML", name: "content", caption:"中文", option:{html:'<sc'+'ript id="editor"></scr'+'ipt>'}},
+            {type: "input-hidden", name: "formtype", attr: {"readonly":true, "value":"aboutus"}},
+            {type: "input-hidden", name: "id", attr: {"readonly":true, "value":"4"}},
+                {type: "customHTML", name: "content_en", caption:"英文", option:{html:'<sc'+'ript id="editor"></scr'+'ipt>'}},
                 {type: "button", option: {'caption': "提交"}}
                 ],
             };
 
             $("#aboutus_container")
         .html(createForm_bootstrap(formDesign))
-        .prepend("<h3>加入我们</h3>")
+        .prepend("<h3>联系我们</h3>")
         .show();
-        window.UEDITOR_CONFIG.initialContent=data.about.content;
-        UE.getEditor('about_form__content');
+            window.UEDITOR_CONFIG.initialContent=data.about.content_en;    
+        UE.getEditor('about_form__content_en');
+
         });
 });
+
 
 </script>
 

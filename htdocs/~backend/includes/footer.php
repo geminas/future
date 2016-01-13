@@ -16,6 +16,10 @@
                             <li><a class="menu_product" href="product.php">产品服务</a></li>
                             <li><a class="menu_joinus" href="joinus.php">加入我们</a></li>
                             <li><a class="menu_contactus" href="contactus.php">联系我们</a></li>
+                            <li><a class="menu_aboutus_en" href="aboutus_en.php">关于我们英文版</a></li>
+                            <li><a class="menu_product_en" href="product_en.php">产品服务英文版</a></li>
+                            <li><a class="menu_joinus_en" href="joinus_en.php">加入我们英文版</a></li>
+                            <li><a class="menu_contactus_en" href="contactus_en.php">联系我们英文版</a></li>
                         </ul>
                     </li>
                     
