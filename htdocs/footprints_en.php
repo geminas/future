@@ -62,7 +62,7 @@
         <div class="row">
         <div class="GDH-topimage" style="background-image: url('contents/footprint.jpg');">
                     <h2 style="color:white"><?php echo findmisc('footprint-bigtitle','en');?></h2>
-                    <div class="cyanbar" style="width:90px; height:4px"></div>
+                    <!-- <div class="cyanbar" style="width:90px; height:4px"></div> -->
                     <div class="divide30"></div>
                     <p style="color:white"><?php echo findmisc('footprint-text');?></p>
                 </div>
@@ -121,7 +121,7 @@
                                             </div>
                                             <div class="col-xs-6 hidden-sm hidden-md hidden-lg cbp-caption-infobox" style="padding-left: 5%">
                                                 <div class="cbp-caption-title">
-                                                    <?php echo $event['name_zh-cn']; ?>
+                                                    <?php echo $event['name_en']; ?>
                                                 </div>
                                                 
                                                 <div class="cbp-caption-subtitle">
@@ -140,7 +140,7 @@
                                             <div style="height:2px; background-color:#57D9EA; width:100%; margin-bottom: 20px"></div>
                                             
                                             <div class="cbp-caption-title">
-                                                <?php echo $event['name_zh-cn']; ?>
+                                                <?php echo $event['name_en']; ?>
                                             </div>
                                             
                                             <div class="cbp-caption-subtitle">

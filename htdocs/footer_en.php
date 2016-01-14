@@ -62,7 +62,7 @@ $links6=queryDB_array("select * from links where type = 6");
                     <div class="col-xs-6 col-sm-3">
                         <div style="margin-bottom:10px">
                             <div style="background-color:black; width:100%; height:6px"></div>
-                            <h3 class="FooterHeader">Strategic partner</h3>
+                            <h3 class="FooterHeader">Strategic Partner</h3>
                             <?php
                             foreach ($links3 as $link) {
                             ?>
@@ -71,7 +71,7 @@ $links6=queryDB_array("select * from links where type = 6");
                         </div>
                         <div style="margin-bottom:10px">
                             <div style="background-color:black; width:100%; height:6px"></div>
-                            <h3 class="FooterHeader">Philanthropic partner</h3>
+                            <h3 class="FooterHeader">Philanthropic Partner</h3>
                             <?php
                             foreach ($links4 as $link) {
                             ?>
@@ -82,7 +82,7 @@ $links6=queryDB_array("select * from links where type = 6");
                     <div class="col-xs-6 col-sm-3">
                         <div style="margin-bottom:10px">
                             <div style="background-color:black; width:100%; height:6px"></div>
-                            <h3 class="FooterHeader">Honorary partner</h3>
+                            <h3 class="FooterHeader">Honorary Partner</h3>
                             <?php
                             foreach ($links5 as $link) {
                             ?>
@@ -91,7 +91,7 @@ $links6=queryDB_array("select * from links where type = 6");
                         </div>
                         <div style="margin-bottom:10px">
                             <div style="background-color:black; width:100%; height:6px"></div>
-                            <h3 class="FooterHeader">Contributing partner</h3>
+                            <h3 class="FooterHeader">Contributing Partner</h3>
                             <?php
                             foreach ($links6 as $link) {
                             ?>
