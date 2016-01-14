@@ -64,7 +64,7 @@
                     <h2 style="color:white"><?php echo findmisc('footprint-bigtitle','en');?></h2>
                     <!-- <div class="cyanbar" style="width:90px; height:4px"></div> -->
                     <div class="divide30"></div>
-                    <p style="color:white"><?php echo findmisc('footprint-text');?></p>
+                    <p style="color:white"><?php echo findmisc('homepage-footprint-note', 'en');?></p>
                 </div>
                 
         </div>

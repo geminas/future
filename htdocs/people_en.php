@@ -64,7 +64,7 @@
                     <h2 style="color:black"><?php echo findmisc('people-bigtitle','en');?></h2>
                     <!-- <div class="cyanbar" style="width:90px; height:4px"></div> -->
                     <div class="divide30"></div>
-                    <p style="color:black"><?php echo findmisc('people-text');?></p>
+                    <p style="color:black"><?php echo findmisc('homepage-people-note','en');?></p>
                 </div>
                 
         </div>
