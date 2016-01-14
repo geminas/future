@@ -177,7 +177,7 @@ $miscs=queryDB_array("select * from miscs where groupcode='homepage' order by se
                                 </div>
                                 <div class="img-overlay">
                                     <div class="inner-overlay">
-                                        <h2><?php echo $action['name_zh-cn']; ?><br><?php echo $action['name_en']; ?></h2>
+                                        <h2><?php echo $action['name_en']; ?></h2>
                                         <p class="HPText">
                                             <?php echo $action['subtitle_en']; ?>
                                         </p>
