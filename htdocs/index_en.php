@@ -231,7 +231,7 @@ $miscs=queryDB_array("select * from miscs where groupcode='homepage' order by se
                                         <div style="height:2px; background-color:#57D9EA; width:100%; margin-bottom: 8%"></div>
                                         
                                         <div class="HPSubtitle" style="color:white">
-                                        <?php echo $event['name_zh-cn']; ?></div>
+                                        <?php echo $event['name_en']; ?></div>
                                         <div class="HPNotes" style="color:white">
                                         <?php echo $event['date_string_en']; ?>
                                         </div>
