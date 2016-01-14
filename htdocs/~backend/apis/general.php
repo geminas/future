@@ -42,11 +42,7 @@ function UpdateFFV($argin) {
             if ($key=='id') continue;
             if (substr($key,1,5)=='FILE_') continue;
             
-            queryDB("
-                UPDATE `{$argin['formtype']}` 
-                SET `{$argin['language']}`='$value'
-                WHERE `id`='$key';
-                ");
+            queryDB("UPDATE `{$argin['formtype']}` SET `{$argin['language']}`='$value' WHERE `id`='$key';");
         }
     } else if ($argin['formtype']=='aboutus') {
         // echo "<pre>";
@@ -102,6 +98,20 @@ function UpdateFFV($argin) {
             $SetClause.="`$key`='$value'";
         }  
         queryDB("UPDATE `{$argin['formtype']}` SET " . $SetClause . " WHERE `id`='{$argin['id']}'");
+    } else if ($argin['formtype']=='events') {
+        $SetClause="";
+        foreach($argin as $key => $value) {
+            if ($key=='formtype') continue;
+            if ($key=='language') continue;
+            if ($key=='id') continue;
+            if (substr($key,0,5)=='FILE_') continue;
+            
+            if ($SetClause!='') $SetClause.=', ';
+            
+            $SetClause.="`$key`='$value'";
+        }  
+
+        queryDB("UPDATE `{$argin['formtype']}` SET " . $SetClause . " WHERE `id`='{$argin['id']}'");
     }
     else {
         $SetClause="";
@@ -115,6 +125,7 @@ function UpdateFFV($argin) {
             
             $SetClause.="`$key`='$value'";
         }  
+
         queryDB("UPDATE `{$argin['formtype']}` SET " . $SetClause . " WHERE `id`='{$argin['id']}'");
     }
     return 0;
