@@ -3,8 +3,36 @@ RewriteEngine On
 
 # Rewrite 系统规则请勿修改
 
-RewriteRule ^FFevent/p/(\S+)\.html$ event.php?eventid=$1
-RewriteRule ^FFeventen/p/(\S+)\.html$ event_en.php?eventid=$1
-RewriteRule ^FFnews/p/(\S+)\.html$ newsitem.php?newsid=$1
+RewriteRule ^footprints/(\S+)\.html$ event.php?eventid=$1
+RewriteRule ^footprints_en/(\S+)\.html$ event_en.php?eventid=$1
+RewriteRule ^news/(\S+)\.html$ newsitem.php?newsid=$1
+RewriteRule ^newsitem_en/(\S+)\.html$ newsitem_en.php?newsid=$1
 
-RewriteRule   contents/  ^FFnews/p/contents/
+RewriteRule ^footprints/contents/(.*) /contents/$1
+RewriteRule ^footprints/img/(.*) /img/$1
+RewriteRule ^footprints/css/(.*) /css/$1
+RewriteRule ^footprints/js/(.*) /js/$1
+RewriteRule ^footprints/bootstrap/(.*) /bootstrap/$1
+
+
+RewriteRule ^footprints_en/contents/(.*) /contents/$1
+RewriteRule ^footprints_en/img/(.*) /img/$1
+RewriteRule ^footprints_en/css/(.*) /css/$1
+RewriteRule ^footprints_en/js/(.*) /js/$1
+RewriteRule ^footprints_en/bootstrap/(.*) /bootstrap/$1
+
+
+
+RewriteRule ^news/contents/(.*) /contents/$1
+RewriteRule ^news/img/(.*) /img/$1
+RewriteRule ^news/css/(.*) /css/$1
+RewriteRule ^news/js/(.*) /js/$1
+RewriteRule ^news/bootstrap/(.*) /bootstrap/$1
+
+
+RewriteRule ^newsitem_en/contents/(.*) /contents/$1
+RewriteRule ^newsitem_en/img/(.*) /img/$1
+RewriteRule ^newsitem_en/css/(.*) /css/$1
+RewriteRule ^newsitem_en/js/(.*) /js/$1
+RewriteRule ^newsitem_en/bootstrap/(.*) /bootstrap/$1
+
