@@ -111,6 +111,9 @@ function accessDB($q) {
     print_r("accesaccessDBaccessDBsDB");
 	// Make the connection:
 	$dbc = @mysqli_connect (DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
+
+print_r("dbcdbcdbcdbcdbcdbcdbc");
+
 	$result=array();
 	
 	// If no connection could be made, trigger an error:
