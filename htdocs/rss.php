@@ -14,6 +14,8 @@
 	  } 
 	}
 	
+	print_r("general.php");
+
 	$items=queryDB_array("select * from news");
 
 	print_r($items);
