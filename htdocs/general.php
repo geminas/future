@@ -30,11 +30,13 @@ function processRequestArguments() {
 
     //Change $_REQUEST to $_POST or $_GET when needed.
     foreach ($_REQUEST as $key => $value) {
+        echo "generalgeneralgeneralgeneralgeneralgeneral3";
         //Add filtering and processing rules here.
         switch ($key) {
             default:
                 $value=escape_string($value); //Simply do the escaping.
         }
+        echo "generalgeneralgeneralgeneralgeneralgeneral4";
         $values[$key]=$value;
         if($testing) echo "\t$key => $value<br>";
     }  
