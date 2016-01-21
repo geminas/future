@@ -103,7 +103,7 @@ function queryDB ($q) {
 }
 
 function escape_string($string) {
-    $dbc = @mysqli_connect (DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
+    $dbc = mysqli_connect (DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
     return mysqli_real_escape_string($dbc, $string);
 }
 

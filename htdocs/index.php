@@ -10,7 +10,7 @@
     <?php
 
     $user_name = "root";
-    $password = "xinmeng@123456";
+    $password = "xinmeng@12345";
     $database = "futureforum";
     $server = "127.0.0.1:3306";
 
