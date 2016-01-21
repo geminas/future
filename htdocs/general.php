@@ -109,7 +109,7 @@ function escape_string($string) {
 
 function accessDB($q) {
 	// Make the connection:
-	$dbc = @mysqli_connect (DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
+	$dbc = mysqli_connect (DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
 	$result=array();
 	
 	// If no connection could be made, trigger an error:
