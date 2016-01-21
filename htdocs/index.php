@@ -6,31 +6,6 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta id="viewport" name="viewport" content="width=device-width">
-
-    <?php
-
-    $user_name = "root";
-    $password = "xinmeng@123456";
-    $database = "futureforum";
-    $server = "127.0.0.1:3306";
-
-    $db_handle = mysql_connect($server, $user_name, $password);
-
-    $db_found = mysql_select_db($database, $db_handle);
-
-    if ($db_found) {
-
-    print "Database Found ";
-    mysql_close($db_handle);
-
-    }
-    else {
-
-    print "Database NOT Found ";
-
-    }
-
-    ?>
     
     <?php
         include "metalinks.php";
