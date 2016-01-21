@@ -19,39 +19,39 @@ foreach ($meta_global as $value) {
 }
 
 //Page specific values
-$page=explode(".",basename($_SERVER['PHP_SELF']))[0];
+// $page=explode(".",basename($_SERVER['PHP_SELF']))[0];
 
-//$code_name=array('
-switch($page) {
-    case 'footprints':
-    case 'people':
-    case 'news':
-        $meta_specific=queryDB_array("select * from miscs where groupcode='$page' order by sequence asc");
-        foreach ($meta_specific as $value) {
-            if(in_array($value['caption'],array_keys($metas)) && $value['zh-cn']!='')
-                $metas[$value['caption']]=$value['zh-cn'];
-        }
-        break;
-    case 'event':
-    case 'newsitem':
-        $db_name=array('event'=>'events', 'newsitem'=>'news');
-        $db_code=array('event'=>'eventid', 'newsitem'=>'newsid');
-        $meta_specific=queryDB_row("
-            select `meta-title`,`meta-keywords`,`meta-description` from `{$db_name[$page]}`
-            where `code`='{$argin[$db_code[$page]]}'
-        ");
-        foreach ($metas as $key=>$value) {
-            if($meta_specific['meta-'.$key]!='') $metas[$key]=$meta_specific['meta-'.$key];
-        }
+// //$code_name=array('
+// switch($page) {
+//     case 'footprints':
+//     case 'people':
+//     case 'news':
+//         $meta_specific=queryDB_array("select * from miscs where groupcode='$page' order by sequence asc");
+//         foreach ($meta_specific as $value) {
+//             if(in_array($value['caption'],array_keys($metas)) && $value['zh-cn']!='')
+//                 $metas[$value['caption']]=$value['zh-cn'];
+//         }
+//         break;
+//     case 'event':
+//     case 'newsitem':
+//         $db_name=array('event'=>'events', 'newsitem'=>'news');
+//         $db_code=array('event'=>'eventid', 'newsitem'=>'newsid');
+//         $meta_specific=queryDB_row("
+//             select `meta-title`,`meta-keywords`,`meta-description` from `{$db_name[$page]}`
+//             where `code`='{$argin[$db_code[$page]]}'
+//         ");
+//         foreach ($metas as $key=>$value) {
+//             if($meta_specific['meta-'.$key]!='') $metas[$key]=$meta_specific['meta-'.$key];
+//         }
         
-        break;
+//         break;
         
-    default:
-}
+//     default:
+// }
 
-//Write it down
-echo "<title>{$metas['title']}</title>";
-echo "<meta name=\"keywords\" content=\"{$metas['keywords']}\">\n";
-echo "<meta name=\"description\" content=\"{$metas['description']}\">\n";
+// //Write it down
+// echo "<title>{$metas['title']}</title>";
+// echo "<meta name=\"keywords\" content=\"{$metas['keywords']}\">\n";
+// echo "<meta name=\"description\" content=\"{$metas['description']}\">\n";
 
 ?>
