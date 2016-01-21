@@ -2,6 +2,8 @@
 //*Initialization, Configuration, and Definition
 require_once $_SERVER['DOCUMENT_ROOT']."/../app_config/FutureForumWWW.php";
 
+echo "echoechoechoechoechoechoechoecho";
+
 //Include Modules
 require_once 'general.php';
 $argin=processRequestArguments();
@@ -10,6 +12,8 @@ $metas=array('title'=>'','keywords'=>'','description'=>'');
 
 //Global Values
 $meta_global=queryDB_array("select * from miscs where groupcode='global' order by sequence asc");
+
+print_r("ssssssssssssssssssssssstar");
 
 foreach ($meta_global as $value) {
     if(in_array($value['caption'],array_keys($metas)))
