@@ -103,14 +103,14 @@ function queryDB ($q) {
 }
 
 function escape_string($string) {
-    $dbc = mysqli_connect (DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
+    $dbc = @mysqli_connect (DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
     return mysqli_real_escape_string($dbc, $string);
 }
 
 function accessDB($q) {
     print_r("accesaccessDBaccessDBsDB");
 	// Make the connection:
-	$dbc = mysqli_connect (DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
+	$dbc = @mysqli_connect (DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
 	$result=array();
 	
 	// If no connection could be made, trigger an error:
