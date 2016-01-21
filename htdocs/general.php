@@ -2,7 +2,7 @@
 //Compatibility: 20151016/standard.
 //V3 series
 require_once $_SERVER['DOCUMENT_ROOT']."/../app_config/FutureForumWWW.php";
-echo "generalgeneralgeneralgeneralgeneralgeneral";
+
 
 //Debug
 function print_r2($val){
@@ -24,6 +24,8 @@ function processRequestArguments() {
     if($testing) echo "Input arguments: <br>";
     
     $values = array();
+    echo "generalgeneralgeneralgeneralgeneralgeneral1";
+
     //Change $_REQUEST to $_POST or $_GET when needed.
     foreach ($_REQUEST as $key => $value) {
         //Add filtering and processing rules here.
