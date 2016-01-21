@@ -4,8 +4,6 @@
 	require_once 'general.php';
 	ob_end_clean();
 
-	print_r("general.php");
-
 	class SimpleXMLExtended extends SimpleXMLElement {
 	public function addCData($cdata_text) {
 	    $node = dom_import_simplexml($this); 
@@ -14,11 +12,13 @@
 	  } 
 	}
 	
-	print_r("general.php");
+	print_r("items.php");
 
 	$items=queryDB_array("select * from news");
 
 	print_r($items);
+
+	print_r("items.php");
 
 	// $xml = new SimpleXMLElement('<rss version="2.0"/>');
 	$rss=new SimpleXMLExtended('<rss version="2.0"/>');
