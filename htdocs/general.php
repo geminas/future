@@ -2,7 +2,7 @@
 //Compatibility: 20151016/standard.
 //V3 series
 require_once $_SERVER['DOCUMENT_ROOT']."/../app_config/FutureForumWWW.php";
-
+echo "generalgeneralgeneralgeneralgeneralgeneral";
 
 //Debug
 function print_r2($val){

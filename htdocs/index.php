@@ -53,7 +53,6 @@
 
 <body>
 <?php
-print_r("indexindexindexindexindexindexindexindexindex");
 $slides=queryDB_array("select * from homepage_slides order by sequence asc");
 $miscs=queryDB_array("select * from miscs where groupcode='homepage' order by sequence asc ");
 ?>
