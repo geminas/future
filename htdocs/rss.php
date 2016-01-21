@@ -12,11 +12,9 @@
 	  } 
 	}
 	
-	print_r("items.php");
+	print_r("queryDB_array.php");
 
 	$items=queryDB_array("select * from news");
-
-	print_r($items);
 
 	print_r("items.php");
 

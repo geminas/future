@@ -19,7 +19,6 @@ foreach ($meta_global as $value) {
 }
 
 //Page specific values
-print_r("123321");
 $page=explode(".",basename($_SERVER['PHP_SELF']));
 
 print_r($page);
