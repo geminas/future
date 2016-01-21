@@ -25,6 +25,8 @@ function processRequestArguments() {
     
     $values = array();
     echo "generalgeneralgeneralgeneralgeneralgeneral1";
+    print_r($_REQUEST);
+    echo "generalgeneralgeneralgeneralgeneralgeneral2";
 
     //Change $_REQUEST to $_POST or $_GET when needed.
     foreach ($_REQUEST as $key => $value) {
