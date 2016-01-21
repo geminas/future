@@ -115,9 +115,11 @@ function accessDB($q) {
 	
 	// If no connection could be made, trigger an error:
 	if (!$dbc) {
+        print_r("okokokokok");
 		stopBecause('Could not connect to MySQL: ' . mysqli_connect_error(), 201);
 	} else { // Otherwise, set the encoding:
 		mysqli_set_charset($dbc, 'utf8');
+        print_r("elelelelel");
 	}
 
 	// Make query
@@ -126,11 +128,9 @@ function accessDB($q) {
 	
 	// Check and return
 	if($result['query']===false) {
-        print_r("resultresultresultresult");
+        
         $q=str_replace("\r\n", "", $q);
         stopBecause("DB query failed. $q", 202);
-
-        print_r($q);
     }
 	return $result;
 }
