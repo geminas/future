@@ -108,6 +108,7 @@ function escape_string($string) {
 }
 
 function accessDB($q) {
+    print_r("accesaccessDBaccessDBsDB");
 	// Make the connection:
 	$dbc = mysqli_connect (DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
 	$result=array();
@@ -125,8 +126,11 @@ function accessDB($q) {
 	
 	// Check and return
 	if($result['query']===false) {
+        print_r("resultresultresultresult");
         $q=str_replace("\r\n", "", $q);
         stopBecause("DB query failed. $q", 202);
+
+        print_r($q);
     }
 	return $result;
 }
