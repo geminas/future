@@ -12,12 +12,7 @@
 	  } 
 	}
 	
-	print_r("queryDB_array.php");
-
 	$items=queryDB_array("select * from news");
-
-	print_r("items.php");
-
 	// $xml = new SimpleXMLElement('<rss version="2.0"/>');
 	$rss=new SimpleXMLExtended('<rss version="2.0"/>');
 	$channel=$rss->addChild('channel');

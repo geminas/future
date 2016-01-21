@@ -103,26 +103,20 @@ function queryDB ($q) {
 }
 
 function escape_string($string) {
-    $dbc = @mysqli_connect (DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
+    $dbc = mysqli_connect (DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
     return mysqli_real_escape_string($dbc, $string);
 }
 
 function accessDB($q) {
-    print_r("accesaccessDBaccessDBsDB");
 	// Make the connection:
-	$dbc = @mysqli_connect (DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
-
-print_r("dbcdbcdbcdbcdbcdbcdbc");
-
+	$dbc = mysqli_connect (DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
 	$result=array();
 	
 	// If no connection could be made, trigger an error:
 	if (!$dbc) {
-        print_r("okokokokok");
 		stopBecause('Could not connect to MySQL: ' . mysqli_connect_error(), 201);
 	} else { // Otherwise, set the encoding:
 		mysqli_set_charset($dbc, 'utf8');
-        print_r("elelelelel");
 	}
 
 	// Make query
@@ -131,7 +125,6 @@ print_r("dbcdbcdbcdbcdbcdbcdbc");
 	
 	// Check and return
 	if($result['query']===false) {
-        
         $q=str_replace("\r\n", "", $q);
         stopBecause("DB query failed. $q", 202);
     }
