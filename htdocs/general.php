@@ -36,6 +36,8 @@ function processRequestArguments() {
             default:
                 $value=escape_string($value); //Simply do the escaping.
         }
+        print_r($key);
+        print_r($value);
         echo "generalgeneralgeneralgeneralgeneralgeneral4";
         $values[$key]=$value;
         if($testing) echo "\t$key => $value<br>";
