@@ -16,6 +16,7 @@ foreach ($meta_global as $value) {
         $metas[$value['caption']]=$value['zh-cn'];
 }
 
+print_r("startttttttttttttttttttttttttt");
 //Page specific values
 $page=explode(".",basename($_SERVER['PHP_SELF']))[0];
 
