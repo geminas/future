@@ -109,10 +109,6 @@ function escape_string($string) {
 
 function accessDB($q) {
 	// Make the connection:
-    print_r(DB_HOST);
-    print_r(DB_USER);
-    print_r(DB_PASSWORD);
-    print_r(DB_NAME);
 	$dbc = mysqli_connect (DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
 	$result=array();
 	
