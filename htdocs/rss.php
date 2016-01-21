@@ -4,6 +4,8 @@
 	require_once 'general.php';
 	ob_end_clean();
 
+	print_r("general.php");
+
 	class SimpleXMLExtended extends SimpleXMLElement {
 	public function addCData($cdata_text) {
 	    $node = dom_import_simplexml($this); 

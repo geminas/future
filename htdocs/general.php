@@ -26,10 +26,6 @@ function processRequestArguments() {
     $values = array();
     echo "generalgeneralgeneralgeneralgeneralgeneral1";
     print_r($_REQUEST);
-
-    // $r=queryDB_row("select * from aboutus where id='1'");
-    echo "generalgeneralgeneralgeneralgeneralgeneral1.5";
-    // print_r($r);
     echo "generalgeneralgeneralgeneralgeneralgeneral2";
 
     //Change $_REQUEST to $_POST or $_GET when needed.
