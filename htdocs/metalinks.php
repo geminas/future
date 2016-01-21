@@ -1,9 +1,9 @@
 <?php
 
-print_r("metalinksmetalinksmetalinksmetalinks");
-
 //*Initialization, Configuration, and Definition
 require_once $_SERVER['DOCUMENT_ROOT']."/../app_config/FutureForumWWW.php";
+
+print_r("metalinksmetalinksmetalinksmetalinks");
 
 //Include Modules
 require_once 'general.php';
