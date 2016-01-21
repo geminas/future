@@ -8,9 +8,7 @@
     <meta id="viewport" name="viewport" content="width=device-width">
     
     <?php
-        print_r("indexindexindexindexindexindex1");
         include "metalinks.php";
-        print_r("indexindexindexindexindexindex2");
     ?>
     
      <meta name="baidu-site-verification" content="PBM2DzZIRr" />
