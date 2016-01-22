@@ -31,10 +31,10 @@ $links6=queryDB_array("select * from links where type = 6");
                                 <div style="margin-bottom:10px">
                                     <div style="background-color:black; width:100%; height:6px"></div>
                                     <h3 class="FooterHeader" style="padding-bottom:5px">About FutureForum</h3>
-                                    <a href="/aboutus_en.php" style="text-decoration:underline; color:blue; margin-left: 28px;">About Us</a><br>
-                                    <a href="/product_en.php" style="text-decoration:underline; color:blue; margin-left: 28px;">Product Service</a><br>
-                                    <a href="/joinus_en.php" style="text-decoration:underline; color:blue; margin-left: 28px;">Join Us</a><br>
-                                    <a href="/contactus_en.php" style="text-decoration:underline; color:blue; margin-left: 28px;">Contact Us</a>
+                                    <a href="/aboutus_en.php" style="text-decoration:underline; color:blue; margin-left: 0px;">About Us</a><br>
+                                    <a href="/product_en.php" style="text-decoration:underline; color:blue; margin-left: 0px;">Product Service</a><br>
+                                    <a href="/joinus_en.php" style="text-decoration:underline; color:blue; margin-left: 0px;">Join Us</a><br>
+                                    <a href="/contactus_en.php" style="text-decoration:underline; color:blue; margin-left: 0px;">Contact Us</a>
                                 </div>
                                 <div style="margin-bottom:10px">
                                     <div style="background-color:black; width:100%; height:6px"></div>

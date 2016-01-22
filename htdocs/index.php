@@ -431,6 +431,8 @@ $miscs=queryDB_array("select * from miscs where groupcode='homepage' order by se
                     $("#vip1 *").fadeOut(1000);
                     $("#vipbar").delay(50).fadeOut(1000);
                     $("#vip2 *").delay(100).fadeOut(1000);
+
+                    alert(JSONresponse[0]);
                     
                     setTimeout(function () {
                     $("#vip1 .vip-quote").html(JSONresponse[0].quote);

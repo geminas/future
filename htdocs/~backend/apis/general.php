@@ -208,44 +208,46 @@ function queryDB ($q) {
 }
 
 function escape_string($string) {
-    $dbc = @mysqli_connect (DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
-    return mysqli_real_escape_string($dbc, $string);
+    $dbc = mysql_connect (DB_HOST, DB_USER, DB_PASSWORD);
+    mysql_select_db(DB_NAME,$dbc);
+    return mysql_real_escape_string($string,$dbc);
 }
 
 function accessDB($q) {
-	// Make the connection:
-	$dbc = @mysqli_connect (DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
-	$result=array();
-	
-	// If no connection could be made, trigger an error:
-	if (!$dbc) {
-		stopBecause('Could not connect to MySQL: ' . mysqli_connect_error(), 201);
-	} else { // Otherwise, set the encoding:
-		mysqli_set_charset($dbc, 'utf8');
-	}
+    // Make the connection:
+    $dbc = mysql_connect (DB_HOST, DB_USER, DB_PASSWORD);
+    mysql_select_db(DB_NAME,$dbc);
+    $result=array();
+    
+    // If no connection could be made, trigger an error:
+    if (!$dbc) {
+        stopBecause('Could not connect to MySQL: ' . mysql_error(), 201);
+    } else { // Otherwise, set the encoding:
+        mysql_set_charset('utf8', $dbc);
+    }
 
-	// Make query
-	$result['query'] = mysqli_query($dbc, $q);
-	$result['insert_id'] = mysqli_insert_id($dbc);
-	
-	// Check and return
-	if($result['query']===false) {
+    // Make query
+    $result['query'] = mysql_query($q, $dbc);
+    $result['insert_id'] = mysql_insert_id($dbc);
+    
+    // Check and return
+    if($result['query']===false) {
         $q=str_replace("\r\n", "", $q);
         stopBecause("DB query failed. $q", 202);
     }
-	return $result;
+    return $result;
 }
 
 function queryResultToArray($r) {
     $a=array();
-    while($row=mysqli_fetch_array($r, MYSQLI_ASSOC)){
+    while($row=mysql_fetch_array($r, MYSQL_ASSOC)){
         $a[]=$row;
     }
     return $a;
 }
 
 function queryResultToRow($r) {
-	return mysqli_fetch_array($r, MYSQLI_ASSOC);
+    return mysql_fetch_array($r, MYSQL_ASSOC);
 }
 
 
