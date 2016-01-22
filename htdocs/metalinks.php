@@ -19,7 +19,7 @@ foreach ($meta_global as $value) {
 }
 
 //Page specific values
-$page=explode(".",basename($_SERVER['PHP_SELF']));
+$page=explode(".",basename($_SERVER['PHP_SELF']))[0];
 //$code_name=array('
 switch($page) {
     case 'footprints':

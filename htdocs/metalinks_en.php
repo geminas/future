@@ -1,4 +1,5 @@
 <?php
+
 //*Initialization, Configuration, and Definition
 require_once $_SERVER['DOCUMENT_ROOT']."/../app_config/FutureForumWWW.php";
 
