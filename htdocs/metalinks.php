@@ -21,6 +21,7 @@ foreach ($meta_global as $value) {
 //Page specific values
 $page=explode(".",basename($_SERVER['PHP_SELF']));
 //$code_name=array('
+print_r($page);
 switch($page) {
     case 'footprints':
     case 'people':
