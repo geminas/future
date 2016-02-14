@@ -33,17 +33,15 @@ switch($page[0]) {
         break;
     case 'event':
         $meta_specific=queryDB_row("
-            select `meta-title`,`meta-keywords`,`meta-description` from events
-            where `code`='{$argin['newsid']}'
+            select `meta-title`,`meta-keywords`,`meta-description` from events where code = {$argin['newsid']}
         ");
-        foreach ($metas as $key=>$value) {
-            if($meta_specific['meta-'.$key]!='') $metas[$key]=$meta_specific['meta-'.$key];
-        }
+
+        $metas['title']=$meta_specific['title_zh-cn'];
         
         break;
     case 'newsitem':
         $meta_specific=queryDB_row("
-            select * from news where `code`='{$argin['newsid']}'
+            select * from news where code = {$argin['newsid']}
         ");
         
         $metas['title']=$meta_specific['title'];
