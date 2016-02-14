@@ -33,11 +33,11 @@ switch($page[0]) {
         break;
     case 'event':
         print_r("xxxxx".$argin['eventid']."xxxxx")
-        $meta_specific=queryDB_row("
-            select * from events where code = {$argin['eventid']}
-        ");
+        // $meta_specific=queryDB_row("
+        //     select * from events where code = {$argin['eventid']}
+        // ");
 
-        $metas['title']=$meta_specific['title_zh-cn'];
+        // $metas['title']=$meta_specific['title_zh-cn'];
         
         break;
     case 'newsitem':
