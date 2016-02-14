@@ -32,7 +32,6 @@ switch($page) {
         }
         break;
     case 'event':
-    case 'newsitem':
         $db_name=array('event'=>'events', 'newsitem'=>'news');
         $db_code=array('event'=>'eventid', 'newsitem'=>'newsid');
         $meta_specific=queryDB_row("
@@ -42,6 +41,17 @@ switch($page) {
         foreach ($metas as $key=>$value) {
             if($meta_specific['meta-'.$key]!='') $metas[$key]=$meta_specific['meta-'.$key];
         }
+        
+        break;
+    case 'newsitem':
+        $db_name=array('event'=>'events', 'newsitem'=>'news');
+        $db_code=array('event'=>'eventid', 'newsitem'=>'newsid');
+        print_r("xxxx".$argin[$db_code[$page]]."xxxx");
+        $meta_specific=queryDB_row("
+            select * from news where `code`='{$argin[$db_code[$page]]}'
+        ");
+        
+        $metas['title']=
         
         break;
         
