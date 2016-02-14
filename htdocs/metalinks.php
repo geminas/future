@@ -41,7 +41,7 @@ switch($page[0]) {
         break;
     case 'newsitem':
         $meta_specific=queryDB_row("
-            select * from news where code = {$argin['newsid']}
+            select * from news where id = {$argin['newsid']}
         ");
         
         $metas['title']=$meta_specific['title'];
