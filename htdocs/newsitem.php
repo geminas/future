@@ -76,6 +76,26 @@ $folder="contents/news/";
                 <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
 
             </div>
+            <div class="container" style="padding:30px">
+                <div class="row">
+                <!-- 多说评论框 start -->
+                    <div class="ds-thread col-sm-8" data-thread-key="<?php echo $newsitem['id'];?>" data-title="<?php echo $newsitem['title'];?>" data-url="<?php echo "http://".$_SERVER['HTTP_HOST']."/"; ?>news/<?php echo $newsitem['id']; ?>.html"></div>
+                    <!-- 多说评论框 end -->
+                    <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+                    <script type="text/javascript">
+                    var duoshuoQuery = {short_name:"futureforum"};
+                    (function() {
+                        var ds = document.createElement('script');
+                        ds.type = 'text/javascript';ds.async = true;
+                        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+                        ds.charset = 'UTF-8';
+                        (document.getElementsByTagName('head')[0] 
+                         || document.getElementsByTagName('body')[0]).appendChild(ds);
+                    })();
+                    </script>
+                    <!-- 多说公共JS代码 end -->
+                </div>
+            </div>
         </div>
         <div class="col-sm-4">
             <h3 style="font-size:24px">推荐阅读</h3>
@@ -102,26 +122,7 @@ $folder="contents/news/";
     </div>
 </div>
 
-<div class="container" style="padding:30px">
-    <div class="row">
-    <!-- 多说评论框 start -->
-    <div class="ds-thread col-sm-8" data-thread-key="<?php echo $newsitem['id'];?>" data-title="<?php echo $newsitem['title'];?>" data-url="<?php echo "http://".$_SERVER['HTTP_HOST']."/"; ?>news/<?php echo $newsitem['id']; ?>.html"></div>
-    <!-- 多说评论框 end -->
-    <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-    <script type="text/javascript">
-    var duoshuoQuery = {short_name:"futureforum"};
-    (function() {
-        var ds = document.createElement('script');
-        ds.type = 'text/javascript';ds.async = true;
-        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-        ds.charset = 'UTF-8';
-        (document.getElementsByTagName('head')[0] 
-         || document.getElementsByTagName('body')[0]).appendChild(ds);
-    })();
-    </script>
-    <!-- 多说公共JS代码 end -->
-    </div>
-</div>
+
 
 
 
