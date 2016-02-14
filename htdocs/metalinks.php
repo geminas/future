@@ -32,8 +32,9 @@ switch($page[0]) {
         }
         break;
     case 'event':
+        print_r("xxxxx"$argin['eventid']."xxxxx")
         $meta_specific=queryDB_row("
-            select `meta-title`,`meta-keywords`,`meta-description` from events where code = {$argin['newsid']}
+            select * from events where code = {$argin['eventid']}
         ");
 
         $metas['title']=$meta_specific['title_zh-cn'];
