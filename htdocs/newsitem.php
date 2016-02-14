@@ -76,7 +76,7 @@ $folder="contents/news/";
                 <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
 
             </div>
-            <div class="container" style="padding:30px">
+            <div class="duoshuo" style="padding:30px">
                 
                 <!-- 多说评论框 start -->
                     <div class="ds-thread col-sm-8" data-thread-key="<?php echo $newsitem['id'];?>" data-title="<?php echo $newsitem['title'];?>" data-url="<?php echo "http://".$_SERVER['HTTP_HOST']."/"; ?>news/<?php echo $newsitem['id']; ?>.html"></div>
