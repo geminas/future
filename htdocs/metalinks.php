@@ -25,7 +25,7 @@ switch($page[0]) {
     case 'footprints':
     case 'people':
     case 'news':
-        $meta_specific=queryDB_array("select * from miscs where groupcode='$page' order by sequence asc");
+        $meta_specific=queryDB_array("select * from miscs where groupcode='$page[0]' order by sequence asc");
         foreach ($meta_specific as $value) {
             if(in_array($value['caption'],array_keys($metas)) && $value['zh-cn']!='')
                 $metas[$value['caption']]=$value['zh-cn'];
@@ -35,8 +35,8 @@ switch($page[0]) {
         $db_name=array('event'=>'events', 'newsitem'=>'news');
         $db_code=array('event'=>'eventid', 'newsitem'=>'newsid');
         $meta_specific=queryDB_row("
-            select `meta-title`,`meta-keywords`,`meta-description` from `{$db_name[$page]}`
-            where `code`='{$argin[$db_code[$page]]}'
+            select `meta-title`,`meta-keywords`,`meta-description` from `{$db_name[$page[0]]}`
+            where `code`='{$argin[$db_code[$page[0]]]}'
         ");
         foreach ($metas as $key=>$value) {
             if($meta_specific['meta-'.$key]!='') $metas[$key]=$meta_specific['meta-'.$key];
@@ -47,7 +47,7 @@ switch($page[0]) {
         $db_name=array('event'=>'events', 'newsitem'=>'news');
         $db_code=array('event'=>'eventid', 'newsitem'=>'newsid');
         $meta_specific=queryDB_row("
-            select * from news where `code`='{$argin[$db_code[$page]]}'
+            select * from news where `code`='{$argin[$db_code[$page[0]]]}'
         ");
         
         $metas['title']=$meta_specific['title'];
