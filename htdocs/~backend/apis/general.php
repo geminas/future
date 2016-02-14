@@ -62,13 +62,13 @@ function UpdateFFV($argin) {
         // echo "<pre>";
         $SetClause="";
         foreach($argin as $key => $value) {
-            print_r2("start:::");
-            print_r2($key);
-            print_r2(":::end");
             if ($key=='formtype') continue;
             if ($key=='language') continue;
             if ($key=='id') continue;
             if (substr($key,0,5)=='FILE_') continue;
+            if (substr($key,0,5)=='__cfd') continue;
+            if (substr($key,0,4)=='Hm_l') continue;
+            if (substr($key,0,9)=='PHPSESSID') continue;
             
             if ($SetClause!='') $SetClause.=', ';
             if ($key=='publishTime') {
