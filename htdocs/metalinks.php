@@ -32,7 +32,7 @@ switch($page[0]) {
         }
         break;
     case 'event':
-        print_r("xxxxx"$argin['eventid']."xxxxx")
+        print_r("xxxxx".$argin['eventid']."xxxxx")
         $meta_specific=queryDB_row("
             select * from events where code = {$argin['eventid']}
         ");
