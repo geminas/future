@@ -51,7 +51,7 @@ switch($page) {
             select * from news where `code`='{$argin[$db_code[$page]]}'
         ");
         
-        $metas['title']=
+        $metas['title']=$meta_specific['title'];
         
         break;
         
