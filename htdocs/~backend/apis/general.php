@@ -62,6 +62,9 @@ function UpdateFFV($argin) {
         // echo "<pre>";
         $SetClause="";
         foreach($argin as $key => $value) {
+            print_r2("start:::");
+            print_r2($key);
+            print_r2(":::end");
             if ($key=='formtype') continue;
             if ($key=='language') continue;
             if ($key=='id') continue;
