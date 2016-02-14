@@ -77,7 +77,7 @@ $folder="contents/news/";
 
             </div>
             <div class="container" style="padding:30px">
-                <div class="row">
+                
                 <!-- 多说评论框 start -->
                     <div class="ds-thread col-sm-8" data-thread-key="<?php echo $newsitem['id'];?>" data-title="<?php echo $newsitem['title'];?>" data-url="<?php echo "http://".$_SERVER['HTTP_HOST']."/"; ?>news/<?php echo $newsitem['id']; ?>.html"></div>
                     <!-- 多说评论框 end -->
@@ -94,7 +94,7 @@ $folder="contents/news/";
                     })();
                     </script>
                     <!-- 多说公共JS代码 end -->
-                </div>
+                
             </div>
         </div>
         <div class="col-sm-4">
