@@ -46,7 +46,6 @@ switch($page[0]) {
     case 'newsitem':
         $db_name=array('event'=>'events', 'newsitem'=>'news');
         $db_code=array('event'=>'eventid', 'newsitem'=>'newsid');
-        print_r("xxxx".$argin[$db_code[$page]]."xxxx");
         $meta_specific=queryDB_row("
             select * from news where `code`='{$argin[$db_code[$page]]}'
         ");
