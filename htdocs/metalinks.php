@@ -36,7 +36,9 @@ switch($page[0]) {
             select * from events where id = {$argin['eventid']}
         ");
 
-        $metas['title']=$meta_specific['title_zh-cn'];
+        $metas['title']=$meta_specific['meta-title'];
+        $metas['keywords']=$meta_specific['meta-keywords'];
+        $metas['description']=$meta_specific['meta-description'];
         
         break;
     case 'newsitem':
@@ -44,7 +46,9 @@ switch($page[0]) {
             select * from news where id = {$argin['newsid']}
         ");
         
-        $metas['title']=$meta_specific['title'];
+        $metas['title']=$meta_specific['meta-title'];
+        $metas['keywords']=$meta_specific['meta-keywords'];
+        $metas['description']=$meta_specific['meta-description'];
         
         break;
         
