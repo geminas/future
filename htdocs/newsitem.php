@@ -39,7 +39,7 @@ $folder="contents/news/";
     
 </head>
 
-<body style="background-color:#ffffff; ">
+<body style="background-color:#939598; ">
 <?php require "headermenu.php" ?>
 
 <div class="container" style="padding:30px">
@@ -57,7 +57,7 @@ $folder="contents/news/";
                 <!-- </div> -->
             </div>
 
-            <div class="abstract">
+            <div class="abstract" style="background-color:#F2F2F2; ">
                 <?php echo $newsitem['abstract'];?>
             </div>
             <div class="newstext">
