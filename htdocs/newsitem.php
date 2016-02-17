@@ -39,7 +39,7 @@ $folder="contents/news/";
     
 </head>
 
-<body style="background-color:#939598; ">
+<body style="background-color:#ffffff; ">
 <?php require "headermenu.php" ?>
 
 <div class="container" style="padding:30px">
