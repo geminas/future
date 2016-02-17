@@ -44,7 +44,7 @@ $folder="contents/news/";
 
 <div class="container" style="padding:30px">
     <div class="row">
-        <div class="col-sm-8">
+        <div class="col-sm-8" style="background-color: white">
             <h2 style="font-size:24px">
                 <?php echo $newsitem['title'];?>
             </h2>
