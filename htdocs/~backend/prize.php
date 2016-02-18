@@ -1,8 +1,11 @@
 <?php
-    $page_title="科学大奖";
-    include ('includes/header.php');
-?>
 
+//if(!isset($_POST['publish'])) $_POST['publish']=0;
+//if(!isset($_POST['headline'])) $_POST['headline']=0;
+
+$page_title="科学大奖";
+include ('includes/header.php');
+?>
 <script type="text/javascript" charset="utf-8" src="ueditor/ueditor.config.js"></script>
 <script type="text/javascript" charset="utf-8" src="ueditor/ueditor.all.min.js"> </script>
 <script type="text/javascript" charset="utf-8" src="ueditor/lang/zh-cn/zh-cn.js"></script>
