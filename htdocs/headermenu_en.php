@@ -9,7 +9,7 @@
         <span style="width:0.5%" class="HPtopmenu"></span>
         <a href="<?php echo "http://".$_SERVER['HTTP_HOST']."/index_en.php"; ?>"><span style="width:13.7%" class="HPtopmenu0e">HOME</span></a>
         <a href="<?php echo "http://".$_SERVER['HTTP_HOST']."/people_en.php"; ?>"><span style="width:18.7%" class="HPtopmenu1e">Future·Characters</span></a>
-        <a href="<?php echo "http://".$_SERVER['HTTP_HOST']."/index_en.php#action"; ?>"><span style="width:16.7%" class="HPtopmenu2e">Future·Action</span></a>
+        <a href="<?php echo "http://".$_SERVER['HTTP_HOST']."/prize_en.php"; ?>"><span style="width:16.7%" class="HPtopmenu2e">Future·Prize</span></a>
         <a href="<?php echo "http://".$_SERVER['HTTP_HOST']."/footprints_en.php"; ?>"><span style="width:18.7%" class="HPtopmenu HPtopmenu3e">Future·Footprints</span></a>
         <a class="header-language-cn" href="<?php echo "http://".$_SERVER['HTTP_HOST']."/index.php"; ?>"><img src="/contents/language/l_english.png" style="width: 100%" alt=""> </a> 
     </div>
@@ -22,7 +22,7 @@
         <div id="barmenu-content" style="display: none; position: absolute; right:0; width:66%; background-color: rgb(80,80,80); z-index:99999; padding: 10% 0">
             <a href="<?php echo "http://".$_SERVER['HTTP_HOST']."/index_en.php"; ?>"><div class="HPtopmenucollapse" style="padding: 10%;">HOME</div></a>
             <a href="<?php echo "http://".$_SERVER['HTTP_HOST']."/people_en.php"; ?>"><div class="HPtopmenucollapse" style="padding: 10%;">Future·Characters</div></a>
-            <a href="<?php echo "http://".$_SERVER['HTTP_HOST']."/index_en.php#action"; ?>"><div class="HPtopmenucollapse" style="padding: 10%;">Future·Action</div></a>
+            <a href="<?php echo "http://".$_SERVER['HTTP_HOST']."/prize_en.php"; ?>"><div class="HPtopmenucollapse" style="padding: 10%;">Future·Prize</div></a>
             <a href="<?php echo "http://".$_SERVER['HTTP_HOST']."/footprints_en.php"; ?>"><div class="HPtopmenucollapse" style="padding: 10%;">Future·Footprints</div></a>
             <a href="<?php echo "http://".$_SERVER['HTTP_HOST']."/index.php"; ?>"><div class="HPtopmenucollapse" style="padding: 10%;">中文</div></a>
         </div>

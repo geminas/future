@@ -10,21 +10,21 @@
 <script>
 
 $(document).ready( function () {
-    $(".menu_prize").addClass("selected");
+    $(".menu_prize_en").addClass("selected");
 });
 
 $(document).ready( function () {
    // pullNews();
     apiCall(
         'PrizeGet',
-        {language:1},
+        {language:2},
         function (data) {
             console.log(data)
              var formDesign = {
             formAttr: {id:"prize_form", method:"POST", enctype:"multipart/form-data"},
             formItems: [
             {type: "input-hidden", name: "formtype", attr: {"readonly":true, "value":"prize"}},
-            {type: "input-hidden", name: "language", attr: {"readonly":true, "value":1}},
+            {type: "input-hidden", name: "language", attr: {"readonly":true, "value":2}},
                 {type: "customHTML", name: "content", caption:"正文", option:{html:'<sc'+'ript id="editor"></scr'+'ipt>'}},
                 {type: "button", option: {'caption': "提交"}}
                 ],

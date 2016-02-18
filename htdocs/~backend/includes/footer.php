@@ -20,6 +20,8 @@
                             <li><a class="menu_product_en" href="product_en.php">产品服务英文版</a></li>
                             <li><a class="menu_joinus_en" href="joinus_en.php">加入我们英文版</a></li>
                             <li><a class="menu_contactus_en" href="contactus_en.php">联系我们英文版</a></li>
+                            <li><a class="menu_prize" href="prize.php">未来大奖</a></li>
+                            <li><a class="menu_prize_en" href="prize_en.php">未来大奖英文版</a></li>
                         </ul>
                     </li>
                     
