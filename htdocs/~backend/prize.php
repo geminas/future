@@ -27,7 +27,7 @@ $(document).ready( function () {
             formAttr: {id:"prize_form", method:"POST", enctype:"multipart/form-data"},
             formItems: [
             {type: "input-hidden", name: "formtype", attr: {"readonly":true, "value":"prize"}},
-            {type: "input-hidden", name: "language", attr: {"readonly":true, "value":"1"}},
+            {type: "input-hidden", name: "language", attr: {"readonly":true, "value":1}},
                 {type: "customHTML", name: "content", caption:"正文", option:{html:'<sc'+'ript id="editor"></scr'+'ipt>'}},
                 {type: "button", option: {'caption': "提交"}}
                 ],
@@ -41,6 +41,7 @@ $(document).ready( function () {
         UE.getEditor('prize_form__content');
 
         });
+    console.log("end");
 });
 
 

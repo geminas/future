@@ -21,6 +21,5 @@ if (!isset($_SESSION['user_id'])) {
 
 //*JSON encoding and return
 //defaults: 'status'=0, 'data'=array(), 'message'='', 'redirection'='';
-console.log($argin);
 produceOutputV3(array('data'=>array('prize'=>queryDB_row("select * from prize where language = {$argin['language']}"))));
 ?>
