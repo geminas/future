@@ -42,6 +42,9 @@ function UpdateFFV($argin) {
     
     if($argin['formtype']=='miscs') {
         foreach($argin as $key => $value) {
+            if (substr($key,0,5)=='__cfd') continue;
+            if (substr($key,0,4)=='Hm_l') continue;
+            if (substr($key,0,9)=='PHPSESSID') continue;
             if ($key=='formtype') continue;
             if ($key=='language') continue;
             if ($key=='id') continue;
@@ -56,6 +59,9 @@ function UpdateFFV($argin) {
     } else {
         $SetClause="";
         foreach($argin as $key => $value) {
+            if (substr($key,0,5)=='__cfd') continue;
+            if (substr($key,0,4)=='Hm_l') continue;
+            if (substr($key,0,9)=='PHPSESSID') continue;
             if ($key=='formtype') continue;
             if ($key=='language') continue;
             if ($key=='id') continue;
@@ -75,24 +81,24 @@ function UpdateFFV($argin) {
 function getWhereClause($argin, $where_filters) {
 $where_clause='';
 while($where_filter=array_shift($where_filters))
-	if ($argin[$where_filter])
-	{
-		addWhereCondition($where_clause, "`$where_filter` = '{$argin[$where_filter]}' ");
-	}
+    if ($argin[$where_filter])
+    {
+        addWhereCondition($where_clause, "`$where_filter` = '{$argin[$where_filter]}' ");
+    }
 return $where_clause;
 }
 
 function addWhereCondition(&$where_clause, $condition) {
-	if($where_clause=='')
-		$where_clause.= 'WHERE ';
-	else
-		$where_clause.= 'AND ';
-	$where_clause.= $condition;
+    if($where_clause=='')
+        $where_clause.= 'WHERE ';
+    else
+        $where_clause.= 'AND ';
+    $where_clause.= $condition;
 }
 
 function queryDB ($q) {
-	$result=accessDB($q);
-	return $result['query'];
+    $result=accessDB($q);
+    return $result['query'];
 }
 
 function escape_string($string) {
@@ -102,28 +108,28 @@ function escape_string($string) {
 }
 
 function accessDB($q) {
-	// Make the connection:
-	$dbc = mysql_connect (DB_HOST, DB_USER, DB_PASSWORD);
+    // Make the connection:
+    $dbc = mysql_connect (DB_HOST, DB_USER, DB_PASSWORD);
     mysql_select_db(DB_NAME,$dbc);
-	$result=array();
-	
-	// If no connection could be made, trigger an error:
-	if (!$dbc) {
-		stopBecause('Could not connect to MySQL: ' . mysql_error(), 201);
-	} else { // Otherwise, set the encoding:
-		mysql_set_charset('utf8', $dbc);
-	}
+    $result=array();
+    
+    // If no connection could be made, trigger an error:
+    if (!$dbc) {
+        stopBecause('Could not connect to MySQL: ' . mysql_error(), 201);
+    } else { // Otherwise, set the encoding:
+        mysql_set_charset('utf8', $dbc);
+    }
 
-	// Make query
-	$result['query'] = mysql_query($q, $dbc);
-	$result['insert_id'] = mysql_insert_id($dbc);
-	
-	// Check and return
-	if($result['query']===false) {
+    // Make query
+    $result['query'] = mysql_query($q, $dbc);
+    $result['insert_id'] = mysql_insert_id($dbc);
+    
+    // Check and return
+    if($result['query']===false) {
         $q=str_replace("\r\n", "", $q);
         stopBecause("DB query failed. $q", 202);
     }
-	return $result;
+    return $result;
 }
 
 function queryResultToArray($r) {
@@ -135,17 +141,17 @@ function queryResultToArray($r) {
 }
 
 function queryResultToRow($r) {
-	return mysql_fetch_array($r, MYSQL_ASSOC);
+    return mysql_fetch_array($r, MYSQL_ASSOC);
 }
 
 
 function queryDB_array ($q){
-	return queryResultToArray(queryDB($q));
+    return queryResultToArray(queryDB($q));
 }
 
 
 function queryDB_row ($q) {
-	return queryResultToRow(queryDB($q));
+    return queryResultToRow(queryDB($q));
 }
 
 //Output
@@ -182,11 +188,11 @@ function stopBecause($errstr, $errno) {
 
 function error_handler($errno, $errstr) // This is intended only for api functions.
 {
-	if ($errno & E_USER_ERROR) {
-		produceOutputV3(array('status'=>$errno, 'message'=>$errstr));
-		exit();
-	}
-	return false;
+    if ($errno & E_USER_ERROR) {
+        produceOutputV3(array('status'=>$errno, 'message'=>$errstr));
+        exit();
+    }
+    return false;
 }
 set_error_handler("error_handler");
 ?>

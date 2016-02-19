@@ -41,6 +41,9 @@ function UpdateFFV($argin) {
     
     if($argin['formtype']=='miscs') {
         foreach($argin as $key => $value) {
+            if (substr($key,0,5)=='__cfd') continue;
+            if (substr($key,0,4)=='Hm_l') continue;
+            if (substr($key,0,9)=='PHPSESSID') continue;
             if ($key=='formtype') continue;
             if ($key=='language') continue;
             if ($key=='id') continue;
@@ -55,6 +58,9 @@ function UpdateFFV($argin) {
     } else {
         $SetClause="";
         foreach($argin as $key => $value) {
+            if (substr($key,0,5)=='__cfd') continue;
+            if (substr($key,0,4)=='Hm_l') continue;
+            if (substr($key,0,9)=='PHPSESSID') continue;
             if ($key=='formtype') continue;
             if ($key=='language') continue;
             if ($key=='id') continue;
@@ -74,24 +80,24 @@ function UpdateFFV($argin) {
 function getWhereClause($argin, $where_filters) {
 $where_clause='';
 while($where_filter=array_shift($where_filters))
-	if ($argin[$where_filter])
-	{
-		addWhereCondition($where_clause, "`$where_filter` = '{$argin[$where_filter]}' ");
-	}
+    if ($argin[$where_filter])
+    {
+        addWhereCondition($where_clause, "`$where_filter` = '{$argin[$where_filter]}' ");
+    }
 return $where_clause;
 }
 
 function addWhereCondition(&$where_clause, $condition) {
-	if($where_clause=='')
-		$where_clause.= 'WHERE ';
-	else
-		$where_clause.= 'AND ';
-	$where_clause.= $condition;
+    if($where_clause=='')
+        $where_clause.= 'WHERE ';
+    else
+        $where_clause.= 'AND ';
+    $where_clause.= $condition;
 }
 
 function queryDB ($q) {
-	$result=accessDB($q);
-	return $result['query'];
+    $result=accessDB($q);
+    return $result['query'];
 }
 
 function escape_string($string) {
@@ -139,12 +145,12 @@ function queryResultToRow($r) {
 
 
 function queryDB_array ($q){
-	return queryResultToArray(queryDB($q));
+    return queryResultToArray(queryDB($q));
 }
 
 
 function queryDB_row ($q) {
-	return queryResultToRow(queryDB($q));
+    return queryResultToRow(queryDB($q));
 }
 
 //Output
@@ -181,11 +187,11 @@ function stopBecause($errstr, $errno) {
 
 function error_handler($errno, $errstr) // This is intended only for api functions.
 {
-	if ($errno & E_USER_ERROR) {
-		produceOutputV3(array('status'=>$errno, 'message'=>$errstr));
-		exit();
-	}
-	return false;
+    if ($errno & E_USER_ERROR) {
+        produceOutputV3(array('status'=>$errno, 'message'=>$errstr));
+        exit();
+    }
+    return false;
 }
 set_error_handler("error_handler");
 ?>
