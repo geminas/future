@@ -102,7 +102,7 @@ function UpdateFFV($argin) {
                     $tempStatus=queryDB_row("select * from news where id = '{$argin['id']}'");
                     $oldStatus=$tempStatus['status'];
                     if ($oldStatus==0) {
-                        $time1 = date("Y-m-d H:i:s", time());
+                        $time1 = date("yyyy-MM-dd HH:mm:ss", time());
                         $SetClause.="`publishTime`='$time1'";
                         continue;
                     }
