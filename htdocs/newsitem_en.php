@@ -49,7 +49,7 @@ $folder="contents/news/";
                 <?php echo $newsitem['title'];?>
             </h2>
             <div class="author_publishTime" font-family: 'Microsoft YaHei',"微软雅黑", 'Avenir Next',Avenir,'Helvetica Neue',Helvetica,'Lantinghei SC','Hiragino Sans GB',STHeiti,'WenQuanYi Micro Hei',SimSun,sans-serif;>
-                <span class="author"><?php echo $newsitem['author'];?></span>
+                <span class="author"><?php echo $newsitem['author'];?>     </span>
                 <span class="publishTime"><?php echo $newsitem['publishTime'];?></span>
             </div>
             <div class="abstract">
