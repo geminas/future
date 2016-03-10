@@ -12,7 +12,7 @@ include "metalinks.php";
 $newsRecommended=queryDB_array("
     select id,code,title from news
     where recommendation > 0 and status <> 0
-    order by recommendation desc, publishTime desc
+    order by publishTime desc
     limit 10;
 ");
 $folder="contents/news/";
