@@ -37,6 +37,7 @@ function processRequestArguments() {
 function UpdateFFV($argin) {
     if($argin['formtype']=='miscs') {
         foreach($argin as $key => $value) {
+            if (substr($key,0,16)=='bdshare_firstime') continue;
             if (substr($key,0,5)=='__cfd') continue;
             if (substr($key,0,4)=='Hm_l') continue;
             if (substr($key,0,9)=='PHPSESSID') continue;
@@ -51,6 +52,7 @@ function UpdateFFV($argin) {
         // echo "<pre>";
         $SetClause="";
         foreach($argin as $key => $value) {
+            if (substr($key,0,16)=='bdshare_firstime') continue;
             if (substr($key,0,5)=='__cfd') continue;
             if (substr($key,0,4)=='Hm_l') continue;
             if (substr($key,0,9)=='PHPSESSID') continue;
@@ -68,6 +70,7 @@ function UpdateFFV($argin) {
         // echo "<pre>";
         $SetClause="";
         foreach($argin as $key => $value) {
+            if (substr($key,0,16)=='bdshare_firstime') continue;
             if (substr($key,0,5)=='__cfd') continue;
             if (substr($key,0,4)=='Hm_l') continue;
             if (substr($key,0,9)=='PHPSESSID') continue;
@@ -83,6 +86,7 @@ function UpdateFFV($argin) {
         // echo "<pre>";
         $SetClause="";
         foreach($argin as $key => $value) {
+            if (substr($key,0,16)=='bdshare_firstime') continue;
             if (substr($key,0,5)=='__cfd') continue;
             if (substr($key,0,4)=='Hm_l') continue;
             if (substr($key,0,9)=='PHPSESSID') continue;
@@ -112,6 +116,7 @@ function UpdateFFV($argin) {
     } else if ($argin['formtype']=='links') {
         $SetClause="";
         foreach($argin as $key => $value) {
+            if (substr($key,0,16)=='bdshare_firstime') continue;
             if (substr($key,0,5)=='__cfd') continue;
             if (substr($key,0,4)=='Hm_l') continue;
             if (substr($key,0,9)=='PHPSESSID') continue;
@@ -128,6 +133,7 @@ function UpdateFFV($argin) {
     } else if ($argin['formtype']=='events') {
         $SetClause="";
         foreach($argin as $key => $value) {
+            if (substr($key,0,16)=='bdshare_firstime') continue;
             if (substr($key,0,5)=='__cfd') continue;
             if (substr($key,0,4)=='Hm_l') continue;
             if (substr($key,0,9)=='PHPSESSID') continue;
@@ -146,6 +152,7 @@ function UpdateFFV($argin) {
     else {
         $SetClause="";
         foreach($argin as $key => $value) {
+            if (substr($key,0,16)=='bdshare_firstime') continue;
             if (substr($key,0,5)=='__cfd') continue;
             if (substr($key,0,4)=='Hm_l') continue;
             if (substr($key,0,9)=='PHPSESSID') continue;
