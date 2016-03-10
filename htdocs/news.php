@@ -9,12 +9,7 @@
 <?php
 include "metalinks.php";
 
-$newsRecommended=queryDB_array("
-    select id,code,title from news
-    where recommendation > 0 and status <> 0
-    order by code desc
-    limit 10;
-");
+$newsRecommended=queryDB_array("select id,code,title from news where status <> 0 order by publishTime desc limit 10;");
 $folder="contents/news/";
 ?>
     
