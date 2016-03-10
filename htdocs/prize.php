@@ -31,7 +31,7 @@ $prizeDb=queryDB_row("select * from prize where language = 1");
                 <h4 class="t-h1">未来科学大奖</h4>
                 <div class="ctt-wrap">
                     <div style="font-size: 16px">
-                        <?php echo $prizeDb['content'] ?>
+                        <?php echo $prizeDb['editorValue'] ?>
                     </div>
                 </div>
         </div>

@@ -20,13 +20,13 @@ if (!isset($_SESSION['user_id'])) {
 
 
 if (isset($argin['create'])) {
-    queryDB("INSERT INTO `prize` (`content`, `language` )
-    VALUES ('{$argin['content']}', '{$argin['language']}',)");
+    queryDB("INSERT INTO `prize` (`editorValue`, `language` )
+    VALUES ('{$argin['editorValue']}', '{$argin['language']}',)");
 }
 
 if (isset($argin['update'])) {
-    queryDB("UPDATE `prize` SET (`content` )
-    VALUES ('{$argin['content']}')");
+    queryDB("UPDATE `prize` SET (`editorValue` )
+    VALUES ('{$argin['editorValue']}')");
 }
 
 //*JSON encoding and return

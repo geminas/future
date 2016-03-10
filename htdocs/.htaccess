@@ -3,6 +3,12 @@ RewriteEngine On
 
 # Rewrite 系统规则请勿修改
 
+
+
+RewriteCond %{HTTP_HOST} ^futureforum.org.cn [NC]
+RewriteRule ^(.*)$ http://www.futureforum.org.cn/$1 [L,R=301]
+
+
 RewriteRule ^footprints/(\S+)\.html$ event.php?eventid=$1
 RewriteRule ^footprints_en/(\S+)\.html$ event_en.php?eventid=$1
 RewriteRule ^news/(\S+)\.html$ newsitem.php?newsid=$1
@@ -35,4 +41,3 @@ RewriteRule ^newsitem_en/img/(.*) /img/$1
 RewriteRule ^newsitem_en/css/(.*) /css/$1
 RewriteRule ^newsitem_en/js/(.*) /js/$1
 RewriteRule ^newsitem_en/bootstrap/(.*) /bootstrap/$1
-
