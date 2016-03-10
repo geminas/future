@@ -8,9 +8,9 @@
         </a>
         
         <span style="width:0.5%" class="HPtopmenu"></span>
-        <a href="<?php echo "http://".$_SERVER['HTTP_HOST']."/index.php"; ?>"><span style="width:12.7%" class="HPtopmenu">首页</span></a>
+        <a href="<?php echo "http://".$_SERVER['HTTP_HOST']."/index.php"; ?>"><span style="width:10.7%" class="HPtopmenu">首页</span></a>
         <a href="<?php echo "http://".$_SERVER['HTTP_HOST']."/people.php"; ?>"><span style="width:13.8%" class="HPtopmenu1">未来·人物</span></a>
-        <a href="<?php echo "http://".$_SERVER['HTTP_HOST']."/prize.php"; ?>"><span style="width:13.8%" class="HPtopmenu2">未来·科学大奖</span></a>
+        <a href="<?php echo "http://".$_SERVER['HTTP_HOST']."/prize.php"; ?>"><span style="width:15.8%" class="HPtopmenu2">未来·科学大奖</span></a>
         <a href="<?php echo "http://".$_SERVER['HTTP_HOST']."/footprints.php"; ?>"><span style="width:13.8%" class="HPtopmenu3">未来·足迹</span></a>
         <a href="<?php echo "http://".$_SERVER['HTTP_HOST']."/news.php"; ?>"><span style="width:13.8%" class="HPtopmenu4">未来·资讯</span></a>
         <a class="header-language-cn" href="<?php echo "http://".$_SERVER['HTTP_HOST']."/index_en.php"; ?>"><img src="/contents/language/l_chinese.png" style="width: 100%" alt=""> </a> 
