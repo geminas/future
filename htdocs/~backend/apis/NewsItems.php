@@ -17,7 +17,7 @@ if(!isset($argin['offset'])) $argin['offset']=0;
 if(!isset($argin['limit'])) $argin['limit']=15;
 
 $newsRecent=queryDB_array("
-    select id,code,author,abstract,title, DATE_FORMAT(publishTime,'%Y-%c-%e %k:%i') as publishTime from news
+    select id,code,author,abstract,title, DATE_FORMAT(publishTime,'%Y-%m-%d %h:%i:%s') as publishTime from news
     where status <> 0
     order by status desc, publishTime desc
     limit {$argin['offset']} , {$argin['limit']};
