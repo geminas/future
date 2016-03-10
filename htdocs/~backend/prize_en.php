@@ -28,7 +28,7 @@ $(document).ready( function () {
             formItems: [
             {type: "input-hidden", name: "formtype", attr: {"readonly":true, "value":"prize"}},
             {type: "input-hidden", name: "language", attr: {"readonly":true, "value":2}},
-                {type: "customHTML", name: "content", caption:"正文", option:{html:'<sc'+'ript id="editor"></scr'+'ipt>'}},
+                {type: "customHTML", name: "editorValue", caption:"正文", option:{html:'<sc'+'ript id="editor"></scr'+'ipt>'}},
                 {type: "button", option: {'caption': "提交"}}
                 ],
             };
@@ -37,8 +37,8 @@ $(document).ready( function () {
         .html(createForm_bootstrap(formDesign))
         .prepend("<h3>科学大奖英文版</h3>")
         .show();
-        window.UEDITOR_CONFIG.initialContent=data.prize.content;    
-        UE.getEditor('prize_form__content');
+        window.UEDITOR_CONFIG.initialContent=data.prize.editorValue;    
+        UE.getEditor('prize_form__editorValue');
 
         });
 });
