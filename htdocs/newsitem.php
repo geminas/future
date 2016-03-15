@@ -10,7 +10,7 @@
 include "metalinks.php";
 $argin=processRequestArguments();
 
-$newsitem=queryDB_row("select `id`, `code`, `title`, DATE_FORMAT(`publishTime`,'%Y-%c-%e %k:%i') as `publishTime`, `editorValue`, `abstract`, `recommendation`, `author`, `status`, `keywords`, `meta-title`, `meta-keywords`, `meta-description` from news where id='{$argin['newsid']}' and status <> 0");
+$newsitem=queryDB_row("select `id`, `code`, `title`, DATE_FORMAT(`publishTime`,'%Y-%m-%d %H:%i:%s') as `publishTime`, `editorValue`, `abstract`, `recommendation`, `author`, `status`, `keywords`, `meta-title`, `meta-keywords`, `meta-description` from news where id='{$argin['newsid']}' and status <> 0");
 
 
 $newsRecommended=queryDB_array("
@@ -49,7 +49,7 @@ $folder="contents/news/";
                 <?php echo $newsitem['title'];?>
             </h2>
             <div class="author_publishTime" font-family: 'Microsoft YaHei',"微软雅黑", 'Avenir Next',Avenir,'Helvetica Neue',Helvetica,'Lantinghei SC','Hiragino Sans GB',STHeiti,'WenQuanYi Micro Hei',SimSun,sans-serif;>
-                <span class="author"><?php echo $newsitem['author'];?>     </span>
+                <span class="author"><?php echo $newsitem['author'];?>   </span>
                 <span class="publishTime"><?php echo $newsitem['publishTime'];?></span>
                 <!-- <div class="row"> -->
                 <span class="bdsharebuttonbox"></a><a href="#" class="bds_more" data-cmd="more" style="margin-top: 0px; background-size: 14px; font-size: 14px; position: relative; float: right; background-position-y: 4px; background-position-x: 9px;">分享</a></span>
