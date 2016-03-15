@@ -59,7 +59,7 @@ $links6=queryDB_array("select * from links where type = 6");
                     <div class="col-xs-6 col-sm-3">
                         <div style="margin-bottom:10px">
                             <div style="background-color:black; width:100%; height:6px"></div>
-                            <h3 class="FooterHeader">战略合作媒体<br>Media Coalition</h3>
+                            <h3 class="FooterHeader">媒体支持<br>Media Support</h3>
                             <?php
                                 foreach ($links2 as $link) {
                             ?>
@@ -78,10 +78,10 @@ $links6=queryDB_array("select * from links where type = 6");
                     <div class="col-xs-6 col-sm-3">
                         <?php 
                             if (!empty($links3)) {
-                         ?>
+                         ?>ccc
                             <div style="margin-bottom:10px">
                                 <div style="background-color:black; width:100%; height:6px"></div>
-                                <h3 class="FooterHeader">战略合作机构<br>Strategic Partner</h3>
+                                <h3 class="FooterHeader">合作伙伴<br>Partner</h3>
                                 <?php
                                     foreach ($links3 as $link) {
                                 ?>
