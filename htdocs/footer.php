@@ -78,7 +78,7 @@ $links6=queryDB_array("select * from links where type = 6");
                     <div class="col-xs-6 col-sm-3">
                         <?php 
                             if (!empty($links3)) {
-                         ?>ccc
+                         ?>
                             <div style="margin-bottom:10px">
                                 <div style="background-color:black; width:100%; height:6px"></div>
                                 <h3 class="FooterHeader">合作伙伴<br>Partner</h3>
