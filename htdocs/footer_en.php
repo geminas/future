@@ -69,6 +69,8 @@ $links6=queryDB_array("select * from links where type = 6");
                                 <a href="<?php echo $link['href'];?>" target="_blank"><img style="width:100%; padding-bottom:5px" src="<?php echo "contents/" . $link['src'];?>"></a>
                             <?php } ?>
                         </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-3">
                         <div style="margin-bottom:10px">
                             <div style="background-color:black; width:100%; height:6px"></div>
                             <h3 class="FooterHeader">Philanthropic Partner</h3>
@@ -78,8 +80,6 @@ $links6=queryDB_array("select * from links where type = 6");
                                 <a href="<?php echo $link['href'];?>" target="_blank"><img style="width:100%; padding-bottom:5px" src="<?php echo "contents/" . $link['src'];?>"></a>
                             <?php } ?>
                         </div>
-                    </div>
-                    <div class="col-xs-6 col-sm-3">
                         <div style="margin-bottom:10px">
                             <div style="background-color:black; width:100%; height:6px"></div>
                             <h3 class="FooterHeader">Honorary Partner</h3>

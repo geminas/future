@@ -97,6 +97,8 @@ $links6=queryDB_array("select * from links where type = 6");
                                 <?php } ?>
                             </div>
                         <?php } ?>
+                    </div>
+                    <div class="col-xs-6 col-sm-3">
                         <?php 
                             if (!empty($links4)) {
                          ?>
@@ -118,8 +120,6 @@ $links6=queryDB_array("select * from links where type = 6");
                                 <?php } ?>
                             </div>
                         <?php } ?>
-                    </div>
-                    <div class="col-xs-6 col-sm-3">
                         <?php 
                             if (!empty($links5)) {
                          ?>
