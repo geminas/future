@@ -1,0 +1,33 @@
+<?php 
+
+	ob_start();
+	require_once 'general.php';
+	ob_end_clean();
+
+	class SimpleXMLExtended extends SimpleXMLElement {
+	public function addCData($cdata_text) {
+	    $node = dom_import_simplexml($this); 
+	    $no   = $node->ownerDocument; 
+	    $node->appendChild($no->createCDATASection($cdata_text)); 
+	  } 
+	}
+	
+	$items=queryDB_array("
+	    select id,code,author,abstract,title, DATE_FORMAT(publishTime,'%Y-%m-%d %H:%i:%s') as publishTime from news
+	    where status <> 0
+	    order by status desc, publishTime desc;
+	");
+	// $xml = new SimpleXMLElement('<rss version="2.0"/>');
+	$rss=new SimpleXMLExtended('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"/>');
+
+	foreach($items as $item) {
+	    $itemXml = $rss->addChild('url');
+	    $itemXml->addChild('loc', "http://www.futureforum.org.cn/news/{$item['id']}.html");
+	    $itemXml->addChild('priority', "0.6");
+	    $itemXml->addChild('lastmod', "{$item['publishTime']}");
+	    $itemXml->addChild('changefreq', "Weekly");
+	}
+
+	Header('Content-type: text/xml');
+	print($rss->asXML());
+?>
