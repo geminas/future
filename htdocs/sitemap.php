@@ -25,7 +25,7 @@
 	$channel->addChild('link', "http://www.futureforum.org.cn/");
 
 	foreach($items as $item) {
-	    $itemXml = $channel->addChild('url');
+	    $itemXml = $channel->addChild('item');
 	    $itemXml->addChild('loc', "http://www.futureforum.org.cn/news/{$item['id']}.html");
 	    $itemXml->addChild('priority', "0.6");
 	    $itemXml->addChild('lastmod', "{$item['publishTime']}");
