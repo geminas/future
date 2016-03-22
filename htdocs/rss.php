@@ -26,10 +26,14 @@
 
 	foreach($items as $item) {
 	    $itemXml = $channel->addChild('item');
-	    $itemXml->addChild('title', "{$item['title']}");
-	    $itemXml->addChild('link', "http://www.futureforum.org.cn/news/{$item['id']}.html");
-	    $itemXml->addChild('author', "{$item['author']}");
-	    $itemXml->addChild('pubDate', "{$item['publishTime']}");
+	    // $itemXml->addChild('title', "{$item['title']}");
+	    // $itemXml->addChild('link', "http://www.futureforum.org.cn/news/{$item['id']}.html");
+	    // $itemXml->addChild('author', "{$item['author']}");
+	    // $itemXml->addChild('pubDate', "{$item['publishTime']}");
+	    $itemXml->addChild('loc', "http://www.futureforum.org.cn/news/{$item['id']}.html");
+	    $itemXml->addChild('priority', "0.6");
+	    $itemXml->addChild('lastmod', "{$item['publishTime']}");
+	    $itemXml->addChild('changefreq', "Weekly");
 	}
 
 	Header('Content-type: text/xml');
