@@ -18,7 +18,7 @@
 	    order by status desc, publishTime desc;
 	");
 	// $xml = new SimpleXMLElement('<rss version="2.0"/>');
-	$rss=new SimpleXMLExtended('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"/>');
+	$rss=new SimpleXMLExtended('<rss version="2.0"/>');
 
 	foreach($items as $item) {
 	    $itemXml = $rss->addChild('url');
