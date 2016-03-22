@@ -19,9 +19,13 @@
 	");
 	// $xml = new SimpleXMLElement('<rss version="2.0"/>');
 	$rss=new SimpleXMLExtended('<rss version="2.0"/>');
+	$channel=$rss->addChild('channel');
+	$channel->addChild('title', "未来论坛");
+	$channel->addChild('description', "未来论坛RSS");
+	$channel->addChild('link', "http://www.futureforum.org.cn/");
 
 	foreach($items as $item) {
-	    $itemXml = $rss->addChild('url');
+	    $itemXml = $channel->addChild('url');
 	    $itemXml->addChild('loc', "http://www.futureforum.org.cn/news/{$item['id']}.html");
 	    $itemXml->addChild('priority', "0.6");
 	    $itemXml->addChild('lastmod', "{$item['publishTime']}");
