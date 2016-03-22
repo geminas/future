@@ -12,7 +12,11 @@
 	  } 
 	}
 	
-	$items=queryDB_array("select * from news where recommendation > 0 and status <> 0 order by recommendation asc, publishTime desc");
+	$items=queryDB_array("
+	    select id,code,author,abstract,title, DATE_FORMAT(publishTime,'%Y-%m-%d %H:%i:%s') as publishTime from news
+	    where status <> 0
+	    order by status desc, publishTime desc;
+	");
 	// $xml = new SimpleXMLElement('<rss version="2.0"/>');
 	$rss=new SimpleXMLExtended('<rss version="2.0"/>');
 	$channel=$rss->addChild('channel');
