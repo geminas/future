@@ -1,5 +1,6 @@
 <?php 
 
+
 	ob_start();
 	require_once 'general.php';
 	ob_end_clean();
@@ -20,11 +21,12 @@
 
 	$events=queryDB_array("select * from events");
 
-
 	// $xml = new SimpleXMLElement('<rss version="2.0"/>');
-	$channel=new SimpleXMLExtended('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"/>');
+	// 
 
-	$nowTime = date('Y-m-d H:i:s',time());;
+	$channel = new SimpleXMLElement("simple.xml",null,true);
+
+	$nowTime = date('Y-m-d H:i:s',time());
 
 	$itemXml = $channel->addChild('url');
 	$itemXml->addChild('loc', "http://www.futureforum.org.cn/");
@@ -157,6 +159,11 @@
 	}
 
 	Header('Content-type: text/xml');
+
+	$b = '<?xml-stylesheet type="text/xsl" href="sitemap.xsl"?> <!-- Free Sitemap Generator http://www.sitemapx.com -->';
+
+	// echo $b;
+
 	$c = $channel->asXML();
 
 	print($c);
