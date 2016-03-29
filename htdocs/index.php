@@ -223,7 +223,7 @@ $miscs=queryDB_array("select * from miscs where groupcode='homepage' order by se
                 <div class="row" style="margin:0">
                     <!--owl carousel start-->
                     <div id="featured-work" style="">
-                        <?php $events=queryDB_array("select * from events"); reset($events); while (list($number, $event)=each($events)) { ?>
+                        <?php $events=queryDB_array("select * from events order by id desc"); reset($events); while (list($number, $event)=each($events)) { ?>
                         <div class="item">
                             <div class="work-wrap">
                                 <div>
