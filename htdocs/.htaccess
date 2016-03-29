@@ -41,3 +41,5 @@ RewriteRule ^newsitem_en/img/(.*) /img/$1
 RewriteRule ^newsitem_en/css/(.*) /css/$1
 RewriteRule ^newsitem_en/js/(.*) /js/$1
 RewriteRule ^newsitem_en/bootstrap/(.*) /bootstrap/$1
+
+RewriteRule ^(\S+)$ /$1.php

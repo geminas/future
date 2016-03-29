@@ -30,12 +30,22 @@
 	    $itemXml->addChild('link', "http://www.futureforum.org.cn/news/{$item['id']}.html");
 	    $itemXml->addChild('author', "{$item['author']}");
 	    $itemXml->addChild('pubDate', "{$item['publishTime']}");
-	    // $itemXml->addChild('loc', "http://www.futureforum.org.cn/news/{$item['id']}.html");
-	    // $itemXml->addChild('priority', "0.6");
-	    // $itemXml->addChild('lastmod', "{$item['publishTime']}");
-	    // $itemXml->addChild('changefreq', "Weekly");
 	}
 
 	Header('Content-type: text/xml');
-	print($rss->asXML());
+	$c = $channel->asXML();
+	print($c);
+
+	// 假设你的文件b.php已经创建，并且有权操作
+	// 但还是加上权限设定的语句，比较保险
+	// 打开b.php文件，这里采用的是a+，也可以用a，a+为可读可写，a为只写，如果b.php不能存在则会创建它
+	$file = fopen('rss.xml', 'w'); // a模式就是一种追加模式，如果是w模式则会删除之前的内容再添加
+	// 获取需要写入的内容
+	
+	// 写入追加的内容
+	fwrite($file, $c);
+	// 关闭b.php文件
+	fclose($file);
+	// 销毁文件资源句柄变量
+	unset($file);
 ?>
