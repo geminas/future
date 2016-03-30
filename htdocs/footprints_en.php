@@ -51,7 +51,7 @@
     <!-- Static navbar -->
 
     <?php require "headermenu_en.php";
-    $events=queryDB_array("select * from events"); reset($events);
+    $events=queryDB_array("select * from events order by id desc"); reset($events);
     $miscs=queryDB_array("select * from miscs where groupcode='footprint' order by sequence asc ");
     $events_category=queryDB_array("select * from events_category order by value asc")
     ?>
