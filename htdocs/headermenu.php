@@ -20,7 +20,7 @@
                 <a id="uldivlia" href="<?php echo "http://".$_SERVER['HTTP_HOST']."/prize.php"; ?>"><span class="HPtopmenu2">未来·科学大奖</span></a>
             </li>
             <li class="dropdown" style="width:13.8%; padding-top: 4%;">
-                <a id="uldivlia" class="HPtopmenu HPtopmenu3e dropdown-toggle" data-toggle="dropdown" href="<?php echo "http://".$_SERVER['HTTP_HOST']."/footprints.php"; ?>"><span class="HPtopmenu3">未来·足迹</span></a>
+                <a id="uldivlia" class="HPtopmenu HPtopmenu3e dropdown-toggle" data-toggle="dropdown" href="#" href="<?php echo "http://".$_SERVER['HTTP_HOST']."/footprints.php"; ?>"><span class="HPtopmenu3">未来·足迹</span></a>
                 <ul class="dropdown-menu">
                     <li class="dg_menu_border"><a href="#">特别活动</a></li>
                     <li class="dg_menu_border"><a href="#">理解未来讲座</a></li>
