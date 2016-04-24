@@ -57,3 +57,13 @@ RewriteRule ^aboutus_en/ /aboutus_en.php
 RewriteRule ^product_en/ /product_en.php
 RewriteRule ^joinus_en/ /joinus_en.php
 RewriteRule ^contactus_en/ /contactus_en.php
+
+
+RewriteRule ^aboutus /aboutus.php
+RewriteRule ^product /product.php
+RewriteRule ^joinus /joinus.php
+RewriteRule ^contactus /contactus.php
+RewriteRule ^aboutus_en /aboutus_en.php
+RewriteRule ^product_en /product_en.php
+RewriteRule ^joinus_en /joinus_en.php
+RewriteRule ^contactus_en /contactus_en.php
