@@ -2,17 +2,35 @@
 
 
 <div class="container" style="background-color: #F2F2F2; ">
-    <div class="row hidden-xs" style="background-color:#FFF;">
-        <a href="index.php">
-            <img src="img/logo250.jpg" style="width: 19.53125%" alt="Future Forum 未来论坛">
-        </a>
-        
-        <span style="width:0.5%" class="HPtopmenu"></span>
-        <a href="<?php echo "http://".$_SERVER['HTTP_HOST']."/index.php"; ?>"><span style="width:10.7%" class="HPtopmenu">首页</span></a>
-        <a href="<?php echo "http://".$_SERVER['HTTP_HOST']."/people.php"; ?>"><span style="width:13.8%" class="HPtopmenu1">未来·人物</span></a>
-        <a href="<?php echo "http://".$_SERVER['HTTP_HOST']."/prize.php"; ?>"><span style="width:15.8%" class="HPtopmenu2">未来·科学大奖</span></a>
-        <a href="<?php echo "http://".$_SERVER['HTTP_HOST']."/footprints.php"; ?>"><span style="width:13.8%" class="HPtopmenu3">未来·足迹</span></a>
-        <a href="<?php echo "http://".$_SERVER['HTTP_HOST']."/news.php"; ?>"><span style="width:13.8%" class="HPtopmenu4">未来·资讯</span></a>
+    <div class="row hidden-xs" style="background-color:#FFF;" id="uldiv">
+        <ul class="row nav navbar-nav right-nav" style="width: 92%">
+            <li style="width: 26.53125%">
+                <a id="uldivlia" href="index.php" style="padding-left: 0px;"><img src="img/logo250.jpg" style="width:100%" alt="Future Forum 未来论坛"></a>
+            </li>
+            <li style="width:0.5%; padding-top: 4%;">
+                <span class="HPtopmenu"></span>
+            </li>
+            <li style="width:10%; padding-top: 4%;">
+                <a id="uldivlia" href="<?php echo "http://".$_SERVER['HTTP_HOST']."/index.php"; ?>"><span class="HPtopmenu">首页</span></a>
+            </li>
+            <li style="width:13.8%; padding-top: 4%;">
+                <a id="uldivlia" href="<?php echo "http://".$_SERVER['HTTP_HOST']."/people.php"; ?>"><span class="HPtopmenu1">未来·人物</span></a>
+            </li>
+            <li style="width:17.8%; padding-top: 4%;">
+                <a id="uldivlia" href="<?php echo "http://".$_SERVER['HTTP_HOST']."/prize.php"; ?>"><span class="HPtopmenu2">未来·科学大奖</span></a>
+            </li>
+            <li class="dropdown" style="width:13.8%; padding-top: 4%;">
+                <a id="uldivlia" class="HPtopmenu HPtopmenu3e dropdown-toggle" data-toggle="dropdown" href="<?php echo "http://".$_SERVER['HTTP_HOST']."/footprints.php"; ?>"><span class="HPtopmenu3">未来·足迹</span></a>
+                <ul class="dropdown-menu">
+                    <li class="dg_menu_border"><a href="#">特别活动</a></li>
+                    <li class="dg_menu_border"><a href="#">理解未来讲座</a></li>
+                    <li class="dg_menu_border"><a href="#">闭门耕</a></li>
+                </ul>
+            </li>
+            <li style="width:13.8%; padding-top: 4%;">
+                <a id="uldivlia" href="<?php echo "http://".$_SERVER['HTTP_HOST']."/news.php"; ?>"><span class="HPtopmenu4">未来·资讯</span></a>
+            </li>
+        </ul>
         <a class="header-language-cn" href="<?php echo "http://".$_SERVER['HTTP_HOST']."/index_en.php"; ?>"><img src="/contents/language/l_chinese.png" style="width: 100%" alt=""> </a> 
     </div>
     <div class="row">

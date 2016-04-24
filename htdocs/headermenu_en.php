@@ -1,16 +1,32 @@
 <div id="headl">
+<div class="container" style="background-color: #F2F2F2;">
+    <div class="row hidden-xs" style="background-color:#FFF;" id="uldiv">
+        <ul class="row nav navbar-nav right-nav" style="width: 92%">
+            <li style="width: 26.53125%">
+                <a id="uldivlia" href="index_en.php" style="padding-left: 0px;"><img src="img/logo250.jpg" style="width: 100%; text-align: left;" alt="Future Forum 未来论坛"></a>
+            </li>
+            <li style="width:0.5%; padding-top: 4%;">
+                <span style="width:0.5%" class="HPtopmenu"></span>
+            </li>
+            <li style="width:11.7%; padding-top: 4%;">
+                <a id="uldivlia" href="<?php echo "http://".$_SERVER['HTTP_HOST']."/index_en.php"; ?>"><span style="width:13.7%" class="HPtopmenu0e">HOME</span></a>
+            </li>
+            <li style="width:18.7%; padding-top: 4%;">
+                <a id="uldivlia" href="<?php echo "http://".$_SERVER['HTTP_HOST']."/people_en.php"; ?>"><span style="width:18.7%" class="HPtopmenu1e">Future·Characters</span></a>
+            </li>
+            <li style="width:16.7%; padding-top: 4%;">
+                <a id="uldivlia" href="<?php echo "http://".$_SERVER['HTTP_HOST']."/prize_en.php"; ?>"><span style="width:16.7%" class="HPtopmenu2e">Future·Prize</span></a>
+            </li>
+            <li class="dropdown" style="width:18.7%; padding-top: 4%;">
+                <a id="uldivlia" class="HPtopmenu HPtopmenu3e dropdown-toggle" data-toggle="dropdown" href="#" href="<?php echo "http://".$_SERVER['HTTP_HOST']."/footprints_en.php"; ?>"><span style="width:18.7%">Future·Footprints</span></a>
+                <ul class="dropdown-menu">
+                    <li class="dg_menu_border"><a href="#">特别活动</a></li>
+                    <li class="dg_menu_border"><a href="#">理解未来讲座</a></li>
+                    <li class="dg_menu_border"><a href="#">闭门耕</a></li>
+                </ul>
+            </li>
+        </ul>
 
-<div class="container" style="background-color: #F2F2F2; ">
-    <div class="row hidden-xs" style="background-color:#FFF;">
-        <a href="index_en.php">
-            <img src="img/logo250.jpg" style="width: 19.53125%" alt="Future Forum 未来论坛">
-        </a>
-        
-        <span style="width:0.5%" class="HPtopmenu"></span>
-        <a href="<?php echo "http://".$_SERVER['HTTP_HOST']."/index_en.php"; ?>"><span style="width:13.7%" class="HPtopmenu0e">HOME</span></a>
-        <a href="<?php echo "http://".$_SERVER['HTTP_HOST']."/people_en.php"; ?>"><span style="width:18.7%" class="HPtopmenu1e">Future·Characters</span></a>
-        <a href="<?php echo "http://".$_SERVER['HTTP_HOST']."/prize_en.php"; ?>"><span style="width:16.7%" class="HPtopmenu2e">Future·Prize</span></a>
-        <a href="<?php echo "http://".$_SERVER['HTTP_HOST']."/footprints_en.php"; ?>"><span style="width:18.7%" class="HPtopmenu HPtopmenu3e">Future·Footprints</span></a>
         <a class="header-language-cn" href="<?php echo "http://".$_SERVER['HTTP_HOST']."/index.php"; ?>"><img src="/contents/language/l_english.png" style="width: 100%" alt=""> </a> 
     </div>
     <div class="row">

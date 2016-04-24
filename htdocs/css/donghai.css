@@ -11,6 +11,10 @@
     height: 29px;
 }
 
+#uldiv #uldivlia:hover {
+    background-color: rgba(0, 0, 0, 0);
+}
+
 .header-language-en {
     float: right;
     position: relative;
@@ -261,6 +265,10 @@ body {
     color: #d3d3d3;
     font-family: 'Akkurat Pro','Source Han Sans CN', sans-serif; 
 } /*Donghai*/
+
+.HPtopmenuli {
+    padding-top: 4%;
+}
 
 .HPtopmenu {
     display:inline-block;

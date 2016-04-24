@@ -48,7 +48,6 @@
 
     <link rel="stylesheet" type="text/css" href="fullPage.js-master/jquery.fullPage.css" />
     <link href="css/donghai.css" rel="stylesheet" type="text/css">
-
 </head>
 
 <body>
