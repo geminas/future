@@ -27,8 +27,6 @@ RewriteRule ^footprints_en/css/(.*) /css/$1
 RewriteRule ^footprints_en/js/(.*) /js/$1
 RewriteRule ^footprints_en/bootstrap/(.*) /bootstrap/$1
 
-
-
 RewriteRule ^news/contents/(.*) /contents/$1
 RewriteRule ^news/img/(.*) /img/$1
 RewriteRule ^news/css/(.*) /css/$1
@@ -42,4 +40,20 @@ RewriteRule ^newsitem_en/css/(.*) /css/$1
 RewriteRule ^newsitem_en/js/(.*) /js/$1
 RewriteRule ^newsitem_en/bootstrap/(.*) /bootstrap/$1
 
-RewriteRule ^(\S+)$ /$1.php
+RewriteRule ^index/ /index.php
+RewriteRule ^people/ /people.php
+RewriteRule ^prize/ /prize.php
+RewriteRule ^news/ /news.php
+RewriteRule ^index_en/ /index_en.php
+RewriteRule ^people_en/ /people_en.php
+RewriteRule ^prize_en/ /prize_en.php
+RewriteRule ^news_en/ /news_en.php
+
+RewriteRule ^aboutus/ /aboutus.php
+RewriteRule ^product/ /product.php
+RewriteRule ^joinus/ /joinus.php
+RewriteRule ^contactus/ /contactus.php
+RewriteRule ^aboutus_en/ /aboutus_en.php
+RewriteRule ^product_en/ /product_en.php
+RewriteRule ^joinus_en/ /joinus_en.php
+RewriteRule ^contactus_en/ /contactus_en.php
