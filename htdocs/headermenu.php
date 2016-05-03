@@ -1,6 +1,15 @@
+<script>
+    window.onload=function (){
+      $(".dropdown").on("mouseenter",function (){
+        $(this).find(".dropdown-menu").show("fast","linear");
+    }).on("mouseleave",function (){
+        $(this).find(".dropdown-menu").hide("fast","linear");
+    })
+}
+</script>
+
+
 <div id="headl">
-
-
 <div class="container" style="background-color: #F2F2F2; ">
     <div class="row hidden-xs" style="background-color:#FFF;" id="uldiv">
         <ul class="row nav navbar-nav right-nav" style="width: 92%">
@@ -22,9 +31,9 @@
             <li class="dropdown" style="width:13.8%; padding-top: 4%;">
                 <a id="uldivlia" class="HPtopmenu HPtopmenu3e dropdown-toggle" data-toggle="dropdown" href="#" href="<?php echo "http://".$_SERVER['HTTP_HOST']."/footprints.php"; ?>"><span class="HPtopmenu3">未来·足迹</span></a>
                 <ul class="dropdown-menu">
-                    <li class="dg_menu_border"><a href="#">特别活动</a></li>
-                    <li class="dg_menu_border"><a href="#">理解未来讲座</a></li>
-                    <li class="dg_menu_border"><a href="#">闭门耕</a></li>
+                    <li class="dg_menu_border"><a href="<?php echo "http://".$_SERVER['HTTP_HOST']."/footprints.php?item=1#footer_name"; ?>">特别活动</a></li>
+                    <li class="dg_menu_border"><a href="<?php echo "http://".$_SERVER['HTTP_HOST']."/footprints.php?item=2#footer_name"; ?>">理解未来讲座</a></li>
+                    <li class="dg_menu_border"><a href="<?php echo "http://".$_SERVER['HTTP_HOST']."/footprints.php?item=3#footer_name"; ?>">闭门耕</a></li>
                 </ul>
             </li>
             <li style="width:13.8%; padding-top: 4%;">
@@ -59,3 +68,10 @@
 <![endif]-->
 
 </div>
+
+
+
+
+
+
+

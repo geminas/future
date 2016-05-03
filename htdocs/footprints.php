@@ -56,8 +56,6 @@
     $events_category=queryDB_array("select * from events_category order by value asc")
     ?>
 
-
-
         <div class="container">
         <div class="row">
         <div class="GDH-topimage" style="background-image: url('contents/footprint.jpg');">
@@ -70,9 +68,10 @@
         </div>
         </div>
         
+        <a name="footer_name"></a>
         <div class="container GDH-normalpadding xsNoLRPadding">
                 <div class="portfolio-cube">
-
+                
                 <div id="filters-container" class="cbp-l-filters-button">
                     <?php 
                         foreach($events_category as $category) {
@@ -287,12 +286,24 @@
         }
         
         function initcube(mediaQueriesValues) {
+            var item = <?php echo $argin['item']; ?>;
+            var xxx;
+            if (item == 1) {
+                xxx = ".special";
+            } else if (item == 2) {
+                xxx = ".lecture";
+            } else if (item == 3) {
+                xxx = ".seminar";
+            }
+
+            console.log(item);
+
             $('#event-container').cubeportfolio({
                     filters: '#filters-container',
                     loadMore: '#loadMore-container',
                     loadMoreAction: 'click',
                     layoutMode: 'grid',
-                    defaultFilter: '*',
+                    defaultFilter: xxx,
                     animationType: 'quicksand',
                     gapHorizontal: 15,
                     gapVertical: 15,
@@ -317,7 +328,6 @@
                     singlePageCallback: function(url, element) {
                         // to update singlePage content use the following method: this.updateSinglePage(yourContent)
                         var t = this;
-
                         $.ajax({
                                 url: url,
                                 type: 'GET',
